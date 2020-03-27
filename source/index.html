@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <!-- пока я не начинал стилизацию и поэтому не добавляю стили для бэм-блоков. в дальнейшем, по необходимости буду миксовать классы у тегов, дополняя повторяющиеся элементы классами бэм-блоков -->
+
   <header class="header-page">
     <nav class="header-page__navigation">
 
@@ -29,31 +29,33 @@
           <a class="header-page__navigation-link" href="">Попутчики</a>
         </li>
       </ul>
+      <!-- микс. добавляю класс бэм-блока button -->
+      <a class="header-page__button  button" href="">Авторизация</a>
 
-      <a class="header-page__button" href="">Авторизация</a>
-
-      <ul class="header-page__contact-list">
-        <li class="header-page__contact-item">
-          <a class="header-page__contact-link  icon-telephone" href="tel:88005558628">
-            <span class="header-page__contact-detail">8 800 555-86-28</span>
+      <!-- микс. добавляю класс бэм-блока contact-list -->
+      <ul class="header-page__contact-list  contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-telephone" href="tel:88005558628">
+            <span class="contact-list__detail">8 800 555-86-28</span>
           </a>
         </li>
-        <li class="header-page__contact-item">
-          <a class="header-page__contact-link  icon-email" href="mailto:mail@htmlacademy.ru">
-            <span class="header-page__contact-detail">mail@htmlacademy.ru</span>
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="contact-list__detail">mail@htmlacademy.ru</span>
           </a>
         </li>
       </ul>
 
-      <ul class="header-page__social-list">
-        <li class="header-page__social__item">
-          <a class="header-page__social-link  icon-facebook" href="">Facebook</a>
+      <!-- микс. добавляю класс бэм-блока social-list -->
+      <ul class="header-page__social-list  social-list">
+        <li class="social-list__item">
+          <a class="social-list__link  icon-facebook" href="">Facebook</a>
         </li>
-        <li class="header-page__social__item">
-          <a class="header-page__social-link  icon-vkontakte" href="">ВКонтакте</a>
+        <li class="social-list__item">
+          <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
         </li>
-        <li class="header-page__social__item">
-          <a class="header-page__social-link  icon-Instagram" href="">Instagram</a>
+        <li class="social-list__item">
+          <a class="social-list__link  icon-Instagram" href="">Instagram</a>
         </li>
       </ul>
 
@@ -61,10 +63,51 @@
   </header>
 
   <main class="main-page">
+    <h1 class="visually-hidden">Погнали? — Современный онлайн-сервис для весёлых путешествий по миру вместе с
+      попутчиками</h1>
 
     <section class="promo">
+      <span class="promo__title">В путешествие с крутыми попутчиками!</span>
+
+      <!-- микс2. добавляю класс бэм-блока contact-list -->
+      <ul class="promo__contact-list  contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-telephone" href="tel:88005558628">
+            <span class="contact-list__detail">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="contact-list__detail">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- микс2. добавляю класс бэм-блока button -->
+      <a class="promo__button  button" href="">Авторизация</a>
+
+      <blockquote class="promo__quote-content">«Лучшее приложение, что я видел в жизни!»</blockquote>
+      <cite class="promo__quote-author">Мурат Эльтазин<br>
+        главный редактор газеты «гаджетлайф»</cite>
+
+      <ol class="promo__list-steps  steps-list">
+        <li class="steps-list__item">
+          <span class="steps-list__description">Выберите направление</span>
+        </li>
+        <li class="steps-list__item">
+          <span class="steps-list__description">Изучите идеи путешественников</span>
+        </li>
+        <li class="steps-list__item">
+          <span class="steps-list__description">Находите тех, кто похож на вас</span>
+        </li>
+        <li class="steps-list__item">
+          <span class="steps-list__description">Путешествуйте вместе!</span>
+        </li>
+      </ol>
 
     </section>
+
+
 
   </main>
 </body>
