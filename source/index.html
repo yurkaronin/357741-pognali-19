@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+</head>
 
-  </body>
+<body>
+  <!-- пока я не начинал стилизацию и поэтому не добавляю стили для бэм-блоков. в дальнейшем, по необходимости буду миксовать классы у тегов, дополняя повторяющиеся элементы классами бэм-блоков -->
+  <header class="header-page">
+    <nav class="header-page__navigation">
+
+      <a href="" class="header-page__logo-link">
+        <img class="header-page__logo-image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
+          height="19">
+      </a>
+
+      <button class="header-page__button-menu" type="button">Открыть меню</button>
+
+      <ul class="header-page__navigation-list">
+        <li class="header-page__navigation-item">
+          <a class="header-page__navigation-link" href="">О сервисе</a>
+        </li>
+        <li class="header-page__navigation-item">
+          <a class="header-page__navigation-link" href="">Направления</a>
+        </li>
+        <li class="header-page__navigation-item">
+          <a class="header-page__navigation-link" href="">Попутчики</a>
+        </li>
+      </ul>
+
+      <a class="header-page__button" href="">Авторизация</a>
+
+      <ul class="header-page__contact-list">
+        <li class="header-page__contact-item">
+          <a class="header-page__contact-link  icon-telephone" href="tel:88005558628">
+            <span class="header-page__contact-detail">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="header-page__contact-item">
+          <a class="header-page__contact-link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="header-page__contact-detail">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="header-page__social-list">
+        <li class="header-page__social__item">
+          <a class="header-page__social-link  icon-facebook" href="">Facebook</a>
+        </li>
+        <li class="header-page__social__item">
+          <a class="header-page__social-link  icon-vkontakte" href="">ВКонтакте</a>
+        </li>
+        <li class="header-page__social__item">
+          <a class="header-page__social-link  icon-Instagram" href="">Instagram</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="main-page">
+
+    <section class="promo">
+
+    </section>
+
+  </main>
+</body>
+
 </html>
