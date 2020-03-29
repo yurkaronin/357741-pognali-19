@@ -1,12 +1,625 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Каталог</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </body>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+
+  <title>Попутчики: страница с вариантами попутчиков для совместного путешествия</title>
+  <meta name="description" content="Внутренняя страница со списком попутчиков для весёлых путешествий по всему миру.">
+
+  <!-- favicons   -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#161C36">
+
+</head>
+
+<body>
+
+  <!-- микс. добавляю модификатор для страницы каталога  -->
+  <header class="header  header--catalog">
+    <nav class="header__navigation">
+      <!-- микс. добавляем блок с логотипом  -->
+      <a href="index.html" class="header__logo-link  logotype">
+        <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
+          height="19">
+      </a>
+
+      <button class="header__button-menu" type="button">Открыть меню</button>
+
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="">О сервисе</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="">Направления</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="">Попутчики</a>
+        </li>
+      </ul>
+      <!-- микс. добавляю класс бэм-блока button -->
+      <a class="header__button  button" href="">Авторизация</a>
+
+      <!-- микс. добавляю класс бэм-блока contact-list -->
+      <ul class="header__contact-list  contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-telephone" href="tel:88005558628">
+            <span class="contact-list__detail">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="contact-list__detail">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- микс. добавляю класс бэм-блока social-list -->
+      <ul class="header__social-list  social-list">
+        <li class="social-list__item">
+          <a class="social-list__link  icon-facebook" href="">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link  icon-Instagram" href="">Instagram</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <h1 class="header__title  title  title--big">Попутчики</h1>
+
+    <a class="header__link-home" href="index.html">На главную</a>
+  </header>
+
+  <main class="main">
+
+    <section class="geographic-filter">
+      <!-- микс. добавляем блок title для заголовка  -->
+      <h2 class="geographic-filter__title  title">Фильтрация по странам</h2>
+      <button class="geographic-filter__button-open">Открыть фильтр</button>
+
+      <div class="geographic-filter__wrapper">
+        <!-- микс. добавляем блок options-list и модификатор -->
+        <ul class="geographic-filter__option  options-list  options-list--regions">
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Европа</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Азия</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Америка</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Острова</a>
+          </li>
+        </ul>
+        <!-- Очень хотел бы реализовать этот блок таблицей. Мне кажется тут она идеально подходит. Но я пока не продумывал детали. Поэтому и классы пока не прописывал.  -->
+        <table>
+          <tr>
+            <td>а</td>
+            <td>б</td>
+            <td>в</td>
+            <td>г</td>
+            <td>д</td>
+          </tr>
+          <tr>
+            <td>е</td>
+            <td>з</td>
+            <td>и</td>
+            <td>к</td>
+            <td>л</td>
+          </tr>
+          <tr>
+            <td>м</td>
+            <td>н</td>
+            <td>о</td>
+            <td>п</td>
+            <td>р</td>
+          </tr>
+          <tr>
+            <td>с</td>
+            <td>т</td>
+            <td>у</td>
+            <td>ф</td>
+            <td>х</td>
+          </tr>
+          <tr>
+            <td>ч</td>
+            <td>ш</td>
+            <td>э</td>
+            <td>ю</td>
+            <td>я</td>
+          </tr>
+        </table>
+
+        <!-- микс. добавляем блок options-list  и модификатор-->
+        <ul class="geographic-filter__option  options-list  options-list--cities">
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Австралия</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Австрия</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Азербайджан</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Албания</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Алжир</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Ангола</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Андорра</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Антигуа и Барбуда</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Аргентина</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Армения</a>
+          </li>
+          <li class="options-list__item">
+            <a class="options-list__link" href="">Афганистан</a>
+          </li>
+        </ul>
+
+        <button class="geographic-filter__button-closed  ">Свернуть</button>
+
+      </div>
+    </section>
+
+    <section class="preferences-filter">
+      <!-- микс. добавляем блок title  -->
+      <h2 class="preferences-filter__title  title">Подберите идеального попутчика</h2>
+      <form class="preferences-filter__form" method="get" action="https://echo.htmlacademy.ru">
+
+        <!-- тут в мобилке выпадающие списки, похожие на select с дочерними чек-боксами. Я пока не знаю как буду их делать в разметке. нужно посоветоваться с тобой. http://prntscr.com/rp1bn5 -->
+
+
+        <!-- микс. добавляем бэм-блок button  -->
+        <button class="preferences-filter__button  button" type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section class="travelers-result">
+      <h2 class="visually-hidden">Подходящие варианты попутчиков для вас</h2>
+
+      <ul class="travelers-result__list">
+
+        <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
+        <li class="travelers-result__item  traveler-card">
+          <!-- микс. добавляем иконку лайка к фото  -->
+          <img class="traveler-card__photo  icon-like  liked" src="https://via.placeholder.com/70x70"
+            alt="Фотография Тани" width="70" height="70">
+          <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
+          <h3 class="traveler-card__name  user-status">Таня Фирсова</h3>
+          <span class="traveler-card__distance">1,5 м</span>
+
+          <!-- микс. добавляю блок списка хэштегов hashtag-list -->
+          <ul class="traveler-card__hashtag  hashtag-list">
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#ЗОЖ</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#ПП</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Фитнес</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#пляж</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#авокадо</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#смузи</span>
+            </li>
+          </ul>
+          <!-- микс. добавляем wishlist  -->
+          <div class="traveler-card__wishlist-wrapper">
+            <h4 class="traveler-card__label">Хочет посетить:</h4>
+            <ul class="traveler-card__wishlist   wishlist">
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Шри-Ланки" width="26"
+                  height="18">
+                <span class="wishlist__name">Шри-Ланка</span>
+              </li>
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Тайланда" width="26"
+                  height="18">
+                <span class="wishlist__name">Тайланд</span>
+              </li>
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Сейшел" width="26"
+                  height="18">
+                <span class="wishlist__name">Сейшелы</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="traveler-card__transport-wrapper">
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <h4 class="traveler-card__label">Транспорт:</h4>
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <ul class="traveler-card__transport-list  transport-list">
+
+              <!-- микс. добавляю класс для активных элементов списка active -->
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
+                  width="19" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/17x21" alt="Иконка автобус"
+                  width="17" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/24x21" alt="Иконка велосипед"
+                  width="24" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/20x21" alt="Иконка бегун" width="20"
+                  height="21">
+              </li>
+            </ul>
+          </div>
+
+          <div class="traveler-card__level-wrapper">
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <h4 class="traveler-card__label">Левел:</h4>
+            <!-- прогресс-бар пользователя  personal-level-->
+            <div class="travelers-list__level  personal-level">
+              <div class="personal-level__details">
+                <span class="personal-level__number">99</span>
+              </div>
+              <svg class="personal-level__figure">
+                <circle class="personal-level__background" cx="22" cy="22" r="20"></circle>
+                <circle class="personal-level__progress" cx="22" cy="22" r="20"></circle>
+              </svg>
+            </div>
+          </div>
+          <!-- микс. добавляем блок button  -->
+          <a class="traveler-card__button  button" href="">Позвать!</a>
+        </li>
+
+        <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
+        <li class="travelers-result__item  traveler-card">
+          <!-- микс. добавляем иконку лайка к фото  -->
+          <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Пети"
+            width="70" height="70">
+          <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
+          <h3 class="traveler-card__name  user-status">Петя Демин</h3>
+          <span class="traveler-card__distance">1500</span>
+
+          <!-- микс. добавляю блок списка хэштегов hashtag-list -->
+          <ul class="traveler-card__hashtag  hashtag-list">
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#бургер</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#бар</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#футбол</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#концерт</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#крафт</span>
+            </li>
+          </ul>
+          <!-- микс. добавляем wishlist  -->
+          <div class="traveler-card__wishlist-wrapper">
+            <h4 class="traveler-card__label">Хочет посетить:</h4>
+            <ul class="traveler-card__wishlist   wishlist">
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Бельгии" width="26"
+                  height="18">
+                <span class="wishlist__name">Бельгия</span>
+              </li>
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Чехии" width="26"
+                  height="18">
+                <span class="wishlist__name">Чехия</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="traveler-card__transport-wrapper">
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <h4 class="traveler-card__label">Транспорт:</h4>
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <ul class="traveler-card__transport-list  transport-list">
+
+              <!-- микс. добавляю класс для активных элементов списка active -->
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
+                  width="19" height="21">
+              </li>
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/17x21" alt="Иконка автобус"
+                  width="17" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/24x21" alt="Иконка велосипед"
+                  width="24" height="21">
+              </li>
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/20x21" alt="Иконка бегун" width="20"
+                  height="21">
+              </li>
+            </ul>
+          </div>
+
+          <div class="traveler-card__level-wrapper">
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <h4 class="traveler-card__label">Левел:</h4>
+            <!-- прогресс-бар пользователя  personal-level-->
+            <div class="travelers-list__level  personal-level">
+              <div class="personal-level__details">
+                <span class="personal-level__number">80</span>
+              </div>
+              <svg class="personal-level__figure">
+                <circle class="personal-level__background" cx="22" cy="22" r="20"></circle>
+                <circle class="personal-level__progress" cx="22" cy="22" r="20"></circle>
+              </svg>
+            </div>
+          </div>
+          <!-- микс. добавляем блок button  -->
+          <a class="traveler-card__button  button" href="">Позвать!</a>
+        </li>
+
+        <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
+        <li class="travelers-result__item  traveler-card">
+          <!-- микс. добавляем иконку лайка к фото  -->
+          <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Тани"
+            width="70" height="70">
+          <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
+          <h3 class="traveler-card__name  user-status">Марк Смолов</h3>
+          <span class="traveler-card__distance">170</span>
+
+          <!-- микс. добавляю блок списка хэштегов hashtag-list -->
+          <ul class="traveler-card__hashtag  hashtag-list">
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Рэп</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Тату</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Хайпбист</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Кроссовки</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Суприм</span>
+            </li>
+          </ul>
+          <!-- микс. добавляем wishlist  -->
+          <div class="traveler-card__wishlist-wrapper">
+            <h4 class="traveler-card__label">Хочет посетить:</h4>
+            <ul class="traveler-card__wishlist   wishlist">
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг США" width="26"
+                  height="18">
+                <span class="wishlist__name">США</span>
+              </li>
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Австралии" width="26"
+                  height="18">
+                <span class="wishlist__name">Австралия</span>
+              </li>
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Доминики" width="26"
+                  height="18">
+                <span class="wishlist__name">Доминика</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="traveler-card__transport-wrapper">
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <h4 class="traveler-card__label">Транспорт:</h4>
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <ul class="traveler-card__transport-list  transport-list">
+
+              <!-- микс. добавляю класс для активных элементов списка active -->
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
+                  width="19" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/17x21" alt="Иконка автобус"
+                  width="17" height="21">
+              </li>
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/24x21" alt="Иконка велосипед"
+                  width="24" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/20x21" alt="Иконка бегун" width="20"
+                  height="21">
+              </li>
+            </ul>
+          </div>
+
+          <div class="traveler-card__level-wrapper">
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <h4 class="traveler-card__label">Левел:</h4>
+            <!-- прогресс-бар пользователя  personal-level-->
+            <div class="travelers-list__level  personal-level">
+              <div class="personal-level__details">
+                <span class="personal-level__number">25</span>
+              </div>
+              <svg class="personal-level__figure">
+                <circle class="personal-level__background" cx="22" cy="22" r="20"></circle>
+                <circle class="personal-level__progress" cx="22" cy="22" r="20"></circle>
+              </svg>
+            </div>
+          </div>
+          <!-- микс. добавляем блок button  -->
+          <a class="traveler-card__button  button" href="">Позвать!</a>
+        </li>
+
+        <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
+        <li class="travelers-result__item  traveler-card">
+          <!-- микс. добавляем бэм-блок для добавления лайка к фото  -->
+          <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Тани"
+            width="70" height="70">
+          <!-- микс. добавляю доп блок user-status отображающий статус онлайн  -->
+          <h3 class="traveler-card__name  user-status  user-status--online">Лариса Роговая</h3>
+          <span class="traveler-card__distance">23</span>
+
+          <!-- микс. добавляю блок списка хэштегов hashtag-list -->
+          <ul class="traveler-card__hashtag  hashtag-list">
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Образование</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Карьера</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Учёба</span>
+            </li>
+            <li class="hashtag-list__item">
+              <span class="hashtag-list__content">#Линкедин</span>
+            </li>
+          </ul>
+          <!-- микс. добавляем wishlist  -->
+          <div class="traveler-card__wishlist-wrapper">
+            <h4 class="traveler-card__label">Хочет посетить:</h4>
+            <ul class="traveler-card__wishlist   wishlist">
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Великобритании" width="26"
+                  height="18">
+                <span class="wishlist__name">Великобритания</span>
+              </li>
+              <li class="wishlist__item">
+                <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Германии" width="26"
+                  height="18">
+                <span class="wishlist__name">Германия</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="traveler-card__transport-wrapper">
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <h4 class="traveler-card__label">Транспорт:</h4>
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <ul class="traveler-card__transport-list  transport-list">
+
+              <!-- микс. добавляю класс для активных элементов списка active -->
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
+                  width="19" height="21">
+              </li>
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/17x21" alt="Иконка автобус"
+                  width="17" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/24x21" alt="Иконка велосипед"
+                  width="24" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/20x21" alt="Иконка бегун" width="20"
+                  height="21">
+              </li>
+            </ul>
+          </div>
+
+          <div class="traveler-card__level-wrapper">
+            <!-- микс. добавляем бэм-блок transport-list  -->
+            <h4 class="traveler-card__label">Левел:</h4>
+            <!-- прогресс-бар пользователя  personal-level-->
+            <div class="travelers-list__level  personal-level">
+              <div class="personal-level__details">
+                <span class="personal-level__number">50</span>
+              </div>
+              <svg class="personal-level__figure">
+                <circle class="personal-level__background" cx="22" cy="22" r="20"></circle>
+                <circle class="personal-level__progress" cx="22" cy="22" r="20"></circle>
+              </svg>
+            </div>
+          </div>
+          <!-- микс. добавляем блок button  -->
+          <a class="traveler-card__button  button" href="">Позвать!</a>
+        </li>
+
+      </ul>
+      <!-- микс. добавляем бэм-блок button типовая кнопка  -->
+      <button class="travelers-result__button-more  button">Показать еще</button>
+
+      <div class="travelers-result__controls-wrapper">
+        <a class="travelers-result__control-button travelers-result__control-button--prev" href="">Показать предыдущую
+          страницу</a>
+        <a class="travelers-result__control-button travelers-result__control-button--next" href="">Показать следующую
+          страницу</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2 class="visually-hidden">Наши социальные сети</h2>
+    <!-- микс. добавляем блок с логотипом  -->
+    <a href="index.html" class="footer__logo-link  logotype">
+      <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
+        height="19">
+    </a>
+    <!-- микс. добавляю класс бэм-блока social-list -->
+    <ul class="footer__social-list  social-list">
+      <li class="social-list__item">
+        <a class="social-list__link  icon-facebook" href="">Facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link  icon-Instagram" href="">Instagram</a>
+      </li>
+    </ul>
+
+    <div class="footer__copyright  copyright">
+      <a class="copyright__developers-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="copyright__text  text">Разработано</span>
+        <img class="copyright__developers-image" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+      </a>
+    </div>
+
+
+  </footer>
+
+</body>
+
 </html>

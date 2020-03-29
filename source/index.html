@@ -35,32 +35,32 @@
 
 <body>
 
-  <header class="header-page">
-    <nav class="header-page__navigation">
+  <header class="header">
+    <nav class="header__navigation">
       <!-- микс. добавляем блок с логотипом  -->
-      <a href="" class="header-page__logo-link  logotype">
+      <a href="" class="header__logo-link  logotype">
         <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
           height="19">
       </a>
 
-      <button class="header-page__button-menu" type="button">Открыть меню</button>
+      <button class="header__button-menu" type="button">Открыть меню</button>
 
-      <ul class="header-page__navigation-list">
-        <li class="header-page__navigation-item">
-          <a class="header-page__navigation-link" href="">О сервисе</a>
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="">О сервисе</a>
         </li>
-        <li class="header-page__navigation-item">
-          <a class="header-page__navigation-link" href="">Направления</a>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="">Направления</a>
         </li>
-        <li class="header-page__navigation-item">
-          <a class="header-page__navigation-link" href="">Попутчики</a>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="catalog.html">Попутчики</a>
         </li>
       </ul>
       <!-- микс. добавляю класс бэм-блока button -->
-      <a class="header-page__button  button" href="">Авторизация</a>
+      <a class="header__button  button" href="">Авторизация</a>
 
       <!-- микс. добавляю класс бэм-блока contact-list -->
-      <ul class="header-page__contact-list  contact-list">
+      <ul class="header__contact-list  contact-list">
         <li class="contact-list__item">
           <a class="contact-list__link  icon-telephone" href="tel:88005558628">
             <span class="contact-list__detail">8 800 555-86-28</span>
@@ -74,7 +74,7 @@
       </ul>
 
       <!-- микс. добавляю класс бэм-блока social-list -->
-      <ul class="header-page__social-list  social-list">
+      <ul class="header__social-list  social-list">
         <li class="social-list__item">
           <a class="social-list__link  icon-facebook" href="">Facebook</a>
         </li>
@@ -89,13 +89,12 @@
     </nav>
   </header>
 
-  <main class="main-page">
+  <main class="main">
     <section class="promo">
-      <h1 class="visually-hidden">Погнали? — Современный онлайн-сервис для весёлых путешествий по миру вместе с
-        попутчиками</h1>
+      <h1 class="visually-hidden">&laquo;Погнали?&raquo; — Современный онлайн-сервис для весёлых путешествий по миру вместе с попутчиками</h1>
 
-      <!-- микс. добавляю бэм-блок title  -->
-      <span class="promo__title  title">В путешествие с крутыми попутчиками!</span>
+      <!-- микс. добавляю бэм-блок title и его модификатор -->
+      <span class="promo__title  title  title--big">В путешествие с крутыми попутчиками!</span>
 
       <!-- микс. добавляю класс бэм-блока contact-list -->
       <ul class="promo__contact-list  contact-list">
@@ -135,19 +134,19 @@
 
     </section>
 
-    <section class="about-service">
+    <section class="about">
       <!-- микс. добавляю бэм-блок title  -->
-      <h2 class="about-service__title  title">О сервисе</h2>
-      <p class="about-service__description  text">
+      <h2 class="about__title  title">О сервисе</h2>
+      <p class="about__description  text">
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
         черпайте вдохновение в чужих.
       </p>
       <!-- микс. добавляю бэм-блок и модификатор -->
-      <p class="about-service__description  text  text--attention">
+      <p class="about__description  text  text--attention">
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
       <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
-      <a class="about-service__button  button  button--arrow" href="">Подробнее</a>
+      <a class="about__button  button  button--arrow" href="">Подробнее</a>
 
     </section>
 
@@ -218,7 +217,6 @@
       <p class="travelers__description  text  text--attention">Теперь можно легко найти единомышленников!</p>
 
       <ul class="travelers__list  travelers-list">
-
         <li class="travelers-list__item">
           <div class="travelers-list__photo-wrapper">
             <img class="travelers-list__photo" src="https://via.placeholder.com/270x270" alt="Фотография Тани"
@@ -234,6 +232,7 @@
                 <circle class="personal-level__progress" cx="30" cy="30" r="28"></circle>
               </svg>
             </div>
+
           </div>
 
           <div class="travelers-list__details-wrapper">
@@ -255,7 +254,7 @@
             <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
             <h3 class="travelers-list__name  user-status">Таня Фирсова</h3>
 
-            <!-- микс. добавляю блок списка хэштегов -->
+            <!-- микс. добавляю блок списка хэштегов hashtag-list -->
             <ul class="travelers-list__hashtag  hashtag-list">
               <li class="hashtag-list__item">
                 <span class="hashtag-list__content">#ЗОЖ</span>
@@ -278,7 +277,7 @@
             </ul>
 
             <!-- микс. добавляю бэм-блок списка транспорта  -->
-            <ul class="travelers-list__transport  transport__list">
+            <ul class="travelers-list__transport  transport-list">
 
               <!-- микс. добавляю класс для активных элементов списка active -->
               <li class="transport-list__item  active">
@@ -407,7 +406,7 @@
     </section>
 
     <section class="registration">
-      <h2 class="visually-hidden">Авторизация на сервисе "Погнали?"</h2>
+      <h2 class="visually-hidden">Авторизация на сервисе &laquo;Погнали?&raquo;</h2>
       <span class="registration__title  title">Заинтересовались?</span>
       <p class="registration__text  text">Зарегистрируйтесь, это быстро и бесплатно!<br>
         Уже зарегистрированы? Тогда скорее <a class="registration__link" href="">авторизуйтесь</a>.</p>
@@ -436,7 +435,7 @@
     </section>
 
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты карта офиса "Погнали?"</h2>
+      <h2 class="visually-hidden">Контакты карта офиса &laquo;Погнали?&raquo;</h2>
       <!-- микс. добавляю класс бэм-блока contact-list -->
       <ul class="contacts__contact-list  contact-list">
         <li class="contact-list__item">
@@ -454,15 +453,15 @@
     </section>
   </main>
 
-  <footer class="footer-page">
+  <footer class="footer">
     <h2 class="visually-hidden">Наши социальные сети</h2>
     <!-- микс. добавляем блок с логотипом  -->
-    <a href="" class="footer-page__logo-link  logotype">
+    <a href="" class="footer__logo-link  logotype">
       <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
         height="19">
     </a>
     <!-- микс. добавляю класс бэм-блока social-list -->
-    <ul class="footer-page__social-list  social-list">
+    <ul class="footer__social-list  social-list">
       <li class="social-list__item">
         <a class="social-list__link  icon-facebook" href="">Facebook</a>
       </li>
@@ -473,11 +472,11 @@
         <a class="social-list__link  icon-Instagram" href="">Instagram</a>
       </li>
     </ul>
-
-    <div class="copyright">
-      <a class="copyright__developers-link" href="">
+    <!-- микс. добавляем блок copyright  -->
+    <div class="footer__copyright  copyright">
+      <a class="copyright__developers-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="copyright__text  text">Разработано</span>
-        <img class="copyright__developers-image" src="https://via.placeholder.com/27x34" alt="HTML Academy" width="27"
+        <img class="copyright__developers-image" src="img/htmlacademy.svg" alt="HTML Academy" width="27"
           height="34">
       </a>
     </div>
