@@ -1,5 +1,14 @@
 {
- "name": "App",
+ "name": "Pognali?: training project from HTML Academy",
+ "short_name": "Pognali?",
+ "description": "Погнали? Современный онлайн-сервис для весёлых путешествий и удобного поиска попутчиков.",
+ "lang": "ru",
+ "dir": "ltr",
+ "start_url": "/",
+ "display": "browser",
+ "orientation": "any",
+ "theme_color": "#161C36",
+ "background_color": "#161C36",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
