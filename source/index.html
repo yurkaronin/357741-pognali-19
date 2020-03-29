@@ -140,8 +140,8 @@
         Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
         черпайте вдохновение в чужих.
       </p>
-      <!-- микс. добавляю модификатор для элемента -->
-      <p class="about-service__description  about-service__description--attention  text">
+      <!-- микс. добавляю бэм-блок и модификатор -->
+      <p class="about-service__description  text  text--attention">
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
       <!-- микс. добавляю два класса. бэм блоки его модификатор -->
@@ -204,7 +204,181 @@
       </ul>
 
       <!-- микс. добавляю два класса. бэм блоки его модификатор -->
-      <a class="directions__link  button  button--arrow" href="">Показать все</a>
+      <a class="directions__link  button  button--arrow" href="form.html">Показать все</a>
+
+    </section>
+
+    <section class="travelers">
+      <h2 class="travelers__title  title">Попутчики</h2>
+      <p class="travelers__description  text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
+        нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+      <!-- микс. добавляю два класса. бэм блоки его модификатор -->
+      <p class="travelers__description  text  text--attention">Теперь можно легко найти единомышленников!</p>
+
+      <ul class="travelers__list  travelers-list">
+
+        <li class="travelers-list__item">
+          <div class="travelers-list__photo-wrapper">
+            <img class="travelers-list__photo" src="https://via.placeholder.com/270x270" alt="Фотография Тани"
+              width="270" height="270">
+            <!-- прогресс-бар пользователя  personal-level-->
+            <div class="travelers-list__level  personal-level">
+              <div class="personal-level__details">
+                <span class="personal-level__number">99</span>
+                <span class="personal-level__label">level</span>
+              </div>
+              <svg class="personal-level__figure">
+                <circle class="personal-level__background" cx="30" cy="30" r="28"></circle>
+                <circle class="personal-level__progress" cx="30" cy="30" r="28"></circle>
+              </svg>
+            </div>
+          </div>
+
+          <div class="travelers-list__details-wrapper">
+            <!-- микс. добавляю бем-блок списка с флагами  -->
+            <ul class="travelers-list__flags  flags-list">
+              <li class="flags-list__item">
+                <img class="flags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Шри-Ланки" width="35"
+                  height="24">
+              </li>
+              <li class="lags-list__item">
+                <img class="lags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Тайланда" width="35"
+                  height="24">
+              </li>
+              <li class="lags-list__item">
+                <img class="lags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Сейшел" width="35"
+                  height="24">
+              </li>
+            </ul>
+            <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
+            <h3 class="travelers-list__name  user-status">Таня Фирсова</h3>
+
+            <!-- микс. добавляю блок списка хэштегов -->
+            <ul class="travelers-list__hashtag  hashtag-list">
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#ЗОЖ</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#ПП</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#Фитнес</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#пляж</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#авокадо</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#смузи</span>
+              </li>
+            </ul>
+
+            <!-- микс. добавляю бэм-блок списка транспорта  -->
+            <ul class="travelers-list__transport  transport__list">
+
+              <!-- микс. добавляю класс для активных элементов списка active -->
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
+                  width="19" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/17x21" alt="Иконка автобус"
+                  width="17" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/24x21" alt="Иконка велосипед"
+                  width="24" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/20x21" alt="Иконка бегун" width="20"
+                  height="21">
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="travelers-list__item">
+          <div class="travelers-list__photo-wrapper">
+            <img class="travelers-list__photo" src="https://via.placeholder.com/270x270" alt="Фотография Пети"
+              width="270" height="270">
+            <!-- прогресс-бар пользователя  personal-level-->
+            <div class="travelers-list__level  personal-level">
+              <div class="personal-level__details">
+                <span class="personal-level__number">80</span>
+                <span class="personal-level__label">level</span>
+              </div>
+              <svg class="personal-level__figure">
+                <circle class="personal-level__background" cx="30" cy="30" r="28"></circle>
+                <circle class="personal-level__progress" cx="30" cy="30" r="28"></circle>
+              </svg>
+            </div>
+          </div>
+
+          <div class="travelers-list__details-wrapper">
+            <!-- микс. добавляю бем-блок списка с флагами  -->
+            <ul class="travelers-list__flags  flags-list">
+              <li class="flags-list__item">
+                <img class="flags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Бельгии>" width="35"
+                  height="24">
+              </li>
+              <li class="lags-list__item">
+                <img class="lags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Чехии" width="35"
+                  height="24">
+              </li>
+            </ul>
+            <!-- микс. добавляю доп блок user-status и модификатор, если он онлайн  -->
+            <h3 class="travelers-list__name  user-status  user-status--online">Петя Демин</h3>
+
+            <!-- микс. добавляю блок списка хэштегов -->
+            <ul class="travelers-list__hashtag  hashtag-list">
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#бургер</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#бар</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#футбол</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#концерт</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#крафт</span>
+              </li>
+            </ul>
+
+            <!-- микс. добавляю бэм-блок списка транспорта  -->
+            <ul class="travelers-list__transport  transport-list">
+
+              <!-- микс. добавляю класс для активных элементов списка active -->
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
+                  width="19" height="21">
+              </li>
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/17x21" alt="Иконка автобус"
+                  width="17" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/24x21" alt="Иконка велосипед"
+                  width="24" height="21">
+              </li>
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/20x21" alt="Иконка бегун" width="20"
+                  height="21">
+              </li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- микс. добавляю два класса. бэм блоки его модификатор -->
+      <a class="travelers__button  button  button--arrow" href="catalog.html">Показать всех</a>
+
 
     </section>
 
