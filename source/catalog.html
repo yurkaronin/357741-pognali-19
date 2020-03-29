@@ -50,7 +50,7 @@
           <a class="header__navigation-link" href="">О сервисе</a>
         </li>
         <li class="header__navigation-item">
-          <a class="header__navigation-link" href="">Направления</a>
+          <a class="header__navigation-link" href="form.html">Направления</a>
         </li>
         <li class="header__navigation-item">
           <a class="header__navigation-link" href="">Попутчики</a>
@@ -104,16 +104,16 @@
         <!-- микс. добавляем блок options-list и модификатор -->
         <ul class="geographic-filter__option  options-list  options-list--regions">
           <li class="options-list__item">
-            <a class="options-list__link" href="">Европа</a>
+            <a class="options-list__link" href="/europe">Европа</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Азия</a>
+            <a class="options-list__link" href="/asia">Азия</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Америка</a>
+            <a class="options-list__link" href="/usa">Америка</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Острова</a>
+            <a class="options-list__link" href="/islands">Острова</a>
           </li>
         </ul>
         <!-- Очень хотел бы реализовать этот блок таблицей. Мне кажется тут она идеально подходит. Но я пока не продумывал детали. Поэтому и классы пока не прописывал.  -->
@@ -218,10 +218,12 @@
         <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
         <li class="travelers-result__item  traveler-card">
           <!-- микс. добавляем иконку лайка к фото  -->
-          <img class="traveler-card__photo  icon-like  liked" src="https://via.placeholder.com/70x70"
-            alt="Фотография Тани" width="70" height="70">
-          <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
-          <h3 class="traveler-card__name  user-status">Таня Фирсова</h3>
+          <a class="traveler-card__link" href="">
+            <img class="traveler-card__photo  icon-like  liked" src="https://via.placeholder.com/70x70"
+              alt="Фотография Тани" width="70" height="70">
+            <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
+            <span class="traveler-card__name  user-status">Таня Фирсова</span>
+          </a>
           <span class="traveler-card__distance">1,5 м</span>
 
           <!-- микс. добавляю блок списка хэштегов hashtag-list -->
@@ -308,16 +310,18 @@
             </div>
           </div>
           <!-- микс. добавляем блок button  -->
-          <a class="traveler-card__button  button" href="">Позвать!</a>
+          <a class="traveler-card__button  button" href="#modal">Позвать!</a>
         </li>
 
         <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
         <li class="travelers-result__item  traveler-card">
           <!-- микс. добавляем иконку лайка к фото  -->
-          <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Пети"
-            width="70" height="70">
-          <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
-          <h3 class="traveler-card__name  user-status">Петя Демин</h3>
+          <a class="traveler-card__link" href="">
+            <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Пети"
+              width="70" height="70">
+            <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
+            <span class="traveler-card__name  user-status">Петя Демин</span>
+          </a>
           <span class="traveler-card__distance">1500</span>
 
           <!-- микс. добавляю блок списка хэштегов hashtag-list -->
@@ -396,16 +400,18 @@
             </div>
           </div>
           <!-- микс. добавляем блок button  -->
-          <a class="traveler-card__button  button" href="">Позвать!</a>
+          <a class="traveler-card__button  button" href="#modal">Позвать!</a>
         </li>
 
         <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
         <li class="travelers-result__item  traveler-card">
           <!-- микс. добавляем иконку лайка к фото  -->
-          <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Тани"
-            width="70" height="70">
-          <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
-          <h3 class="traveler-card__name  user-status">Марк Смолов</h3>
+          <a class="traveler-card__link" href="">
+            <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Тани"
+              width="70" height="70">
+            <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
+            <span class="traveler-card__name  user-status">Марк Смолов</span>
+          </a>
           <span class="traveler-card__distance">170</span>
 
           <!-- микс. добавляю блок списка хэштегов hashtag-list -->
@@ -489,16 +495,18 @@
             </div>
           </div>
           <!-- микс. добавляем блок button  -->
-          <a class="traveler-card__button  button" href="">Позвать!</a>
+          <a class="traveler-card__button  button" href="#modal">Позвать!</a>
         </li>
 
         <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
         <li class="travelers-result__item  traveler-card">
           <!-- микс. добавляем бэм-блок для добавления лайка к фото  -->
-          <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Тани"
-            width="70" height="70">
-          <!-- микс. добавляю доп блок user-status отображающий статус онлайн  -->
-          <h3 class="traveler-card__name  user-status  user-status--online">Лариса Роговая</h3>
+          <a class="traveler-card__link" href="">
+            <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Тани"
+              width="70" height="70">
+            <!-- микс. добавляю доп блок user-status отображающий статус онлайн  -->
+            <span class="traveler-card__name  user-status  user-status--online">Лариса Роговая</span>
+          </a>
           <span class="traveler-card__distance">23</span>
 
           <!-- микс. добавляю блок списка хэштегов hashtag-list -->
@@ -574,17 +582,19 @@
             </div>
           </div>
           <!-- микс. добавляем блок button  -->
-          <a class="traveler-card__button  button" href="">Позвать!</a>
+          <a class="traveler-card__button  button" href="#modal">Позвать!</a>
         </li>
 
       </ul>
       <!-- микс. добавляем бэм-блок button типовая кнопка  -->
-      <button class="travelers-result__button-more  button">Показать еще</button>
+      <a class="travelers-result__button-more  button" href="travelers-all.html">Показать еще</a>
 
       <div class="travelers-result__controls-wrapper">
-        <a class="travelers-result__control-button travelers-result__control-button--prev" href="">Показать предыдущую
+        <a class="travelers-result__control-button travelers-result__control-button--prev"
+          href="catalog-prev.html">Показать предыдущую
           страницу</a>
-        <a class="travelers-result__control-button travelers-result__control-button--next" href="">Показать следующую
+        <a class="travelers-result__control-button travelers-result__control-button--next"
+          href="catalog-next.html">Показать следующую
           страницу</a>
       </div>
     </section>
