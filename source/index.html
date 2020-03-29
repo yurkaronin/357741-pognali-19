@@ -35,9 +35,9 @@
 
   <header class="header-page">
     <nav class="header-page__navigation">
-
-      <a href="" class="header-page__logo-link">
-        <img class="header-page__logo-image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
+      <!-- микс. добавляем блок с логотипом  -->
+      <a href="" class="header-page__logo-link  logotype">
+        <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
           height="19">
       </a>
 
@@ -144,7 +144,7 @@
       <p class="about-service__description  text  text--attention">
         А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
       </p>
-      <!-- микс. добавляю два класса. бэм блоки его модификатор -->
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
       <a class="about-service__button  button  button--arrow" href="">Подробнее</a>
 
     </section>
@@ -203,7 +203,7 @@
 
       </ul>
 
-      <!-- микс. добавляю два класса. бэм блоки его модификатор -->
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
       <a class="directions__link  button  button--arrow" href="form.html">Показать все</a>
 
     </section>
@@ -212,7 +212,7 @@
       <h2 class="travelers__title  title">Попутчики</h2>
       <p class="travelers__description  text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
         нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-      <!-- микс. добавляю два класса. бэм блоки его модификатор -->
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
       <p class="travelers__description  text  text--attention">Теперь можно легко найти единомышленников!</p>
 
       <ul class="travelers__list  travelers-list">
@@ -376,12 +376,111 @@
 
       </ul>
 
-      <!-- микс. добавляю два класса. бэм блоки его модификатор -->
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
       <a class="travelers__button  button  button--arrow" href="catalog.html">Показать всех</a>
 
     </section>
 
+    <section class="prices">
+      <h2 class="visually-hidden">Цены на популярные услуг</h2>
+      <!-- микс. добавляю бэм-блок заголовка  -->
+      <span class="prices__title  title">Добавьте свой профиль</span>
+      <!-- микс. добавляю бэм-блок price-list  -->
+      <ol class="prices__list  price-list">
+        <li class="price-list__item">
+          <span class="price-list__service">Базовое размещение</span>
+          <span class="price-list__cost">Бесплатно</span>
+        </li>
+        <li class="price-list__item">
+          <span class="price-list__service">Вывод на первых позициях</span>
+          <span class="price-list__cost">99 руб./мес</span>
+        </li>
+        <li class="price-list__item">
+          <span class="price-list__service">Кастомный цвет карточки</span>
+          <span class="price-list__cost">59 руб./мес</span>
+        </li>
+      </ol>
+      <a class="prices__link" href="">Показать тарифы для бизнеса</a>
+    </section>
+
+    <section class="registration">
+      <h2 class="visually-hidden">Авторизация на сервисе "Погнали?"</h2>
+      <span class="registration__title  title">Заинтересовались?</span>
+      <p class="registration__text  text">Зарегистрируйтесь, это быстро и бесплатно!<br>
+        Уже зарегистрированы? Тогда скорее <a class="registration__link" href="">авторизуйтесь</a>.</p>
+      <form class="registration__form" method="post" action="https://echo.htmlacademy.ru">
+        <input class="registration__data-email" type="email" name="email" placeholder="E-mail"
+          aria-label="Введите ваш E-mail">
+        <!-- микс. добавляем к кнопке бэм-блок button  -->
+        <button class="registration__button-form  button" type="submit">Регистрация</button>
+      </form>
+      <!-- микс. типовой бэм-блок text для текстов  -->
+      <p class="registration__text  text">Остались вопросы?
+        Мы с радостью на них ответим!</p>
+      <!-- микс. добавляю класс бэм-блока contact-list -->
+      <ul class="registration__contact-list  contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-telephone" href="tel:88005558628">
+            <span class="contact-list__detail">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="contact-list__detail">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты карта офиса "Погнали?"</h2>
+      <!-- микс. добавляю класс бэм-блока contact-list -->
+      <ul class="contacts__contact-list  contact-list">
+        <li class="contact-list__item">
+          <p class="contact-list__link  icon-address">
+            <span class="contact-list__detail">ул. Большая
+              Конюшенная, 19/8</span>
+          </p>
+        </li>
+      </ul>
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
+      <a class="contacts__button  button  button--transparent" href="">Проложить маршрут</a>
+
+      <!-- тут будет интерактивная карта с гео-меткой  -->
+      <div class="contacts__map"></div>
+    </section>
   </main>
+
+  <footer class="footer-page">
+    <h2 class="visually-hidden">Наши социальные сети</h2>
+    <!-- микс. добавляем блок с логотипом  -->
+    <a href="" class="footer-page__logo-link  logotype">
+      <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
+        height="19">
+    </a>
+    <!-- микс. добавляю класс бэм-блока social-list -->
+    <ul class="footer-page__social-list  social-list">
+      <li class="social-list__item">
+        <a class="social-list__link  icon-facebook" href="">Facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link  icon-Instagram" href="">Instagram</a>
+      </li>
+    </ul>
+
+    <div class="copyright">
+      <a class="copyright__developers-link" href="">
+        <span class="copyright__text  text">Разработано</span>
+        <img class="copyright__developers-image" src="https://via.placeholder.com/27x34" alt="HTML Academy" width="27"
+          height="34">
+      </a>
+    </div>
+
+
+  </footer>
 </body>
 
 </html>
