@@ -400,7 +400,8 @@
           <span class="price-list__cost">59 руб./мес</span>
         </li>
       </ol>
-      <a class="prices__link" href="">Показать тарифы для бизнеса</a>
+      <!-- микс. добавляем класс для показа модального окна с ценами для бизнеса  -->
+      <a class="prices__link  business-price__link-open" href="">Показать тарифы для бизнеса</a>
     </section>
 
     <section class="registration">
@@ -481,6 +482,36 @@
 
 
   </footer>
+
+  <!-- Диалоговое окно с прайсом для бизнеса  -->
+  <div class="business-price">
+    <!-- микс. добавляем типовой бэм-блок title  -->
+    <h3 class="business-price__title  title">Бизнес-тарифы</h3>
+    <!-- микс. добавляем типовой бэм-блок price-list  -->
+    <ol class="business-price__list  price-list">
+      <li class="price-list__item">
+        <span class="price-list__service">Реклама у блоггера</span>
+        <span class="price-list__cost">300 000 руб./пост</span>
+      </li>
+      <li class="price-list__item">
+        <span class="price-list__service">Накрутка подписчиков</span>
+        <span class="price-list__cost">от 1 руб./шт.</span>
+      </li>
+      <li class="price-list__item">
+        <span class="price-list__service">Лайки от ботов</span>
+        <span class="price-list__cost">от 20 коп./лайк</span>
+      </li>
+      <li class="price-list__item">
+        <span class="price-list__service">Ваш продакт-плейсмент</span>
+        <span class="price-list__cost">Индивидуально</span>
+      </li>
+    </ol>
+    <button class="business-price__close-button" type="button">Закрыть окно</button>
+  </div>
+  <!-- / Диалоговое окно с прайсом для бизнеса  -->
+
+<!-- / Диалоговые окна -->
+
 </body>
 
 </html>
