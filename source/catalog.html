@@ -56,19 +56,21 @@
           <a class="header__navigation-link" href="">Попутчики</a>
         </li>
       </ul>
-      <!-- микс. добавляю класс бэм-блока button -->
-      <a class="header__button  button" href="">Авторизация</a>
 
-      <!-- микс. добавляю класс бэм-блока contact-list -->
-      <ul class="header__contact-list  contact-list">
-        <li class="contact-list__item">
-          <a class="contact-list__link  icon-telephone" href="tel:88005558628">
-            <span class="contact-list__detail">8 800 555-86-28</span>
+      <!-- микс. добавляю класс бэм-блока user-list -->
+      <ul class="header__user-list  user-list">
+        <li class="user-list__item">
+          <!-- микс. добавляем блок button  -->
+          <a class="user-list__button  button" href="">Авторизация</a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link  icon-telephone" href="tel:88005558628">
+            <span class="user-list__detail">8 800 555-86-28</span>
           </a>
         </li>
-        <li class="contact-list__item">
-          <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
-            <span class="contact-list__detail">mail@htmlacademy.ru</span>
+        <li class="user-list__item">
+          <a class="user-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="user-list__detail">mail@htmlacademy.ru</span>
           </a>
         </li>
       </ul>
@@ -98,7 +100,7 @@
     <section class="geographic-filter">
       <!-- микс. добавляем блок title для заголовка  -->
       <h2 class="geographic-filter__title  title">Фильтрация по странам</h2>
-      <button class="geographic-filter__button-open">Открыть фильтр</button>
+      <button class="geographic-filter__button-open" type="button">Открыть фильтр</button>
 
       <div class="geographic-filter__wrapper">
         <!-- микс. добавляем блок options-list и модификатор -->
@@ -158,37 +160,37 @@
         <!-- микс. добавляем блок options-list  и модификатор-->
         <ul class="geographic-filter__option  options-list  options-list--cities">
           <li class="options-list__item">
-            <a class="options-list__link" href="">Австралия</a>
+            <a class="options-list__link" href="/australia">Австралия</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Австрия</a>
+            <a class="options-list__link" href="/avstria">Австрия</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Азербайджан</a>
+            <a class="options-list__link" href="/arzejbargan">Азербайджан</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Албания</a>
+            <a class="options-list__link" href="/albaniya">Албания</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Алжир</a>
+            <a class="options-list__link" href="/aljir">Алжир</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Ангола</a>
+            <a class="options-list__link" href="/angola">Ангола</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Андорра</a>
+            <a class="options-list__link" href="/andora">Андорра</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Антигуа и Барбуда</a>
+            <a class="options-list__link" href="/antogua-bruda">Антигуа и Барбуда</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Аргентина</a>
+            <a class="options-list__link" href="argentina">Аргентина</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Армения</a>
+            <a class="options-list__link" href="/armeniya">Армения</a>
           </li>
           <li class="options-list__item">
-            <a class="options-list__link" href="">Афганистан</a>
+            <a class="options-list__link" href="/afganistan">Афганистан</a>
           </li>
         </ul>
 
@@ -222,7 +224,7 @@
             <img class="traveler-card__photo  icon-like  liked" src="https://via.placeholder.com/70x70"
               alt="Фотография Тани" width="70" height="70">
             <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
-            <span class="traveler-card__name  user-status">Таня Фирсова</span>
+            <h3 class="traveler-card__name  user-status">Таня Фирсова</h3>
           </a>
           <span class="traveler-card__distance">1,5 м</span>
 
@@ -310,7 +312,7 @@
             </div>
           </div>
           <!-- микс. добавляем блок button  -->
-          <a class="traveler-card__button  button" href="#modal">Позвать!</a>
+          <a class="traveler-card__button  button" href="feedback.html">Позвать!</a>
         </li>
 
         <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
@@ -320,7 +322,7 @@
             <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Пети"
               width="70" height="70">
             <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
-            <span class="traveler-card__name  user-status">Петя Демин</span>
+            <h3 class="traveler-card__name  user-status">Петя Демин</h3>
           </a>
           <span class="traveler-card__distance">1500</span>
 
@@ -400,7 +402,7 @@
             </div>
           </div>
           <!-- микс. добавляем блок button  -->
-          <a class="traveler-card__button  button" href="#modal">Позвать!</a>
+          <a class="traveler-card__button  button" href="feedback.html">Позвать!</a>
         </li>
 
         <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
@@ -410,7 +412,7 @@
             <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Тани"
               width="70" height="70">
             <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
-            <span class="traveler-card__name  user-status">Марк Смолов</span>
+            <h3 class="traveler-card__name  user-status">Марк Смолов</h3>
           </a>
           <span class="traveler-card__distance">170</span>
 
@@ -495,7 +497,7 @@
             </div>
           </div>
           <!-- микс. добавляем блок button  -->
-          <a class="traveler-card__button  button" href="#modal">Позвать!</a>
+          <a class="traveler-card__button  button" href="feedback.html">Позвать!</a>
         </li>
 
         <!-- микс. добавляем бэм-блок traveler-card карточка попутчика  -->
@@ -505,7 +507,7 @@
             <img class="traveler-card__photo  icon-like" src="https://via.placeholder.com/70x70" alt="Фотография Тани"
               width="70" height="70">
             <!-- микс. добавляю доп блок user-status отображающий статус онлайн  -->
-            <span class="traveler-card__name  user-status  user-status--online">Лариса Роговая</span>
+            <h3 class="traveler-card__name  user-status  user-status--online">Лариса Роговая</h3>
           </a>
           <span class="traveler-card__distance">23</span>
 
@@ -582,7 +584,7 @@
             </div>
           </div>
           <!-- микс. добавляем блок button  -->
-          <a class="traveler-card__button  button" href="#modal">Позвать!</a>
+          <a class="traveler-card__button  button" href="feedback.html">Позвать!</a>
         </li>
 
       </ul>
