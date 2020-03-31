@@ -1,12 +1,508 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </body>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="address=no">
+
+  <title>Погнали? Главная страница онлайн-сервиса для весёлых путешествий и поиска попутчиков.</title>
+  <meta name="description"
+    content="Главная страница современного онлайн-сервиса для весёлых путешествий по всему миру и поиска попутчиков.">
+
+  <!-- favicons   -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#161C36">
+
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="header__navigation">
+      <!-- микс. добавляем блок с логотипом  -->
+      <a href="" class="header__logo-link  logotype">
+        <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
+          height="19">
+      </a>
+
+      <button class="header__button-menu" type="button">Открыть меню</button>
+
+      <ul class="header__navigation-list">
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="">О сервисе</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="form.html">Направления</a>
+        </li>
+        <li class="header__navigation-item">
+          <a class="header__navigation-link" href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+
+      <!-- микс. добавляю класс бэм-блока user-list -->
+      <ul class="header__user-list  user-list">
+        <li class="user-list__item">
+          <!-- микс. добавляем блок button  -->
+          <a class="user-list__button  button" href="">Авторизация</a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link  icon-telephone" href="tel:88005558628">
+            <span class="user-list__detail">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="user-list__detail">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- микс. добавляю класс бэм-блока social-list -->
+      <ul class="header__social-list  social-list">
+        <li class="social-list__item">
+          <a class="social-list__link  icon-facebook" href="">Facebook</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link  icon-Instagram" href="">Instagram</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <section class="promo">
+      <!-- микс. добавляю бэм-блок title и его модификатор -->
+      <h2 class="promo__title  title  title--big">В путешествие с крутыми попутчиками!</h2>
+
+      <!-- микс. добавляю класс бэм-блока user-list -->
+      <ul class="promo__user-list  user-list">
+        <li class="user-list__item">
+          <a class="user-list__link  icon-telephone" href="tel:88005558628">
+            <span class="user-list__detail">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="user-list__detail">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__button  button" href="">Авторизация</a>
+        </li>
+      </ul>
+
+      <blockquote class="promo__quote-content">«Лучшее приложение, что я видел в жизни!»</blockquote>
+      <cite class="promo__quote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+
+      <ol class="promo__list-steps  steps-list">
+        <li class="steps-list__item">Выберите направление</li>
+        <li class="steps-list__item">Изучите идеи путешественников</li>
+        <li class="steps-list__item">Находите тех, кто похож на вас</li>
+        <li class="steps-list__item">Путешествуйте вместе!</li>
+      </ol>
+
+    </section>
+
+    <section class="about">
+      <!-- микс. добавляю бэм-блок title  -->
+      <h2 class="about__title  title">О сервисе</h2>
+      <p class="about__description  text">
+        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
+        черпайте вдохновение в чужих.
+      </p>
+      <!-- микс. добавляю бэм-блок и модификатор -->
+      <p class="about__description  text  text--attention">
+        А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+      </p>
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
+      <a class="about__button  button  button--arrow" href="">Подробнее</a>
+
+    </section>
+
+    <section class="directions">
+      <!-- микс. добавляю бэм-блок title  -->
+      <h2 class="directions__title  title">Направления</h2>
+
+      <p class="directions__description  text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах,
+        куда хотели бы отправиться и чем можно там заняться.</p>
+
+      <!-- микс. добавляю бэм-блок directions-list  -->
+      <ul class="directions__list  directions-list">
+
+        <li class="directions-list__item">
+          <img class="directions-list__image" src="https://via.placeholder.com/270x110" alt="Таиланд" width="270"
+            height="110">
+
+          <div class="directions-list__details-wrapper">
+            <!-- микс. добавляю бэм-блок для  позиционирования флага  -->
+            <img class="directions-list__flag  flag-icon" src="https://via.placeholder.com/35x24" alt="флаг Таиланда"
+              width="35" height="24">
+            <h3 class="directions-list__item-title">Таиланд</h3>
+            <p class="directions-list__feature">Джунгли зовут!</p>
+            <span class="directions-list__total-users  icon-user">18321</span>
+          </div>
+        </li>
+
+        <li class="directions-list__item">
+          <img class="directions-list__image" src="https://via.placeholder.com/270x110" alt="Франция" width="270"
+            height="110">
+
+          <div class="directions-list__details-wrapper">
+            <!-- микс. добавляю бэм-блок для  позиционирования флага  -->
+            <img class="directions-list__flag  flag-icon" src="https://via.placeholder.com/35x24" alt="флаг Франции"
+              width="35" height="24">
+            <h3 class="directions-list__item-title">Франция</h3>
+            <p class="directions-list__feature">Трэ бьен, манифик!</p>
+            <span class="directions-list__total-users  icon-user">12518</span>
+          </div>
+        </li>
+
+        <li class="directions-list__item">
+          <img class="directions-list__image" src="https://via.placeholder.com/270x110" alt="Чехия" width="270"
+            height="110">
+
+          <div class="directions-list__details-wrapper">
+            <!-- микс. добавляю бэм-блок для  позиционирования флага  -->
+            <img class="directions-list__flag  flag-icon" src="https://via.placeholder.com/35x24" alt="флаг Чехии"
+              width="35" height="24">
+            <h3 class="directions-list__item-title">Чехия</h3>
+            <p class="directions-list__feature">Закоулки старой Европы</p>
+            <span class="directions-list__total-users  icon-user">5326</span>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
+      <a class="directions__link  button  button--arrow" href="form.html">Показать все</a>
+
+    </section>
+
+    <section class="travelers">
+      <h2 class="travelers__title  title">Попутчики</h2>
+      <p class="travelers__description  text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
+        нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
+      <p class="travelers__description  text  text--attention">Теперь можно легко найти единомышленников!</p>
+
+      <ul class="travelers__list  travelers-list">
+        <li class="travelers-list__item">
+          <img class="travelers-list__photo" src="https://via.placeholder.com/270x270" alt="Фотография Тани" width="270"
+            height="270">
+
+          <div class="travelers-list__details-wrapper">
+
+            <!-- микс. добавляю доп блок user-status отображающий статус оффлайн  -->
+            <a class="travelers-list__link  user-status" href="">Таня Фирсова</a>
+
+            <!-- микс. добавляю блок списка хэштегов hashtag-list -->
+            <ul class="travelers-list__hashtag  hashtag-list">
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#ЗОЖ</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#ПП</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#Фитнес</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#пляж</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#авокадо</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#смузи</span>
+              </li>
+            </ul>
+
+            <!-- микс. добавляю бэм-блок списка транспорта  -->
+            <ul class="travelers-list__transport  transport-list">
+
+              <!-- микс. добавляю класс для активных элементов списка active -->
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
+                  width="19" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/17x21" alt="Иконка автобус"
+                  width="17" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/24x21" alt="Иконка велосипед"
+                  width="24" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/20x21" alt="Иконка бегун" width="20"
+                  height="21">
+              </li>
+            </ul>
+
+            <!-- микс. добавляю бем-блок списка с флагами  -->
+            <ul class="travelers-list__flags  flags-list">
+              <li class="flags-list__item">
+                <img class="flags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Шри-Ланки" width="35"
+                  height="24">
+              </li>
+              <li class="flags-list__item">
+                <img class="flags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Тайланда" width="35"
+                  height="24">
+              </li>
+              <li class="flags-list__item">
+                <img class="flags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Сейшел" width="35"
+                  height="24">
+              </li>
+            </ul>
+          </div>
+
+          <!-- прогресс-бар пользователя  personal-level-->
+          <div class="travelers-list__level  personal-level">
+            <div class="personal-level__details">
+              <span class="personal-level__number">99</span>
+              <span class="personal-level__label">level</span>
+            </div>
+            <svg class="personal-level__figure">
+              <circle class="personal-level__background" cx="30" cy="30" r="28"></circle>
+              <circle class="personal-level__progress" cx="30" cy="30" r="28"></circle>
+            </svg>
+          </div>
+        </li>
+
+        <li class="travelers-list__item">
+          <img class="travelers-list__photo" src="https://via.placeholder.com/270x270" alt="Фотография Пети" width="270"
+            height="270">
+
+          <div class="travelers-list__details-wrapper">
+            <!-- микс. добавляю доп блок user-status и модификатор, если он онлайн  -->
+            <a class="travelers-list__link  user-status  user-status--online" href="">ТПетя Демин</a>
+
+            <!-- микс. добавляю блок списка хэштегов -->
+            <ul class="travelers-list__hashtag  hashtag-list">
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#бургер</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#бар</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#футбол</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#концерт</span>
+              </li>
+              <li class="hashtag-list__item">
+                <span class="hashtag-list__content">#крафт</span>
+              </li>
+            </ul>
+
+            <!-- микс. добавляю бэм-блок списка транспорта  -->
+            <ul class="travelers-list__transport  transport-list">
+
+              <!-- микс. добавляю класс для активных элементов списка active -->
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
+                  width="19" height="21">
+              </li>
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/17x21" alt="Иконка автобус"
+                  width="17" height="21">
+              </li>
+              <li class="transport-list__item">
+                <img class="transport-list__icon" src="https://via.placeholder.com/24x21" alt="Иконка велосипед"
+                  width="24" height="21">
+              </li>
+              <li class="transport-list__item  active">
+                <img class="transport-list__icon" src="https://via.placeholder.com/20x21" alt="Иконка бегун" width="20"
+                  height="21">
+              </li>
+            </ul>
+            <!-- микс. добавляю бем-блок списка с флагами  -->
+            <ul class="travelers-list__flags  flags-list">
+              <li class="flags-list__item">
+                <img class="flags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Бельгии>" width="35"
+                  height="24">
+              </li>
+              <li class="flags-list__item">
+                <img class="flags-list__image" src="https://via.placeholder.com/35x24" alt="Флаг Чехии" width="35"
+                  height="24">
+              </li>
+            </ul>
+          </div>
+
+          <!-- прогресс-бар пользователя  personal-level-->
+          <div class="travelers-list__level  personal-level">
+            <div class="personal-level__details">
+              <span class="personal-level__number">80</span>
+              <span class="personal-level__label">level</span>
+            </div>
+            <svg class="personal-level__figure">
+              <circle class="personal-level__background" cx="30" cy="30" r="28"></circle>
+              <circle class="personal-level__progress" cx="30" cy="30" r="28"></circle>
+            </svg>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
+      <a class="travelers__button  button  button--arrow" href="catalog.html">Показать всех</a>
+
+    </section>
+
+    <section class="prices">
+      <h2 class="visually-hidden">Цены на популярные услуг</h2>
+      <!-- микс. добавляю бэм-блок заголовка  -->
+      <span class="prices__title  title">Добавьте свой профиль</span>
+      <!-- микс. добавляю бэм-блок price-list  -->
+      <ol class="prices__list  price-list">
+        <li class="price-list__item">Базовое размещение
+          <span class="price-list__cost">Бесплатно</span>
+        </li>
+        <li class="price-list__item">Вывод на первых позициях
+          <span class="price-list__cost">99 руб./мес</span>
+        </li>
+        <li class="price-list__item">Кастомный цвет карточки
+          <span class="price-list__cost">59 руб./мес</span>
+        </li>
+      </ol>
+      <!-- микс. добавляем класс для показа модального окна с ценами для бизнеса  -->
+      <a class="prices__link" href="business-tarifs.html">Показать тарифы для бизнеса</a>
+    </section>
+
+    <section class="registration">
+      <h2 class="visually-hidden">Авторизация на сервисе &laquo;Погнали?&raquo;</h2>
+      <span class="registration__title  title">Заинтересовались?</span>
+      <p class="registration__text  text">Зарегистрируйтесь, это быстро и бесплатно!</p>
+      <p class="registration__text  text">Уже зарегистрированы? Тогда скорее <a class="registration__link"
+        href="authorization.html">авторизуйтесь</a>.</p>
+      <form class="registration__form" method="post" action="https://echo.htmlacademy.ru">
+        <input class="registration__data-email" type="email" name="email" placeholder="E-mail"
+          aria-label="Введите ваш E-mail">
+        <!-- микс. добавляем к кнопке бэм-блок button  -->
+        <button class="registration__button-form  button" type="submit">Регистрация</button>
+      </form>
+      <!-- микс. типовой бэм-блок text для текстов  -->
+      <p class="registration__text  text">Остались вопросы?
+        Мы с радостью на них ответим!</p>
+      <!-- микс. добавляю класс бэм-блока user-list -->
+      <ul class="registration__user-list  user-list">
+        <li class="user-list__item">
+          <a class="user-list__link  icon-telephone" href="tel:88005558628">
+            <span class="user-list__detail">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="user-list__detail">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты карта офиса &laquo;Погнали?&raquo;</h2>
+      <!-- микс. добавляю класс бэм-блока user-list -->
+      <ul class="contacts__user-list  user-list">
+        <li class="user-list__item">
+          <p class="user-list__link  icon-address">
+            <span class="user-list__detail">ул. Большая
+              Конюшенная, 19/8</span>
+          </p>
+        </li>
+      </ul>
+      <!-- микс. добавляю два класса. бэм-блок и его модификатор -->
+      <a class="contacts__button  button  button--transparent" href="https://cutt.ly/StRc5XN" target="_blank">Проложить
+        маршрут</a>
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aaa967724b7ed646df0087a72a7f69ecc682cb5132f36100a4edb827d72b5cd54&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true">
+      </script>
+      <div class="contacts__map"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <h2 class="visually-hidden">Наши социальные сети</h2>
+    <!-- микс. добавляем блок с логотипом  -->
+    <a href="" class="footer__logo-link  logotype">
+      <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
+        height="19">
+    </a>
+    <!-- микс. добавляю класс бэм-блока social-list -->
+    <ul class="footer__social-list  social-list">
+      <li class="social-list__item">
+        <a class="social-list__link  icon-facebook" href="">Facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link  icon-Instagram" href="">Instagram</a>
+      </li>
+    </ul>
+    <!-- микс. добавляем блок copyright  -->
+    <div class="footer__copyright  copyright">
+      <a class="copyright__developers-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="copyright__text  text">Разработано</span>
+        <img class="copyright__developers-image" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+      </a>
+    </div>
+
+
+  </footer>
+
+  <!-- Диалоговое окно с прайсом для бизнеса  -->
+  <div class="business-price">
+    <!-- микс. добавляем типовой бэм-блок title  -->
+    <h3 class="business-price__title  title">Бизнес-тарифы</h3>
+    <!-- микс. добавляем типовой бэм-блок price-list  -->
+    <ol class="business-price__list  price-list">
+      <li class="price-list__item">
+        <span class="price-list__service">Реклама у блоггера</span>
+        <span class="price-list__cost">300 000 руб./пост</span>
+      </li>
+      <li class="price-list__item">
+        <span class="price-list__service">Накрутка подписчиков</span>
+        <span class="price-list__cost">от 1 руб./шт.</span>
+      </li>
+      <li class="price-list__item">
+        <span class="price-list__service">Лайки от ботов</span>
+        <span class="price-list__cost">от 20 коп./лайк</span>
+      </li>
+      <li class="price-list__item">
+        <span class="price-list__service">Ваш продакт-плейсмент</span>
+        <span class="price-list__cost">Индивидуально</span>
+      </li>
+    </ol>
+    <button class="business-price__close-button" type="button">Закрыть окно</button>
+  </div>
+  <!-- / Диалоговое окно с прайсом для бизнеса  -->
+
+  <!-- / Диалоговые окна -->
+
+</body>
+
 </html>
