@@ -87,19 +87,19 @@
     <section class="geographic-filter">
       <h2 class="geographic-filter__title  title">Фильтрация по странам</h2>
       <button class="geographic-filter__button-open" type="button">Открыть фильтр</button>
-      <div class="geographic-filter__regions-wrapper">
-        <ul class="geographic-filter__list  regions-list">
-          <li class="regions-list__item">
-            <a class="regions-list__link" href="/europe">Европа</a>
+      <div class="geographic-filter__region-wrapper">
+        <ul class="geographic-filter__list  region-filter">
+          <li class="region-filter__item">
+            <a class="region-filter__link" href="/europe">Европа</a>
           </li>
-          <li class="regions-list__item">
-            <a class="regions-list__link" href="/asia">Азия</a>
+          <li class="region-filter__item">
+            <a class="region-filter__link" href="/asia">Азия</a>
           </li>
-          <li class="regions-list__item">
-            <a class="regions-list__link" href="/usa">Америка</a>
+          <li class="region-filter__item">
+            <a class="region-filter__link" href="/usa">Америка</a>
           </li>
-          <li class="regions-list__item">
-            <a class="regions-list__link" href="/islands">Острова</a>
+          <li class="region-filter__item">
+            <a class="region-filter__link" href="/islands">Острова</a>
           </li>
         </ul>
 
@@ -262,8 +262,6 @@
                 </li>
               </ul>
             </li>
-
-            <!-- все остальные  -->
 
             <li class="city-filter__item">
               <span class="filter__country-letter">Г</span>
@@ -910,26 +908,11 @@
             <h3 class="traveler-card__name  user-status">Таня Фирсова</h3>
           </a>
           <span class="traveler-card__distance">1,5 м</span>
-          <ul class="traveler-card__hashtag  hashtag-list">
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#ЗОЖ</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#ПП</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Фитнес</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#пляж</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#авокадо</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#смузи</span>
-            </li>
-          </ul>
+
+          <div class="traveler-card__hashtag hashtag-list">
+            <p class="hashtag-list__input">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          </div>
+
           <div class="traveler-card__wishlist-wrapper">
             <h4 class="traveler-card__label">Хочет посетить:</h4>
             <ul class="traveler-card__wishlist   wishlist">
@@ -993,23 +976,11 @@
             <h3 class="traveler-card__name  user-status">Петя Демин</h3>
           </a>
           <span class="traveler-card__distance">1500</span>
-          <ul class="traveler-card__hashtag  hashtag-list">
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#бургер</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#бар</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#футбол</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#концерт</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#крафт</span>
-            </li>
-          </ul>
+
+          <div class="traveler-card__hashtag hashtag-list">
+            <p class="hashtag-list__input">#бургер #бар #футбол #концерт #крафт</p>
+          </div>
+
           <div class="traveler-card__wishlist-wrapper">
             <h4 class="traveler-card__label">Хочет посетить:</h4>
             <ul class="traveler-card__wishlist   wishlist">
@@ -1067,23 +1038,11 @@
             <h3 class="traveler-card__name  user-status">Марк Смолов</h3>
           </a>
           <span class="traveler-card__distance">170</span>
-          <ul class="traveler-card__hashtag  hashtag-list">
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Рэп</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Тату</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Хайпбист</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Кроссовки</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Суприм</span>
-            </li>
-          </ul>
+
+          <div class="traveler-card__hashtag hashtag-list">
+            <p class="hashtag-list__input">#Рэп #Тату #Хайпбист #Кроссовки #Суприм</p>
+          </div>
+
           <div class="traveler-card__wishlist-wrapper">
             <h4 class="traveler-card__label">Хочет посетить:</h4>
             <ul class="traveler-card__wishlist   wishlist">
@@ -1146,20 +1105,11 @@
             <h3 class="traveler-card__name  user-status  user-status--online">Лариса Роговая</h3>
           </a>
           <span class="traveler-card__distance">23</span>
-          <ul class="traveler-card__hashtag  hashtag-list">
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Образование</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Карьера</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Учёба</span>
-            </li>
-            <li class="hashtag-list__item">
-              <span class="hashtag-list__content">#Линкедин</span>
-            </li>
-          </ul>
+
+          <div class="traveler-card__hashtag hashtag-list">
+            <p class="hashtag-list__input">#Образование #Карьера #Учёба #Линкедин</p>
+          </div>
+
           <div class="traveler-card__wishlist-wrapper">
             <h4 class="traveler-card__label">Хочет посетить:</h4>
             <ul class="traveler-card__wishlist   wishlist">
