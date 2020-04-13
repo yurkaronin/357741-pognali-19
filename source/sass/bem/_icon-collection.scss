@@ -24,3 +24,15 @@
   height: 18px;
 }
 
+@media (min-width: 1440px) {
+  .icon-telephone::before {
+    background-image: url("../img/icons/topmenu-phone.svg");
+  }
+
+  .icon-email::before {
+    background-image: url("../img/icons/topmenu-mail-black.svg");
+  }
+
+
+}
+
