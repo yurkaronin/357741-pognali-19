@@ -1,5 +1,26 @@
-.icon {
-  width: 50px;
-  height: 50px;
-  margin: .5em;
+.icon-telephone::before {
+  background-image: url("../img/icons/contacts-phone.svg");
 }
+
+.icon-email::before {
+  background-image: url("../img/icons/topmenu-mail.svg");
+}
+
+.icon-facebook::before {
+  background-image: url("../img/icons/facebook.svg");
+  width: 11px;
+  height: 21px;
+}
+
+.icon-vkontakte::before {
+  background-image: url("../img/icons/vk.svg");
+  width: 23px;
+  height: 12px;
+}
+
+.icon-Instagram::before {
+  background-image: url("../img/icons/instagram.svg");
+  width: 18px;
+  height: 18px;
+}
+

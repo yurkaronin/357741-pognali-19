@@ -1,0 +1,26 @@
+.body {
+  background-color: #edeff6;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  font-weight: 300;
+  line-height: 1.18;
+  color: #444444;
+}
+
+/* центровщик согласно макета с шириной 320 = 270 контент и по 25 px отступы по бокам */
+.container {
+  width: 320px;
+  padding: 0 25px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 110;
+}
+
+/* выборочный сброс типового оформления у списков */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

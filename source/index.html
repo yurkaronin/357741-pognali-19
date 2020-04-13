@@ -10,8 +10,8 @@
   <meta name="description"
     content="Главная страница современного онлайн-сервиса для весёлых путешествий по всему миру и поиска попутчиков.">
 
-    <!-- style  -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- style  -->
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
@@ -33,72 +33,107 @@
 
 </head>
 
-<body>
+<body class="body">
 
   <header class="header">
-    <nav class="header__navigation">
-      <a href="" class="header__logo-link  logotype">
-        <img class="logotype__image" src="https://via.placeholder.com/100x19" alt="Логотип Погнали" width="100"
-          height="19">
-      </a>
-      <button class="header__button-menu" type="button">Открыть меню</button>
-      <ul class="header__navigation-list">
-        <li class="header__navigation-item">
-          <a class="header__navigation-link" href="">О сервисе</a>
-        </li>
-        <li class="header__navigation-item">
-          <a class="header__navigation-link" href="form.html">Направления</a>
-        </li>
-        <li class="header__navigation-item">
-          <a class="header__navigation-link" href="catalog.html">Попутчики</a>
-        </li>
-      </ul>
-      <ul class="header__user-list  user-list">
-        <li class="user-list__item">
-          <a class="user-list__button  button" href="">Авторизация</a>
-        </li>
-        <li class="user-list__item">
-          <a class="user-list__link  icon-telephone" href="tel:88005558628">
-            <span class="user-list__detail">8 800 555-86-28</span>
+
+    <nav class="header__navigation  header__navigation--active">
+      <!-- типовой центровщик  -->
+      <div class="container  ">
+        <!-- обертка логотипа и кнопки меню -->
+        <div class="header__logo-wrapper">
+          <a href="" class="header__logo-link  logotype">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="
+              img/logo/logo-desktop-white@1x.webp 1x,
+              img/logo/logo-desktop-white@2x.webp 2x
+            ">
+              <source type="image/webp" media="(min-width: 768px)" srcset="
+              img/logo/logo-tablet-white@1x.webp 1x,
+              img/logo/logo-tablet-white@2x.webp 2x
+            ">
+              <source type="image/webp" srcset="
+              img/logo/logo-mobile-white@1x.webp 1x,
+              img/logo/logo-mobile-white@2x.webp 2x
+            ">
+              <source media="(min-width: 1440px)" srcset="
+              img/logo/logo-desktop-white@1x.png 1x,
+              img/logo/logo-desktop-white@2x.png 2x
+            ">
+              <source media="(min-width: 768px)" srcset="
+              img/logo/logo-tablet-white@1x.png 1x,
+              img/logo/logo-tablet-white@2x.png 2x
+            ">
+              <img class="logo__picture" src="img/logo/logo-mobile-white@1x.png" srcset="
+              img/logo/logo-mobile-white@1x.png 1x,
+              img/logo/logo-mobile-white@2x.png 2x
+            " alt="Логотип Погнали">
+            </picture>
           </a>
-        </li>
-        <li class="user-list__item">
-          <a class="user-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
-            <span class="user-list__detail">mail@htmlacademy.ru</span>
-          </a>
-        </li>
-      </ul>
-      <ul class="header__social-list  social-list">
-        <li class="social-list__item">
-          <a class="social-list__link  icon-facebook" href="">Facebook</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link  icon-Instagram" href="">Instagram</a>
-        </li>
-      </ul>
+          <button class="header__button-menu" type="button">Открыть меню</button>
+        </div>
+        <!-- Меню  -->
+        <ul class="header__navigation-list  list">
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="">О сервисе</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="form.html">Направления</a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <!-- Авторизация  -->
+        <a class="header__authorization-button  button" href="">Авторизация</a>
+        <!-- обёртка с контактами и соц сетями  -->
+        <div class="header__contacts-wrapper">
+          <ul class="header__contact-list  contact-list  list">
+            <li class="contact-list__item">
+              <a class="contact-list__link  icon-telephone" href="tel:88005558628">
+                <span class="contact-list__detail">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="contact-list__item">
+              <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+                <span class="contact-list__detail">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="header__social-list  social-list  list">
+            <li class="social-list__item">
+              <a class="social-list__link  icon-facebook" href="">Facebook</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link  icon-Instagram" href="">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+
   </header>
 
   <main class="main">
 
     <section class="promo">
       <h2 class="promo__title  title  title--big">В путешествие с крутыми попутчиками!</h2>
-      <ul class="promo__user-list  user-list">
-        <li class="user-list__item">
-          <a class="user-list__link  icon-telephone" href="tel:88005558628">
-            <span class="user-list__detail">8 800 555-86-28</span>
+      <ul class="promo__contact-list  contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-telephone" href="tel:88005558628">
+            <span class="contact-list__detail">8 800 555-86-28</span>
           </a>
         </li>
-        <li class="user-list__item">
-          <a class="user-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
-            <span class="user-list__detail">mail@htmlacademy.ru</span>
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="contact-list__detail">mail@htmlacademy.ru</span>
           </a>
         </li>
-        <li class="user-list__item">
-          <a class="user-list__button  button" href="">Авторизация</a>
+        <li class="contact-list__item">
+          <a class="contact-list__button  button" href="">Авторизация</a>
         </li>
       </ul>
       <blockquote class="promo__quote-content">«Лучшее приложение, что я видел в жизни!»</blockquote>
@@ -310,15 +345,15 @@
       </form>
       <p class="registration__text  text">Остались вопросы?
         Мы с радостью на них ответим!</p>
-      <ul class="registration__user-list  user-list">
-        <li class="user-list__item">
-          <a class="user-list__link  icon-telephone" href="tel:88005558628">
-            <span class="user-list__detail">8 800 555-86-28</span>
+      <ul class="registration__contact-list  contact-list">
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-telephone" href="tel:88005558628">
+            <span class="contact-list__detail">8 800 555-86-28</span>
           </a>
         </li>
-        <li class="user-list__item">
-          <a class="user-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
-            <span class="user-list__detail">mail@htmlacademy.ru</span>
+        <li class="contact-list__item">
+          <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+            <span class="contact-list__detail">mail@htmlacademy.ru</span>
           </a>
         </li>
       </ul>
@@ -326,10 +361,10 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты карта офиса &laquo;Погнали?&raquo;</h2>
-      <ul class="contacts__user-list  user-list">
-        <li class="user-list__item">
-          <p class="user-list__link  icon-address">
-            <span class="user-list__detail">ул. Большая
+      <ul class="contacts__contact-list  contact-list">
+        <li class="contact-list__item">
+          <p class="contact-list__link  icon-address">
+            <span class="contact-list__detail">ул. Большая
               Конюшенная, 19/8</span>
           </p>
         </li>

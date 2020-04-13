@@ -1,0 +1,27 @@
+.contact-list__link {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.38;
+  font-weight: 700;
+  color: #192144;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.contact-list__link::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  background-color: #121936;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+.contact-list__detail {
+  margin-left: 16px;
+  color: #192144;
+  font-weight: 700;
+}

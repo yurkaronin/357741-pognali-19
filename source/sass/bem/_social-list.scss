@@ -1,0 +1,27 @@
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-list__item {
+  max-width: 33.333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list__link {
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+}
+
+.social-list__link::before {
+  content: "";
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
