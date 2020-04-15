@@ -1,0 +1,191 @@
+.promo {
+  background-color: #161c36;
+  background-image: url("../img/backgrounds/globe-back-mobile@1x.jpg");
+  background-position: left 0 top -100px;
+  position: relative;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-bottom: 39px;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 479px;
+  bottom: 0;
+  background-color: #161c36;
+  z-index: -1;
+}
+
+.promo__title {
+  max-width: 235px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 247px;
+}
+
+.promo__contact-list .contact-list__detail {
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+}
+
+.promo__contacts-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 270px;
+  margin-bottom: 30px;
+}
+
+.promo__contact-list .icon-telephone::before {
+  background-color: #ff8d30;
+  width: 40px;
+  height: 40px;
+}
+
+.promo__contact-list .icon-email::before {
+  background-color: #ffbd30;
+  width: 40px;
+  height: 40px;
+}
+
+.promo__contact-list {
+  max-width: 80px;
+  display: flex;
+}
+
+.promo__contact-list .contact-list__link {
+  border: none;
+}
+
+.promo__contact-list .contact-list__item {
+  max-width: 40px;
+}
+
+.contact-list__button {
+  max-width: 190px;
+}
+
+.promo__quote__wrapper {
+  background-color: #161C35;
+  padding: 50px;
+  padding-bottom: 113px;
+  margin-top: -48px;
+}
+
+.promo__quote-content {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.promo__quote-author {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  max-width: 153px;
+  margin-bottom: 33px;
+  font-style: normal;
+}
+
+.promo__steps__wrapper {
+  margin-top: -72px;
+}
+
+@media (min-width: 768px) {
+  .promo {
+    background-color: #182044;
+    background-image: url("../img/backgrounds/globe-back-tablet@1x.jpg");
+    background-position: left -390px bottom 127px;
+    padding-top: 34px;
+    padding-bottom: 90px;
+  }
+
+  .promo__title {
+    min-width: 400px;
+    margin-bottom: 90px;
+  }
+
+  .promo__contacts-wrapper {
+    display: none;
+  }
+
+  .promo__quote__wrapper {
+    background-color: transparent;
+    max-width: 300px;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 105px;
+    margin-bottom: 290px;
+  }
+
+  .promo__quote-content {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    margin-bottom: 48px;
+    max-width: 100%;
+  }
+
+  .promo__quote-author {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .promo {
+    padding-top: 80px;
+    background-image: url("../img/backgrounds/globe-back-desktop@1x.jpg");
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .promo .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .promo__info-wrapper {
+    max-width: 45%;
+    margin: 0;
+    padding-left: 70px;
+  }
+
+  .promo__title {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .promo__quote__wrapper {
+    max-width: 45%;
+    margin: 0;
+    padding-left: 310px;
+    padding-top: 10px;
+  }
+
+  .promo__steps__wrapper {
+    max-width: 100%;
+    margin: 0;
+    margin-top: 100px;
+  }
+
+}

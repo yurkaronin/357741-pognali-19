@@ -64,7 +64,7 @@
               img/logo/logo-tablet-white@1x.png 1x,
               img/logo/logo-tablet-white@2x.png 2x
             ">
-              <img class="logo__picture" src="img/logo/logo-mobile-white@1x.png" srcset="
+              <img class="header__logo-picture" src="img/logo/logo-mobile-white@1x.png" srcset="
               img/logo/logo-mobile-white@1x.png 1x,
               img/logo/logo-mobile-white@2x.png 2x
             " alt="Логотип Погнали">
@@ -119,30 +119,42 @@
   <main class="main">
 
     <section class="promo">
-      <h2 class="promo__title  title  title--big">В путешествие с крутыми попутчиками!</h2>
-      <ul class="promo__contact-list  contact-list">
-        <li class="contact-list__item">
-          <a class="contact-list__link  icon-telephone" href="tel:88005558628">
-            <span class="contact-list__detail">8 800 555-86-28</span>
-          </a>
-        </li>
-        <li class="contact-list__item">
-          <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
-            <span class="contact-list__detail">mail@htmlacademy.ru</span>
-          </a>
-        </li>
-        <li class="contact-list__item">
-          <a class="contact-list__button  button" href="">Авторизация</a>
-        </li>
-      </ul>
-      <blockquote class="promo__quote-content">«Лучшее приложение, что я видел в жизни!»</blockquote>
-      <cite class="promo__quote-author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-      <ol class="promo__list-steps  steps-list">
-        <li class="steps-list__item">Выберите направление</li>
-        <li class="steps-list__item">Изучите идеи путешественников</li>
-        <li class="steps-list__item">Находите тех, кто похож на вас</li>
-        <li class="steps-list__item">Путешествуйте вместе!</li>
-      </ol>
+      <!-- центровщик  -->
+      <div class="container">
+        <!-- обёртка для верхнего контента  -->
+        <div class="promo__info-wrapper">
+          <h2 class="promo__title  title  title--big">В&nbsp;путешествие с&nbsp;крутыми попутчиками!</h2>
+          <div class="promo__contacts-wrapper">
+            <ul class="promo__contact-list  contact-list  list">
+              <li class="contact-list__item">
+                <a class="contact-list__link  icon-telephone" href="tel:88005558628">
+                  <span class="contact-list__detail">8 800 555-86-28</span>
+                </a>
+              </li>
+              <li class="contact-list__item">
+                <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
+                  <span class="contact-list__detail">mail@htmlacademy.ru</span>
+                </a>
+              </li>
+            </ul>
+            <a class="contact-list__button  button" href="">Авторизация</a>
+          </div>
+        </div>
+        <!-- обёртка для цитаты  -->
+        <div class="promo__quote__wrapper">
+          <blockquote class="promo__quote-content">«Лучшее приложение, что я видел в жизни!»</blockquote>
+          <cite class="promo__quote-author">Мурат&nbsp;Эльтазин главный&nbsp;редактор газеты «гаджетлайф»</cite>
+        </div>
+        <!-- обёртка для шагов  -->
+        <div class="promo__steps__wrapper">
+          <ol class="promo__list-steps  steps-list  list">
+            <li class="steps-list__item">Выберите направление</li>
+            <li class="steps-list__item">Изучите&nbsp;идеи путешественников</li>
+            <li class="steps-list__item">Находите&nbsp;тех, кто&nbsp;похож&nbsp;на&nbsp;вас</li>
+            <li class="steps-list__item">Путешествуйте вместе!</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
     <section class="about">

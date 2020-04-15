@@ -1,0 +1,17 @@
+.title--big {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+@media (min-width: 768px) {
+.title--big {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+}
