@@ -1,0 +1,122 @@
+.about {
+  background-color: #192144;
+  color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 85px;
+  background-image: url("../img/backgrounds/about-mobile@1x.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0 0 30px 30px;
+}
+
+.about .container {
+  padding: 0 49px;
+}
+
+.about__title {
+  margin-bottom: 23px;
+  position: relative;
+}
+
+.about__description {
+  margin-bottom: 15px;
+}
+
+.about .text--attention {
+  margin-bottom: 0;
+}
+
+.about__button {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .about {
+    background-image: none;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 88px;
+  }
+
+  .about .container {
+    background-image: url("../img/backgrounds/about-tablet@1x.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 33px;
+    padding-left: 75px;
+  }
+
+  .about__title {
+    margin-bottom: 43px;
+    max-width: 280px;
+  }
+
+  .about__description {
+    margin-bottom: 38px;
+    max-width: 300px;
+
+  }
+
+  .about .text--attention {
+    margin-bottom: 53px;
+    max-width: 260px;
+  }
+
+  .about__button {
+    max-width: 274px;
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    padding: 0;
+    margin: 0;
+
+  }
+
+  .about .container {
+    padding: 160px 0;
+    padding-left: 126px;
+    padding-bottom: 160px;
+    background-image: url("../img/backgrounds/about-desktop@1x.png");
+    background-position: bottom right 60px;
+    background-size: auto;
+  }
+
+  .about__title {
+    max-width: 350px;
+    margin-bottom: 61px;
+    position: relative;
+    z-index: 2;
+
+  }
+
+  .about__title::after {
+    content: "";
+    display: block;
+    width: 213px;
+    height: 213px;
+    border-radius: 20px;
+    background-color: #141b3b;
+    z-index: -1;
+    top: -65px;
+    left: -65px;
+    position: absolute;
+  }
+
+  .about__description {
+    max-width: 620px;
+    margin-bottom: 44px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .about .text--attention {
+    max-width: 430px;
+    margin-bottom: 86px;
+  }
+
+}

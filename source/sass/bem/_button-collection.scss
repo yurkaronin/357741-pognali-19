@@ -19,5 +19,19 @@
     font-weight: 700;
   }
 
+  .button--arrow {
+    padding: 30px 125px 28px 34px;
+    display: block;
+    position: relative;
+  }
+
+  .button--arrow::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    right: 15px;
+    border: 8px solid transparent;
+    border-left: 10px solid #1d2e5b;
+  }
 
 }

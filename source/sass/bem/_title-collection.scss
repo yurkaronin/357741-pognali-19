@@ -1,3 +1,12 @@
+.title {
+  margin: 0;
+  padding: 0;
+  color: #ff8d30;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 .title--big {
   margin: 0;
   padding: 0;
@@ -9,9 +18,14 @@
 }
 
 @media (min-width: 768px) {
-.title--big {
-  font-size: 60px;
-  line-height: 70px;
-}
+  .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .title--big {
+    font-size: 60px;
+    line-height: 70px;
+  }
 
 }

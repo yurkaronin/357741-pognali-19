@@ -8,17 +8,6 @@
   padding-bottom: 39px;
 }
 
-.promo::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 479px;
-  bottom: 0;
-  background-color: #161c36;
-  z-index: -1;
-}
-
 .promo__title {
   max-width: 235px;
   margin: 0 auto;
