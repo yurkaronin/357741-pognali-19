@@ -1,0 +1,26 @@
+.total-users {
+  max-width: 100px;
+}
+
+.total-users__info {
+  position: relative;
+  opacity: 0.3;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding-left: 25px;
+  max-width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.total-users__info::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  display: block;
+  width: 11px;
+  height: 11px;
+}

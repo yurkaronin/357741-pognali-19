@@ -13,6 +13,21 @@
   cursor: pointer;
 }
 
+.button--arrow {
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.button--arrow::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  border: 8px solid transparent;
+  border-left: 10px solid #1d2e5b;
+}
+
 @media (min-width: 768px) {
   .button {
     font-size: 20px;
@@ -21,17 +36,7 @@
 
   .button--arrow {
     padding: 30px 125px 28px 34px;
-    display: block;
-    position: relative;
-  }
-
-  .button--arrow::after {
-    content: "";
-    position: absolute;
-    top: 31px;
-    right: 15px;
-    border: 8px solid transparent;
-    border-left: 10px solid #1d2e5b;
+    border-radius: 20px;
   }
 
 }

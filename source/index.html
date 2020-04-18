@@ -158,59 +158,135 @@
     </section>
 
     <section class="about">
+      <!-- обёртка  -->
       <div class="container">
-        <h2 class="about__title  title">О сервисе</h2>
-        <p class="about__description  text">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
-          черпайте вдохновение в чужих.
-        </p>
-        <p class="about__description  text  text--attention">
-          А если найдете кого-то близкого по духу - скорее зовите в совместный трип!
-        </p>
-        <a class="about__button  button  button--arrow" href="">Подробнее</a>
+        <!-- шапка блока с текстом  -->
+        <div class="about__header">
+          <h2 class="about__title  title">О сервисе</h2>
+          <p class="about__description  text">
+            Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
+            и
+            черпайте вдохновение в чужих.
+          </p>
+          <p class="about__description  text  text--attention">
+            А если найдете кого-то близкого по духу - скорее зовите в совместный трип!
+          </p>
+          <a class="about__button  button  button--arrow" href="">Подробнее</a>
+        </div>
       </div>
     </section>
 
     <section class="directions">
-      <h2 class="directions__title  title">Направления</h2>
-      <p class="directions__description  text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах,
-        куда хотели бы отправиться и чем можно там заняться.</p>
-      <ul class="directions__list  directions-list">
-        <li class="directions-list__item">
-          <img class="directions-list__image" src="https://via.placeholder.com/270x110" alt="Таиланд" width="270"
-            height="110">
-          <div class="directions-list__details-wrapper">
-            <img class="directions-list__flag  flag-icon" src="https://via.placeholder.com/35x24" alt="флаг Таиланда"
-              width="35" height="24">
-            <h3 class="directions-list__item-title">Таиланд</h3>
-            <p class="directions-list__feature">Джунгли зовут!</p>
-            <span class="directions-list__total-users  icon-user">18321</span>
-          </div>
-        </li>
-        <li class="directions-list__item">
-          <img class="directions-list__image" src="https://via.placeholder.com/270x110" alt="Франция" width="270"
-            height="110">
-          <div class="directions-list__details-wrapper">
-            <img class="directions-list__flag  flag-icon" src="https://via.placeholder.com/35x24" alt="флаг Франции"
-              width="35" height="24">
-            <h3 class="directions-list__item-title">Франция</h3>
-            <p class="directions-list__feature">Трэ бьен, манифик!</p>
-            <span class="directions-list__total-users  icon-user">12518</span>
-          </div>
-        </li>
-        <li class="directions-list__item">
-          <img class="directions-list__image" src="https://via.placeholder.com/270x110" alt="Чехия" width="270"
-            height="110">
-          <div class="directions-list__details-wrapper">
-            <img class="directions-list__flag  flag-icon" src="https://via.placeholder.com/35x24" alt="флаг Чехии"
-              width="35" height="24">
-            <h3 class="directions-list__item-title">Чехия</h3>
-            <p class="directions-list__feature">Закоулки старой Европы</p>
-            <span class="directions-list__total-users  icon-user">5326</span>
-          </div>
-        </li>
-      </ul>
-      <a class="directions__link  button  button--arrow" href="form.html">Показать все</a>
+      <!-- обёртка -->
+      <div class="container">
+        <!-- шапка блока с текстами  -->
+        <div class="directions__header">
+          <h2 class="directions__title  title">Направления</h2>
+          <p class="directions__description  text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о
+            странах,
+            куда хотели бы отправиться и чем можно там заняться.</p>
+        </div>
+
+        <ul class="directions__list  directions-list  list">
+          <li class="directions-list__item">
+            <a class="directions-list__link" href="">
+              <picture class="directions-list__image-options">
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/countries/thailand-desktop@1x.webp 1x,
+                  img/countries/thailand-desktop@2x.webp 2x
+                ">
+                <source type="image/webp" srcset="
+                  img/countries/thailand-mobile@1x.webp 1x,
+                  img/countries/thailand-mobile@2x.webp 2x
+                ">
+                <source media="(min-width: 768px)" srcset="
+                  img/countries/thailand-desktop@1x.jpg 1x,
+                  img/countries/thailand-desktop@2x.jpg 2x
+                ">
+                <img class="directions-list__image" src="img/countries/thailand-mobile@1x.jpg" srcset="
+                  img/countries/thailand-mobile@1x.jpg 1x,
+                  img/countries/thailand-mobile@2x.jpg 2x
+                " alt="Таиланд" width="270" height="110">
+              </picture>
+              <div class="directions-list__details-wrapper">
+                <img class="directions-list__flag  flag-icon" src="img/flags/flag-thailand.svg" alt="флаг Тайланда"
+                  width="35" height="24">
+                <h3 class="directions-list__item-title">Таиланд</h3>
+                <p class="directions-list__feature">Джунгли зовут!</p>
+                <!-- обёртка для вывода числа посетивших страну -->
+                <div class="directions-list__total-users  total-users">
+                  <span class="total-users__info  icon-user">18321</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="directions-list__item">
+            <a class="directions-list__link" href="">
+              <picture class="directions-list__image-options">
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/countries/france-desktop@1x.webp 1x,
+                  img/countries/france-desktop@2x.webp 2x
+                ">
+                <source type="image/webp" srcset="
+                  img/countries/france-mobile@1x.webp 1x,
+                  img/countries/france-mobile@2x.webp 2x
+                ">
+                <source media="(min-width: 768px)" srcset="
+                  img/countries/france-desktop@1x.jpg 1x,
+                  img/countries/france-desktop@2x.jpg 2x
+                ">
+                <img class="directions-list__image" src="img/countries/france-mobile@1x.jpg" srcset="
+                  img/countries/france-mobile@1x.jpg 1x,
+                  img/countries/france-mobile@2x.jpg 2x
+                " alt="Франция" width="270" height="110">
+              </picture>
+
+              <div class="directions-list__details-wrapper">
+                <img class="directions-list__flag  flag-icon" src="img/flags/flag-france.svg" alt="флаг Франции"
+                  width="35" height="24">
+                <h3 class="directions-list__item-title">Франция</h3>
+                <p class="directions-list__feature">Трэ бьен, манифик!</p>
+                <div class="directions-list__total-users  total-users">
+                  <span class="total-users__info  icon-user">12518</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="directions-list__item">
+            <a class="directions-list__link" href="">
+              <picture class="directions-list__image-options">
+                <source type="image/webp" media="(min-width: 768px)" srcset="
+                  img/countries/czech-desktop@1x.webp 1x,
+                  img/countries/czech-desktop@2x.webp 2x
+                ">
+                <source type="image/webp" srcset="
+                  img/countries/czech-mobile@1x.webp 1x,
+                  img/countries/czech-mobile@2x.webp 2x
+                ">
+                <source media="(min-width: 768px)" srcset="
+                  img/countries/czech-desktop@1x.jpg 1x,
+                  img/countries/czech-desktop@2x.jpg 2x
+                ">
+                <img class="directions-list__image" src="img/countries/czech-mobile@1x.jpg" srcset="
+                  img/countries/czech-mobile@1x.jpg 1x,
+                  img/countries/czech-mobile@2x.jpg 2x
+                " alt="Чехия" width="270" height="110">
+              </picture>
+
+              <div class="directions-list__details-wrapper">
+                <img class="directions-list__flag  flag-icon" src="img/flags/flag-seychelles.svg" alt="флаг Чехии"
+                  width="35" height="24">
+                <h3 class="directions-list__item-title">Чехия</h3>
+                <p class="directions-list__feature">Закоулки старой Европы</p>
+                <div class="directions-list__total-users  total-users">
+                  <span class="total-users__info  icon-user">5326</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a class="directions__link  button  button--arrow" href="form.html">Показать все</a>
+      </div>
     </section>
 
     <section class="travelers">

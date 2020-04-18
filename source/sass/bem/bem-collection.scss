@@ -6,6 +6,8 @@
 @import "city-filter";
 @import "copyright";
 @import "countries-list";
+
+/* список анонсов популярных стран дляпутешествий на главной стр.  */
 @import "directions-list";
 @import "dots-list";
 @import "flags-list";
@@ -13,6 +15,7 @@
 @import "icon-collection";
 @import "logotype";
 @import "options-list";
+
 /* Прогресс-бар уровня пользователя в карточке*/
 @import "personal-level";
 @import "planing-steps";
@@ -20,11 +23,15 @@
 @import "social-list";
 @import "steps-list";
 @import "text-collection";
+
+/* Список популярных направлений для путешествий по миру */
+@import "total-users";
 @import "title-collection";
 @import "transport-list";
 @import "traveler-card";
 @import "travelers-list";
 @import "travelers-result";
+
 /* блок с контактной информацией  */
 @import "contact-list";
 @import "user-status";

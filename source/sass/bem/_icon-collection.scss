@@ -32,6 +32,10 @@
   background-image: url("../img/icons/topmenu-mail-black.svg");
 }
 
+.icon-user::before {
+  background-image: url("../img/icons/user.svg");
+}
+
 @media (min-width: 1440px) {
   .icon-telephone::before {
     background-image: url("../img/icons/topmenu-phone.svg");
