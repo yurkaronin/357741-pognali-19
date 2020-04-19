@@ -36,6 +36,11 @@
   background-image: url("../img/icons/user.svg");
 }
 
+.icon-address::before {
+  background-image: url("../img/icons/contacts-location.svg");
+  background-size: 14px 22px;
+}
+
 @media (min-width: 1440px) {
   .icon-telephone::before {
     background-image: url("../img/icons/topmenu-phone.svg");
