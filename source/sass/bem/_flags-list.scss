@@ -1,0 +1,20 @@
+.flags-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.flags-list__item {
+  max-width: 35px;
+  margin-right: 15px;
+}
+
+.flags-list__item:last-child {
+  margin-right: 0;
+}
+
