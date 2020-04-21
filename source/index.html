@@ -120,7 +120,7 @@
 
     <section class="promo">
       <!-- центровщик  -->
-      <div class="container">
+      <div class="promo__container  container">
         <!-- обёртка для верхнего контента  -->
         <div class="promo__info-wrapper">
           <h2 class="promo__title  title  title--big">В&nbsp;путешествие с&nbsp;крутыми попутчиками!</h2>
@@ -296,11 +296,14 @@
     </section>
 
     <section class="travelers">
-      <div class="container">
-        <h2 class="travelers__title  title">Попутчики</h2>
-        <p class="travelers__description  text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному
-          нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="travelers__description  text  text--attention">Теперь можно легко найти единомышленников!</p>
+      <div class="container  travelers__container">
+        <div class="travelers__header">
+          <h2 class="travelers__title  title">Попутчики</h2>
+          <p class="travelers__description  text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
+            Одному
+            нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="travelers__description  text  text--attention">Теперь можно легко найти&#160;единомышленников!</p>
+        </div>
 
         <ul class="travelers__list  travelers-list  list">
           <li class="travelers-list__item">
@@ -439,6 +442,7 @@
             </div>
           </li>
         </ul>
+
         <a class="travelers__button  button  button--arrow" href="catalog.html">Показать всех</a>
       </div>
     </section>
@@ -547,8 +551,7 @@
           <img class="logotype__image" src="img/logo/logo-mobile-blue@1x.png" srcset="
               img/logo/logo-mobile-blue@1x.png 1x,
               img/logo/logo-mobile-blue@2x.png 2x
-            " alt="Логотип Погнали" width="100"
-            height="19">
+            " alt="Логотип Погнали" width="100" height="19">
         </picture>
       </a>
       <ul class="footer__social-list  social-list">
