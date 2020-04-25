@@ -1,6 +1,6 @@
 .about {
   background-color: #192144;
-  color: #ffffff;
+  color: $color__text--white;
   padding-top: 25px;
   padding-bottom: 85px;
   background-image: url("../img/backgrounds/about-mobile@1x.png");
@@ -21,12 +21,12 @@
 
 .about__description {
   margin-bottom: 15px;
-  color: #ffffff;
+  color: $color__text--white;
 }
 
 .about .text--attention {
   margin-bottom: 0;
-  color: #ffffff;
+  color: $color__text--white;
 }
 
 .about__button {
@@ -38,7 +38,8 @@
     background-image: none;
     position: relative;
     padding-top: 0;
-    padding-bottom: 83px;
+    padding-bottom: 86px;
+    border-radius: 0 0 60px 60px;
   }
 
   .about .container {
@@ -65,13 +66,21 @@
   }
 
   .about .text--attention {
-    margin-bottom: 53px;
+    margin-bottom: 55px;
     max-width: 260px;
   }
 
   .about__button {
     max-width: 274px;
     display: block;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .about .button--arrow::after {
+    right: 25px;
   }
 }
 
@@ -105,7 +114,7 @@
     width: 213px;
     height: 213px;
     border-radius: 20px;
-    background-color: #141b3b;
+    background-color: $color__background-section;
     z-index: -1;
     top: -65px;
     left: -65px;

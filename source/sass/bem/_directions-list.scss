@@ -6,8 +6,8 @@
   border-radius: 10px;
   background-color: #ffffff;
   color: #000000;
-  padding: 26px 26px 21px 24px;
-  margin-top: -16px;
+  padding: 26px 24px 24px;
+  margin-top: -13px;
   z-index: 2;
   position: relative;
 }
@@ -29,7 +29,6 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  margin-bottom: 5px;
   max-width: 130px;
 }
 
@@ -63,7 +62,6 @@
 }
 
 @media (min-width: 768px) {
-
   .directions-list {
     max-width: 618px;
     display: flex;
@@ -126,14 +124,14 @@
   }
 
   .directions-list__flag {
-    top: 20%;
+    top: 10px;
     right: -20px;
     width: 70px;
     height: 47px;
   }
 
   .directions-list__item-description {
-    padding: 28px 25px 0 25px;
+    padding: 27px 25px 0 31px;
   }
 
 }

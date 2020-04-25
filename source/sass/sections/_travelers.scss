@@ -1,5 +1,5 @@
 .travelers {
-  padding-top: 73px;
+  padding-top: 70px;
   padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
@@ -35,11 +35,12 @@
 
 .travelers__header {
   max-width: 270px;
+  padding: 0 25px;
 }
 
 .travelers__title {
   margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .travelers__description {
@@ -48,7 +49,7 @@
   font-weight: 300;
   line-height: 22px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 
 .travelers .text--attention {
@@ -82,8 +83,8 @@
   width: 71px;
   height: 71px;
   position: absolute;
-  top: -30px;
-  left: -40px;
+  top: -35px;
+  left: -35px;
   z-index: -1;
 }
 
@@ -101,7 +102,6 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  margin-bottom: 16px;
   text-align: center;
   max-width: 140px;
 }
@@ -112,7 +112,6 @@
   font-weight: 400;
   line-height: 18px;
   max-width: 180px;
-  margin-bottom: 17px;
   text-align: center;
 }
 
@@ -144,7 +143,9 @@
 
 @media (min-width: 768px) {
   .travelers {
+    padding-top: 135px;
     padding-bottom: 88px;
+    border-radius: 0 0 60px 60px;
   }
 
   .travelers__container::before {
@@ -154,8 +155,8 @@
     border-radius: 20px;
     background-color: #141b3b;
     position: absolute;
-    top: -20px;
-    left: -40px;
+    top: -60px;
+    left: 40px;
     z-index: -1;
   }
 
@@ -165,21 +166,25 @@
     width: 285px;
     height: 285px;
     position: absolute;
-    top: -20px;
-    right: 75px;
+    top: -55px;
+    right: 70px;
     z-index: -1;
   }
 
+  .travelers__container {
+    padding: 0 75px;
+  }
+
   .travelers__header {
-    max-width: 423px;
-    padding: 0px 25px;
+    max-width: 450px;
+    padding: 0;
   }
 
   .travelers__title {
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
-    margin-bottom: 61px;
+    margin-bottom: 60px;
     margin-left: 0;
   }
 
@@ -188,6 +193,7 @@
     font-weight: 300;
     line-height: 33px;
     margin-left: 0;
+    margin-bottom: 40px;
   }
 
   .travelers .text--attention {
@@ -202,7 +208,7 @@
     width: 143px;
     height: 143px;
     top: -96px;
-    left: -35px;
+    left: 0;
   }
 
   .travelers__list {
@@ -210,10 +216,61 @@
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 80px;
+    justify-content: space-between;
+  }
+
+  .travelers-list__item {
+    margin: 0;
+    max-width: 285px;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .travelers-list__item:last-child {
+    margin-right: 0;
   }
 
   .travelers__button {
     max-width: 618px;
+  }
+
+  .travelers-list__photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  }
+
+  .travelers-list__details-wrapper {
+    padding: 28px 20px 30px;
+    margin-top: 0;
+  }
+
+  .travelers-list__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    max-width: 170px;
+    margin-bottom: 20px;
+  }
+
+  .travelers-list__hashtag {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .travelers__button {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 27px 63px 30px 34px;
+  }
+
+  .travelers__button::after {
+    content: "";
+    position: absolute;
+    right: 25px;
   }
 
 }
@@ -292,7 +349,7 @@
   }
 
   .travelers-list__details-wrapper {
-    padding: 36px 20px 27px;
+    padding: 30px 20px 27px;
   }
 
   .travelers-list__hashtag {
@@ -307,14 +364,6 @@
     font-weight: 700;
     line-height: 24px;
     padding: 29px 94px 31px 34px;
-  }
-
-  .hashtag-list__input {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0;
-    margin-bottom: 10px;
   }
 
   .travelers-list__level {

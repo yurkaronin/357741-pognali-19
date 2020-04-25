@@ -1,12 +1,10 @@
 .body {
-  background-color: #edeff6;
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
-  font-weight: 300;
-  line-height: 1.18;
-  color: #444444;
+  background-color: $color__background-body;
+  font-family: $font-family_base;
+  font-size: $font__size_base;
+  line-height: $font__size-ratio;
+  font-weight: $font-weight_base;
+  color: $color__text;
 }
 
 /* центровщик согласно макета с шириной 320 = 270 контент и по 25 px отступы по бокам */

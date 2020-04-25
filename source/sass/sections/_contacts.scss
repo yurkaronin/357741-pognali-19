@@ -2,16 +2,21 @@
   border-radius: 0 0 30px 30px;
   background-color: #ffd74b;
   color: #192144;
-  padding-top: 37px;
+  padding-top: 15px;
   padding-bottom: 35px;
   position: relative;
   z-index: 2;
 }
 
 .contacts__map {
-max-height: 546px;
-margin-top: -50px;
-z-index: -1;
+  max-height: 545px;
+  margin-top: -50px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.contacts__contact-list {
+  margin-bottom: 35px;
 }
 
 .contacts .contact-list__link::before {
@@ -22,4 +27,13 @@ z-index: -1;
 
 .contacts .contact-list__detail {
   max-width: 145px;
+}
+
+.contacts__button {
+  text-transform: none;
+  border-radius: 10px;
+  border: 3px solid #192144;
+  padding: 18px 20px 21px;
+  display: block;
+  text-align: left;
 }
