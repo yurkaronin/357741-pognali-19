@@ -80,5 +80,48 @@
     left: -10px;
   }
 
+}
+
+@media (min-width: 1440px) {
+  .prices {
+    padding-top: 100px;
+    padding-bottom: 190px;
+  }
+
+  .prices__title {
+    margin-bottom: 140px;
+  }
+
+  .prices__list {
+    max-width: 904px;
+    margin: 0 auto;
+    margin-left: 85px;
+    margin-bottom: 58px;
+  }
+
+  .price-list::before {
+    width: 444px;
+    height: 300px;
+    right: -150px;
+    top: -50px;
+  }
+
+  .prices__list::after {
+    background-image: url("../img/icons/rates@1x.png");
+    width: 198px;
+    height: 198px;
+    top: 0;
+    right: -263px;
+  }
+
+  .price-list__cost {
+    padding-right: 0;
+    max-width: 150px;
+  }
+
+  .prices__link {
+    margin-left: 85px;
+  }
+
 
 }

@@ -193,8 +193,9 @@
 
 @media (min-width: 1440px) {
   .travelers {
-    padding: 125px 0 115px;
-  }
+    padding-top: 125px;
+    padding-bottom: 132px;
+}
 
   .travelers__container {
     display: flex;
@@ -205,10 +206,10 @@
   }
 
   .travelers__header {
-    max-width: 430px;
+    max-width: 490px;
     margin-bottom: 85px;
     padding: 0;
-    padding-left: 5px;
+    padding-left: 65px;
   }
 
   .travelers__title {
@@ -221,6 +222,7 @@
 
   .travelers .text--attention {
     margin-bottom: 0;
+    max-width: 300px;
   }
 
   .travelers__list {
@@ -234,11 +236,13 @@
   .travelers__button {
     margin-left: 0;
     max-width: 280px;
-    margin-top: -103px;
+    margin-top: -90px;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
     padding: 29px 94px 31px 34px;
+    margin-left: 65px;
+    width: 100%;
   }
 
   .travelers-list__level {
@@ -255,6 +259,16 @@
   .travelers__container::before {
     top: -65px;
     left: -65px;
+  }
+
+  .travelers__list::before {
+    top: 0;
+    left: -205px;
+  }
+
+  .travelers__container::after {
+    top: 260px;
+    left: 188px;
   }
 
 }

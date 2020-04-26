@@ -139,8 +139,14 @@
 
 @media (min-width: 1440px) {
   .steps-list__item {
-    max-width: 25%;
-    padding: 23px 55px 35px 39px;
+    max-width: 340px;
+    padding: 23px 55px 35px 28px;
+  }
+
+  .steps-list__item:first-child,
+  .steps-list__item:last-child {
+    max-width: 320px;
+    padding-left: 32px;
   }
 
   .steps-list__item:before {
@@ -149,7 +155,7 @@
     line-height: 120px;
 
     top: -24px;
-    right: 44px;
+    right: 35px;
   }
 
   .steps-list__item,

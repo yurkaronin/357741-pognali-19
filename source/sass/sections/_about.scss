@@ -48,29 +48,50 @@
 
 @media (min-width: 768px) {
   .about {
+    padding-top: 43px;
     background-image: none;
-    position: relative;
-    padding-top: 0;
     padding-bottom: 86px;
     border-radius: 0 0 60px 60px;
   }
 
-  .about .container {
-    background-image: url("../img/backgrounds/about-tablet@1x.png");
-    background-position: top 4px right 4px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 41px;
-    padding-left: 74px;
-  }
-
   .about__header {
     padding: 0;
+    position: relative;
+    padding-left: 33px;
+    z-index: 2;
+  }
+
+  .about__header::after {
+    content: "";
+    background-color: #141b3b;
+    width: 688px;
+    height: 213px;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    z-index: -2;
+    top: -32px;
+    left: 0;
+  }
+
+  .about__header::before {
+    content: "";
+    display: block;
+    width: 376px;
+    height: 548px;
+    background-image: url("../img/backgrounds/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    padding-left: 74px;
+    z-index: -1;
+    position: absolute;
+    right: -34px;
+    top: 12px;
   }
 
   .about__title {
     margin-bottom: 42px;
     max-width: 280px;
+    position: relative;
   }
 
   .about__description {
@@ -103,44 +124,40 @@
   .about {
     padding: 0;
     margin: 0;
+    padding-top: 127px;
+    padding-bottom: 161px;
 
   }
 
-  .about .container {
-    padding: 160px 0;
-    padding-left: 126px;
-    padding-bottom: 160px;
+  .about__header {
+    padding-left: 70px;
+  }
+
+  .about__header::after {
+    width: 213px;
+    height: 213px;
+    border-radius: 20px;
+    background-color: $color__background-section;
+    top: -56px;
+    left: -3px;
+  }
+
+  .about__header::before {
     background-image: url("../img/backgrounds/about-desktop@1x.png");
-    background-position: bottom right 60px;
-    background-size: auto;
+    width: 630px;
+    height: 655px;
+    top: -43px;
+    right: 0;
   }
 
   .about__title {
     max-width: 350px;
     margin-bottom: 61px;
-    position: relative;
-    z-index: 2;
-
-  }
-
-  .about__title::after {
-    content: "";
-    display: block;
-    width: 213px;
-    height: 213px;
-    border-radius: 20px;
-    background-color: $color__background-section;
-    z-index: -1;
-    top: -65px;
-    left: -65px;
-    position: absolute;
   }
 
   .about__description {
     max-width: 620px;
-    margin-bottom: 44px;
-    position: relative;
-    z-index: 2;
+    margin-bottom: 39px;
   }
 
   .about .text--attention {
