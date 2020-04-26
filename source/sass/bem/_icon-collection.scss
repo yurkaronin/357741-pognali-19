@@ -8,18 +8,21 @@
 
 .icon-facebook::before {
   background-image: url("../img/icons/facebook.svg");
+  background-size: 18px 18px;
   width: 11px;
   height: 21px;
 }
 
 .icon-vkontakte::before {
   background-image: url("../img/icons/vk.svg");
+  background-size: 18px 18px;
   width: 23px;
   height: 12px;
 }
 
 .icon-Instagram::before {
   background-image: url("../img/icons/instagram.svg");
+  background-size: 18px 18px;
   width: 18px;
   height: 18px;
 }
@@ -45,6 +48,24 @@
   background-image: url("../img/icons/human.svg");
 }
 
+@media (min-width: 768px) {
+  .icon-facebook::before {
+    background-image: url("../img/icons/facebook.svg");
+    background-size: 14px 28px;
+  }
+
+  .icon-vkontakte::before {
+    background-image: url("../img/icons/vk.svg");
+    background-size: 31px 16px;
+  }
+
+  .icon-Instagram::before {
+    background-image: url("../img/icons/instagram.svg");
+    background-size: 24px 24px;
+  }
+
+}
+
 @media (min-width: 1440px) {
   .icon-telephone::before {
     background-image: url("../img/icons/topmenu-phone.svg");
@@ -56,4 +77,3 @@
 
 
 }
-

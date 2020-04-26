@@ -5,9 +5,6 @@
 @import "calendar-table";
 @import "city-filter";
 
-/* Копирайт в подвале сайта */
-@import "copyright";
-
 @import "countries-list";
 
 /* список анонсов популярных стран дляпутешествий на главной стр.  */
@@ -41,7 +38,11 @@
 @import "travelers-list";
 @import "travelers-result";
 
-/* блок с контактной информацией  */
-@import "contact-list";
 @import "user-status";
 @import "wishlist";
+
+/* блок с контактной информацией  */
+@import "contact-list";
+
+/* Копирайт в подвале сайта */
+@import "copyright";

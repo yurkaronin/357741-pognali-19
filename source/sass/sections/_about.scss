@@ -2,7 +2,7 @@
   background-color: #192144;
   color: $color__text--white;
   padding-top: 30px;
-  padding-bottom: 85px;
+  padding-bottom: 63px;
   background-image: url("../img/backgrounds/about-mobile@1x.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@
 
   .about .container {
     background-image: url("../img/backgrounds/about-tablet@1x.png");
-    background-position: top center;
+    background-position: top 4px right 4px;
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 41px;
@@ -69,7 +69,7 @@
   }
 
   .about__title {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     max-width: 280px;
   }
 
@@ -86,11 +86,12 @@
 
   .about__button {
     max-width: 274px;
-    display: block;
+    display: flex;
     text-align: left;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
+    padding: 27px 60px 30px 35px;
   }
 
   .about .button--arrow::after {

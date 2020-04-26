@@ -22,3 +22,25 @@
 .copyright__developers-image {
   max-width: 27px;
 }
+
+@media (min-width: 768px) {
+  .copyright {
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .copyright__developers-link {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .copyright__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-right: 25px;
+    margin-top: -7px;
+  }
+
+
+}

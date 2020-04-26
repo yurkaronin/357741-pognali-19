@@ -92,6 +92,8 @@
 @media (min-width: 768px) {
   .registration {
     padding-top: 70px;
+    padding-bottom: 58px;
+    border-radius: 0 0 60px 60px;
   }
 
   .registration__title {
@@ -100,7 +102,7 @@
     line-height: 45px;
     max-width: 100%;
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   .registration__text {
@@ -111,7 +113,7 @@
   }
 
   .registration__text--last {
-    margin-bottom: 60px;
+    margin-bottom: 66px;
   }
 
   .registration__form {
@@ -139,6 +141,23 @@
 
   .registration__button-form::after {
     position: static;
+  }
+
+  .registration .contact-list__detail {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .registration__contacts-wrapper .registration__text {
+    margin-bottom: 42px;
+  }
+
+  .registration__contact-list {
+    margin-left: 35px;
+  }
+
+  .contact-list__detail {
+    margin-left: 22px;
   }
 
 }

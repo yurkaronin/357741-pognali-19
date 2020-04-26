@@ -26,6 +26,15 @@
   font-weight: 700;
 }
 
+@media (min-width: 768px) {
+  .contact-list__link::before {
+    width: 68px;
+    height: 68px;
+    background-size: 27px 27px;
+  }
+
+}
+
 
 @media (min-width: 1440px) {
   .contact-list__item {

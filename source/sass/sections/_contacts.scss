@@ -37,3 +37,46 @@
   display: block;
   text-align: left;
 }
+
+@media (min-width: 768px) {
+  .contacts {
+    padding-top: 32px;
+    padding-bottom: 88px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .contacts .container {
+    padding: 0px 75px;
+  }
+
+  .contacts .contact-list__link::before {
+    background-size: 21px 32px;
+    width: 68px;
+    height: 68px;
+  }
+
+  .contacts .contact-list__detail {
+    max-width: 100%;
+    font-size: 28px;
+    line-height: 28px;
+    margin-left: 22px;
+  }
+
+  .contacts__contact-list {
+    margin-bottom: 42px;
+  }
+
+  .contacts__button {
+    border-radius: 20px;
+    padding: 25px 120px 26px 33px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+  }
+
+  .contacts__button::after {
+    right: 26px;
+  }
+
+}

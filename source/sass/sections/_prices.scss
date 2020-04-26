@@ -36,18 +36,6 @@
   position: relative;
 }
 
-.prices__list::after {
-  content: "";
-    display: block;
-    background-image: url(../img/icons/rates.png);
-    width: 99px;
-    height: 99px;
-    top: -125px;
-    right: -25px;
-    background-repeat: no-repeat;
-    position: absolute;
-}
-
 .business-price {
   display: none;
 }

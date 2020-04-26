@@ -182,6 +182,10 @@
 }
 
 @media (min-width: 768px) {
+  .header {
+    margin-bottom: -1px;
+  }
+
   .header__authorization-button {
     display: block;
   }
@@ -214,7 +218,7 @@
   }
 
   .header__navigation {
-    padding-top: 42px;
+    padding-top: 40px;
     background-color: #182044;
   }
 

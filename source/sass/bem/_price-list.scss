@@ -4,6 +4,19 @@
   counter-reset: li;
   flex-wrap: wrap;
   margin-bottom: 31px;
+  position: relative;
+}
+
+.prices__list::after {
+  content: "";
+  display: block;
+  background-image: url("../img/icons/rates.png");
+  width: 99px;
+  height: 99px;
+  top: -125px;
+  right: -25px;
+  background-repeat: no-repeat;
+  position: absolute;
 }
 
 .price-list__item {
@@ -81,8 +94,15 @@
     line-height: 28px;
   }
 
-  .price-list::after {
-    content: "";
+  .prices__list::after {
+    background-image: url(../img/icons/rates.png);
+    width: 100px;
+    height: 99px;
+    top: 218px;
+    right: 34px;
+  }
+
+  .price-list::before {
     content: "";
     position: absolute;
     right: -15px;
@@ -92,11 +112,11 @@
     border-radius: 20px;
     background-color: #e2e5f2;
     z-index: 0;
-}
+  }
 
-.price-list__cost {
-  padding-right: 20px;
-  max-width: 150px;
-}
+  .price-list__cost {
+    padding-right: 24px;
+    max-width: 154px;
+  }
 
 }

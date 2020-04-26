@@ -121,17 +121,21 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 17.68px;
+    max-width: 100%;
   }
 
   .directions-list__flag {
-    top: 10px;
-    right: -20px;
+    top: 15px;
+    right: -35px;
     width: 70px;
     height: 47px;
   }
 
   .directions-list__item-description {
-    padding: 27px 25px 0 31px;
+    padding: 0;
+    max-width: 380px;
+    padding: 28px 20px 0px 29px;
+    margin-bottom: -7px;
   }
 
 }
