@@ -1,5 +1,5 @@
 .directions {
-  padding-top: 72px;
+  padding-top: 67px;
   padding-bottom: 27px;
   border-radius: 0 0 30px 30px;
   background-color: #edeff6;
@@ -26,12 +26,13 @@
 }
 
 .directions__title {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .directions__description {
   margin-bottom: 63px;
   max-width: 100%;
+  padding-right: 25px;
 }
 
 .directions__list {
@@ -96,6 +97,14 @@
 
   .directions__description {
     margin-bottom: 110px;
+    padding-right: 0;
+  }
+
+  .directions .container {
+    background-image: url("../img/backgrounds/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right 40px top 10px;
+
   }
 
 }

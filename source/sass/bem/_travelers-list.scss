@@ -1,0 +1,128 @@
+.travelers-list__details-wrapper {
+  border-radius: 0 0 10px 10px;
+  background-color: #ffffff;
+  padding: 27px 45px 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.travelers__list {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.travelers-list__item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  max-width: 270px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.travelers-list__link {
+  color: #1d2e5b;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  max-width: 140px;
+}
+
+.travelers-list__hashtag {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  max-width: 180px;
+  text-align: center;
+}
+
+.travelers-list__transport {
+  max-width: 122px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.travelers-list__flags {
+  max-width: 145px;
+  position: absolute;
+  top: -10px;
+}
+
+.travelers-list__level {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+}
+
+@media (min-width: 768px) {
+  .travelers-list__item:last-child {
+    margin-right: 0;
+  }
+
+  .travelers-list__details-wrapper {
+    padding: 28px 20px 30px;
+    margin-top: 0;
+  }
+
+  .travelers-list__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    max-width: 170px;
+    margin-bottom: 20px;
+  }
+
+  .travelers-list__hashtag {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .travelers-list__item {
+    margin-right: 60px;
+    margin-bottom: 20px;
+    max-width: 285px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .travelers-list__photo {
+    width: 100%;
+    height: auto;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    z-index: 2;
+    position: relative;
+  }
+
+  .travelers-list__item:last-child {
+    margin-right: 0;
+  }
+
+  .travelers-list__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 20px;
+    max-width: 150px;
+  }
+
+  .travelers-list__details-wrapper {
+    padding: 30px 20px 27px;
+  }
+
+  .travelers-list__hashtag {
+    max-width: 100%;
+  }
+}
