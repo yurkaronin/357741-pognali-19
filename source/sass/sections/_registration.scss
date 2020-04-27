@@ -161,3 +161,86 @@
   }
 
 }
+
+@media (min-width: 1440px) {
+  .registration {
+    padding-top: 100px;
+    padding-bottom: 105px;
+  }
+
+  .registration__text--last {
+    margin-bottom: 58px;
+  }
+
+  .registration__form {
+    padding: 0;
+    margin-bottom: 58px;
+    max-width: 1174px;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 67px;
+  }
+
+  .registration__data-email {
+    width: 850px;
+  }
+
+  .registration__button-form {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .registration__button-form {
+    right: 0;
+    width: 325px;
+  }
+
+  .registration__button-form {
+    padding: 24px 55px 24px 37px;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .registration .button--arrow::after {
+    position: absolute;
+    right: 30px;
+  }
+
+  .registration .registration__contact-list {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 876px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .registration .contact-list__item {
+    max-width: 428px;
+    width: 100%;
+    margin-right: 11px;
+  }
+
+  .registration .contact-list__item:last-child {
+    margin-right: 0;
+  }
+
+  .registration__contacts-wrapper .registration__text {
+    margin-bottom: 45px;
+  }
+
+  .registration .contact-list__detail {
+    margin-left: 32px;
+  }
+
+  .registration .contact-list__link::before {
+    width: 90px;
+    height: 90px;
+    padding: 27px;
+    background-color: #121936;
+}
+
+}
