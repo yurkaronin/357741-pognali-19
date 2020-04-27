@@ -129,6 +129,11 @@
 
   }
 
+  .about::before {
+    top: -80px;
+    height: 120px;
+  }
+
   .about__header {
     padding-left: 70px;
   }
