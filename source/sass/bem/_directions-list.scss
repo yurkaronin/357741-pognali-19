@@ -139,3 +139,20 @@
   }
 
 }
+
+@media (min-width: 1440px) {
+  .directions-list__item-description {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .directions-list__details-wrapper {
+    max-width: 340px;
+  }
+
+  .directions-list__flag {
+    top: 22px;
+    right: -70px;
+  }
+
+}
