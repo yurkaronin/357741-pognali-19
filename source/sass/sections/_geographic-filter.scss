@@ -63,12 +63,14 @@
   line-height: 0;
   font-weight: 0;
   max-width: 23px;
+  background-image: url("../img/icons/dots.svg");
+  background-size: 17px 3px;
+  background-position: center;
 }
 
 .geographic-filter__button--open {
-  background-size: 17px 3px;
-  background-image: url("../img/icons/dots.svg");
-  background-position: center;
+  background-image: url("../img/icons/filter-close.svg");
+  background-size: 12px 12px;
 }
 
 .geographic-filter__region-wrapper {
