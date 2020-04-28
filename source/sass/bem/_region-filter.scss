@@ -1,0 +1,31 @@
+.region-filter {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 194px;
+  margin: 0 auto;
+  margin-left: 0;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.region-filter__item {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.region-filter__link {
+  color: #192144;
+  font-family: $font-family_base;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
+  max-width: 100%;
+  opacity: 0.3;
+}
+
+.region-filter__link--active {
+  opacity: 1;
+}

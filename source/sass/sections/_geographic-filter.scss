@@ -1,0 +1,94 @@
+.geographic-filter {
+  border-radius: 0 0 20px 20px;
+  background-color: #e2e5f2;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.geographic-filter::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  background-color: #e2e5f2;
+  z-index: -1;
+  top: -30px;
+}
+
+.geographic-filter__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.geographic-filter__title {
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 27px;
+}
+
+.geographic-filter__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: 15px 10px;
+  background-position: center;
+  background-image: url("../img/icons/filter.svg");
+}
+
+.geographic-filter__button {
+  display: flex;
+  border: 0;
+  background: 0 0;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0;
+  line-height: 0;
+  font-weight: 0;
+  max-width: 23px;
+}
+
+.geographic-filter__button--open {
+  background-size: 17px 3px;
+  background-image: url("../img/icons/dots.svg");
+  background-position: center;
+}
+
+.geographic-filter__region-wrapper {
+  display: none;
+  margin-top: 29px;
+  padding-left: 27px;
+}
+
+.geographic-filter--open {
+  padding-bottom: 27px;
+}
+
+.geographic-filter--open .geographic-filter__region-wrapper {
+  display: block;
+}
+
+.geographic-filter__countries {
+  max-width: 220px;
+}
+
+.geographic-filter__button-closed {
+  max-width: 270px;
+}

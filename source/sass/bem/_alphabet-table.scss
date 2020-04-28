@@ -1,0 +1,27 @@
+.alphabet-table__cell {
+  border: 1px solid #cbced9;
+  padding: 13px 15px;
+}
+
+.alphabet-table__link {
+  color: #1d2e5b;
+  font-family: $font-family_base;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.alphabet-table__cell--active {
+  border: 1px solid #1d2e5b;
+  background-color: #1d2e5b;
+}
+
+.alphabet-table__cell--active .alphabet-table__link {
+  color: #ffffff;
+}

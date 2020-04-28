@@ -1,5 +1,8 @@
 @import "action-list";
+
+/* таблица с алфавитом в фильтре поиска по городам  */
 @import "alphabet-table";
+
 @import "business-price";
 @import "button-collection";
 @import "calendar-table";
@@ -48,3 +51,6 @@
 
 /* Копирайт в подвале сайта */
 @import "copyright";
+
+/* фильтр по странам на странице каталога  */
+@import "country-filter";

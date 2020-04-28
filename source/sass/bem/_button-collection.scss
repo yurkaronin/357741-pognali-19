@@ -28,6 +28,42 @@
   border-left: 10px solid $color-arrow__icon;
 }
 
+.button-icon {
+  border-radius: 20px;
+  background-color: #d6daed;
+  width: 100%;
+  color: #161c35;
+  font-family: $font-family_base;
+  padding: 14px 40px 13px;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.button-icon__decorate {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.button-icon__decorate::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url("../img/icons/filter-close.svg");
+}
+
 @media (min-width: 768px) {
   .button {
     font-size: 20px;
