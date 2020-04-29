@@ -15,14 +15,3 @@ navToggle.addEventListener("click", function() {
     nav.classList.remove("header__navigation--white");
   }
 });
-
-window.addEventListener("scroll", function() {
-  nav.classList.add("header__navigation--white");
-  nav.classList.add("header__navigation--scrolled");
-  nav.classList.remove(".header__navigation--inner");
-  if (pageYOffset === 0 && nav.classList.contains("header__navigation--inactive")) {
-    nav.classList.remove("header__navigation--white");
-    nav.classList.remove("header__navigation--scrolled");
-    nav.classList.add("header__navigation--inner");
-  }
-});
