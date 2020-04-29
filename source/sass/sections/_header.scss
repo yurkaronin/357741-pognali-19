@@ -1,6 +1,5 @@
 .header {
   position: relative;
-
   color: #fff;
   background-color: #161c36;
 }
@@ -8,14 +7,7 @@
 .header__navigation {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 31px;
-}
-
-
-.header__navigation--active {
-  color: #192144;
-  background-color: #fff;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .15);
+  padding-bottom: 40px;
 }
 
 /* пункты меню  */
@@ -32,10 +24,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.header__navigation--active .header__navigation-list {
-  display: block;
 }
 
 .header__navigation-item {
@@ -71,23 +59,6 @@
   position: relative;
 
   display: block;
-}
-
-.header__navigation--active .header__logo-link:after {
-  position: absolute;
-  z-index: 200;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100%;
-
-  content: '';
-
-  background-image: url('../img/logo/logo-mobile-blue@1x.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .header__button-menu {
@@ -131,25 +102,6 @@
   left: 2px;
 }
 
-.header__navigation--active .header__button-menu::after,
-.header__navigation--active .header__button-menu::before {
-  background-color: #ccc;
-}
-
-.header__navigation--active .header__button-menu::after {
-  top: 12px;
-
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.header__navigation--active .header__button-menu::before {
-  top: 12px;
-
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
 /* кнопка  авторизации  */
 .header__authorization-button {
   display: none;
@@ -159,17 +111,9 @@
   padding: 18px 80px 16px 80px;
 }
 
-.header__navigation--active .header__authorization-button {
-  display: block;
-}
-
 /* список контактов в шапке  */
 .header__contacts-wrapper {
   display: none;
-}
-
-.header__navigation--active .header__contacts-wrapper {
-  display: block;
 }
 
 .header__contact-list {
@@ -177,7 +121,7 @@
 }
 
 .header__social-list {
-  max-width: 105px;
+  max-width: 130px;
   margin: 0 auto;
 }
 
@@ -219,6 +163,104 @@
 
 .header--catalog .header__button-menu {
   width: 28px;
+}
+
+.header__logo-link {
+  position: relative;
+}
+
+/* прилипающее меню  */
+.header__navigation--white {
+  & {
+    background-color: #ffffff;
+    color: #192144;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    padding-bottom: 20px;
+  }
+
+  & .header__button-menu::after,
+  & .header__button-menu::before {
+    background-color: #cccccc;
+  }
+
+  & .header__logo-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../img/logo/logo-mobile-blue@1x.png");
+  }
+
+}
+
+/* меню в активном состоянии  */
+.header__navigation--active {
+  & {
+    color: #192144;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .15);
+    position: fixed;
+    z-index: 9999;
+    max-width: 100%;
+  }
+
+  & .header__navigation-list {
+    display: block;
+  }
+
+  & .header__logo-link:after {
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background-image: url('../img/logo/logo-mobile-blue@1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  & .header__button-menu::after,
+  & .header__button-menu::before {
+    background-color: #ccc;
+  }
+
+  & .header__button-menu::after {
+    top: 12px;
+
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  & .header__button-menu::before {
+    top: 12px;
+
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  & .header__authorization-button {
+    display: block;
+  }
+
+  & .header__contacts-wrapper {
+    display: block;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -269,6 +311,97 @@
   .header__logo-link {
     margin-top: 2px;
   }
+
+  .header__navigation--active {
+    & {
+      background-color: #fff;
+      padding-top: 42px;
+      padding-bottom: 88px;
+    }
+
+    & .header__logo-link:after {
+      background-image: url("../img/logo/logo-tablet-blue@2x.png");
+    }
+
+    & .header__logo-wrapper {
+      order: 0;
+    }
+
+    & .header__authorization-button {
+      order: 2;
+    }
+
+    & .header__navigation-list {
+      order: 3;
+      max-width: 100%;
+      width: 100%;
+      margin-top: 88px;
+      margin-bottom: 135px;
+      margin-left: 55px;
+    }
+
+    & .header__contacts-wrapper {
+      order: 4;
+      margin-left: 55px;
+    }
+
+    & .header__logo-link {
+      margin-top: 0;
+    }
+
+    & .header__button-menu {
+      margin-top: 4px;
+    }
+
+    & .button {
+      line-height: 100%;
+    }
+
+    & .header__navigation-item {
+      justify-content: start;
+    }
+
+    & .header__navigation-link {
+      color: #192144;
+      font-size: 60px;
+      font-weight: 500;
+      line-height: 71.01px;
+      text-transform: uppercase;
+    }
+
+    & .contact-list__detail {
+      margin-left: 22px;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 28px;
+    }
+
+    & .header__contact-list {
+      margin-bottom: 132px;
+    }
+
+    & .header__social-list {
+      justify-content: start;
+      margin-left: 0;
+      max-width: 100%;
+    }
+
+    & .social-list__link {
+      margin: 0px 9px 0 18px;
+    }
+
+    & .social-list__link::before,
+    & .icon-vkontakte::before,
+    & .icon-facebook::before,
+    & .icon-Instagram::before {
+      width: 33px;
+      height: 30px;
+    }
+
+
+  }
+
+
 }
 
 @media (min-width: 1440px) {
