@@ -68,29 +68,138 @@
   background-position: center;
 }
 
-.geographic-filter__button--open {
-  background-image: url("../img/icons/filter-close.svg");
-  background-size: 12px 12px;
-}
-
 .geographic-filter__region-wrapper {
-  display: none;
-  margin-top: 29px;
-  padding-left: 27px;
+  margin: 0;
 }
 
+.geographic-filter__list {
+  display: none;
+}
+
+.geographic-filter__countries {
+  max-width: 220px;
+  display: none;
+}
+
+.geographic-filter__button-closed {
+  display: none;
+  max-width: 270px;
+}
+
+@media (min-width: 768px) {
+  .geographic-filter {
+    padding-top: 57px;
+    padding-bottom: 56px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .geographic-filter .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 74px;
+  }
+
+  .geographic-filter__region-wrapper {
+    max-width: 365px;
+    order: -1;
+  }
+
+  .geographic-filter__list {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .region-filter__item {
+    margin-bottom: 0;
+    margin-right: 27px;
+    max-width: 25%;
+  }
+
+  .region-filter__item:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .geographic-filter__title {
+    display: none;
+  }
+
+  .geographic-filter__header {
+    max-width: 180px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .geographic-filter__button {
+    color: #192144;
+    font-family: $font-family_base;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-image: none;
+    max-width: 156px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 27px;
+    padding-right: 20px;
+  }
+
+  .geographic-filter__button::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 27px;
+    height: 20px;
+    background-image: url("../img/icons/dots.svg");
+    background-size: 27px 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -27px;
+  }
+
+  .region-filter__link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+}
+
+/* фильтра развёрнут  */
 .geographic-filter--open {
   padding-bottom: 27px;
+}
+
+.geographic-filter--open .geographic-filter__list {
+  display: flex;
+}
+
+.geographic-filter--open .geographic-filter__countries {
+  display: block;
+}
+
+.geographic-filter--open .geographic-filter__region-wrapper {
+  margin-top: 29px;
+  padding-left: 27px;
 }
 
 .geographic-filter--open .geographic-filter__region-wrapper {
   display: block;
 }
 
-.geographic-filter__countries {
-  max-width: 220px;
+.geographic-filter--open .geographic-filter__button-closed {
+  display: flex;
 }
 
-.geographic-filter__button-closed {
-  max-width: 270px;
+.geographic-filter--open .geographic-filter__button {
+  background-image: url("../img/icons/filter-close.svg");
+  background-size: 12px 12px;
 }
