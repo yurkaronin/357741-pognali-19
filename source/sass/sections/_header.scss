@@ -113,7 +113,7 @@
 
 .header__title {
   position: relative;
-  max-width: 100%;
+  display: inline-flex;
 }
 
 .header__title::after {
