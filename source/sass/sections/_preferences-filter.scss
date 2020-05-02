@@ -136,7 +136,7 @@
 .preferences-group input[type=checkbox]:checked+label::after {
 display: block;
 }
-
+/* обводка активного декоративного чекбокса для лучшей доступности  */
 .preferences-group input:focus+.preferences-group__label::before {
   box-shadow: 0 0 0 3px rgba(0,123,255,.5);
 }
