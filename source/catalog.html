@@ -900,114 +900,119 @@
     </section>
 
     <section class="preferences-filter">
-      <h2 class="preferences-filter__title  title">Подберите идеального попутчика</h2>
-      <form class="preferences-filter__form" method="get" action="https://echo.htmlacademy.ru">
+      <div class="preferences__wrapper  container">
 
-        <figure class="preferences-filter__wrapper  preferences-group">
-          <figcaption class="preferences-group__title">Хобби</figcaption>
-          <button class="preferences-group__button" type="button">Показать список увлечений</button>
-          <ul class="preferences-group__list">
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-sports">
-              <label class="preferences-group__label" for="love-sports">Спорт</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-hookah">
-              <label class="preferences-group__label" for="love-hookah">Кальян</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-sofa">
-              <label class="preferences-group__label" for="love-sofa">Диван</label>
-            </li>
-          </ul>
-        </figure>
+        <h2 class="preferences-filter__title  title">Подберите идеального попутчика</h2>
+        <form class="preferences-filter__form" method="get" action="https://echo.htmlacademy.ru">
 
-        <figure class="preferences-filter__wrapper  preferences-group">
-          <figcaption class="preferences-group__title">Музыка</figcaption>
-          <button class="preferences-group__button" type="button">Показать список музыки</button>
-          <ul class="preferences-group__list">
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-rock">
-              <label class="preferences-group__label" for="love-rock">Тяжелый рок</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-rap">
-              <label class="preferences-group__label" for="love-rap">Русский рэп</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-dance">
-              <label class="preferences-group__label" for="love-dance">Евроденс</label>
-            </li>
-          </ul>
-        </figure>
+          <figure class="preferences-filter__wrapper  preferences-group">
+            <figcaption class="visually-hidden">Список хобби попутчиков</figcaption>
+            <button class="preferences-group__button" type="button">Хобби</button>
+            <ul class="preferences-group__list">
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-sports">
+                <label class="preferences-group__label" for="love-sports">Спорт</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-hookah">
+                <label class="preferences-group__label" for="love-hookah">Кальян</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-sofa">
+                <label class="preferences-group__label" for="love-sofa">Диван</label>
+              </li>
+            </ul>
+          </figure>
 
-        <figure class="preferences-filter__wrapper  preferences-group">
-          <figcaption class="preferences-group__title">Еда</figcaption>
-          <button class="preferences-group__button" type="button">Показать список еды</button>
-          <ul class="preferences-group__list">
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-meat">
-              <label class="preferences-group__label" for="love-meat">Мясоед</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-pp">
-              <label class="preferences-group__label" for="love-pp">Сидит на ПП</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-vegan">
-              <label class="preferences-group__label" for="love-vegan">Веган-сыроед</label>
-            </li>
-          </ul>
-        </figure>
+          <figure class="preferences-filter__wrapper  preferences-group  preferences-group--active">
+            <figcaption class="visually-hidden">Список любимой музыки попутчиков</figcaption>
+            <button class="preferences-group__button" type="button">Музыка</button>
+            <ul class="preferences-group__list  list">
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-rock">
+                <label class="preferences-group__label" for="love-rock">Тяжелый рок</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-rap">
+                <label class="preferences-group__label" for="love-rap">Русский рэп</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-dance">
+                <label class="preferences-group__label" for="love-dance">Евроденс</label>
+              </li>
+            </ul>
+          </figure>
 
-        <figure class="preferences-filter__wrapper  preferences-group">
-          <figcaption class="preferences-group__title">Транспорт</figcaption>
-          <button class="preferences-group__button" type="button">Показать список транспорта</button>
-          <ul class="preferences-group__list">
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-plane">
-              <label class="preferences-group__label" for="love-plane">Самолет</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-bus">
-              <label class="preferences-group__label" for="love-bus">Автобус</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-bike">
-              <label class="preferences-group__label" for="love-bike">Велосипед</label>
-            </li>
-            <li class="preferences-group__item">
-              <input class="preferences-group__checkbox" type="checkbox" id="love-hiking">
-              <label class="preferences-group__label" for="love-hiking">Пешком</label>
-            </li>
-          </ul>
-        </figure>
+          <figure class="preferences-filter__wrapper  preferences-group">
+            <figcaption class="visually-hidden">Список любимой еды попутчиков</figcaption>
+            <button class="preferences-group__button" type="button">Еда</button>
+            <ul class="preferences-group__list">
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-meat">
+                <label class="preferences-group__label" for="love-meat">Мясоед</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-pp">
+                <label class="preferences-group__label" for="love-pp">Сидит на ПП</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-vegan">
+                <label class="preferences-group__label" for="love-vegan">Веган-сыроед</label>
+              </li>
+            </ul>
+          </figure>
 
-        <figure class="preferences-filter__wrapper  preferences-group">
-          <figcaption class="preferences-group__title">Левел</figcaption>
-          <button class="preferences-group__button" type="button">Показать настройки уровня попутчиков</button>
-          <div class="preferences-group__level  level-options">
-            <div class="level-options__wrapper">
-              <input class="level-options__input" type="text" value="30" name="level" aria-label="Минимальный уровень">
-              <input class="level-options__input" type="text" value="100" name="level"
-                aria-label="Максимальный уровень">
+          <figure class="preferences-filter__wrapper  preferences-group">
+            <figcaption class="visually-hidden">Список любимого транспорта попутчиков</figcaption>
+            <button class="preferences-group__button" type="button">Транспорт</button>
+            <ul class="preferences-group__list">
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-plane">
+                <label class="preferences-group__label" for="love-plane">Самолет</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-bus">
+                <label class="preferences-group__label" for="love-bus">Автобус</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-bike">
+                <label class="preferences-group__label" for="love-bike">Велосипед</label>
+              </li>
+              <li class="preferences-group__item">
+                <input class="visually-hidden" type="checkbox" id="love-hiking">
+                <label class="preferences-group__label" for="love-hiking">Пешком</label>
+              </li>
+            </ul>
+          </figure>
+
+          <figure class="preferences-filter__wrapper  preferences-group">
+            <figcaption class="visually-hidden">Уровень попутчиков</figcaption>
+            <button class="preferences-group__button" type="button">Левел</button>
+            <div class="preferences-group__level  level-options">
+              <div class="level-options__wrapper">
+                <input class="level-options__input" type="text" value="30" name="level"
+                  aria-label="Минимальный уровень">
+                <input class="level-options__input" type="text" value="100" name="level"
+                  aria-label="Максимальный уровень">
+              </div>
+              <div class="preferences-group__range  range-elements">
+                <div class="range-elements__toggle  range-elements__toggle--min"></div>
+                <div class="range-elements__toggle  range-elements__toggle--max"></div>
+                <div class="range-elements__indicator"></div>
+              </div>
             </div>
-            <div class="preferences-group__range  range-elements">
-              <div class="range-elements__toggle  range-elements__toggle--min"></div>
-              <div class="range-elements__toggle  range-elements__toggle--max"></div>
-              <div class="range-elements__indicator"></div>
-            </div>
-          </div>
-        </figure>
+          </figure>
 
-        <button class="preferences-filter__button  button" type="submit">Показать</button>
-      </form>
+          <button class="preferences-filter__button  button" type="submit">Показать</button>
+        </form>
+
+      </div>
     </section>
 
     <section class="travelers-result">
       <h2 class="visually-hidden">Подходящие варианты попутчиков для вас</h2>
 
-      <ul class="travelers-result__list">
+      <ul class="travelers-result__list  list">
         <li class="travelers-result__item  traveler-card">
           <a class="traveler-card__link" href="">
             <img class="traveler-card__photo  icon-like  liked" src="https://via.placeholder.com/70x70"
@@ -1022,7 +1027,7 @@
 
           <div class="traveler-card__wishlist-wrapper">
             <h4 class="traveler-card__label">Хочет посетить:</h4>
-            <ul class="traveler-card__wishlist   wishlist">
+            <ul class="traveler-card__wishlist   wishlist  list">
               <li class="wishlist__item">
                 <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Шри-Ланки" width="26"
                   height="18">
@@ -1043,7 +1048,7 @@
 
           <div class="traveler-card__transport-wrapper">
             <h4 class="traveler-card__label">Транспорт:</h4>
-            <ul class="traveler-card__transport-list  transport-list">
+            <ul class="traveler-card__transport-list  transport-list  list">
               <li class="transport-list__item  active">
                 <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
                   width="19" height="21">
@@ -1090,7 +1095,7 @@
 
           <div class="traveler-card__wishlist-wrapper">
             <h4 class="traveler-card__label">Хочет посетить:</h4>
-            <ul class="traveler-card__wishlist   wishlist">
+            <ul class="traveler-card__wishlist   wishlist  list">
               <li class="wishlist__item">
                 <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Бельгии" width="26"
                   height="18">
@@ -1105,7 +1110,7 @@
           </div>
           <div class="traveler-card__transport-wrapper">
             <h4 class="traveler-card__label">Транспорт:</h4>
-            <ul class="traveler-card__transport-list  transport-list">
+            <ul class="traveler-card__transport-list  transport-list  list">
               <li class="transport-list__item  active">
                 <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
                   width="19" height="21">
@@ -1152,7 +1157,7 @@
 
           <div class="traveler-card__wishlist-wrapper">
             <h4 class="traveler-card__label">Хочет посетить:</h4>
-            <ul class="traveler-card__wishlist   wishlist">
+            <ul class="traveler-card__wishlist   wishlist  list">
               <li class="wishlist__item">
                 <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг США" width="26"
                   height="18">
@@ -1172,7 +1177,7 @@
           </div>
           <div class="traveler-card__transport-wrapper">
             <h4 class="traveler-card__label">Транспорт:</h4>
-            <ul class="traveler-card__transport-list  transport-list">
+            <ul class="traveler-card__transport-list  transport-list  list">
               <li class="transport-list__item  active">
                 <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
                   width="19" height="21">
@@ -1219,7 +1224,7 @@
 
           <div class="traveler-card__wishlist-wrapper">
             <h4 class="traveler-card__label">Хочет посетить:</h4>
-            <ul class="traveler-card__wishlist   wishlist">
+            <ul class="traveler-card__wishlist   wishlist  list">
               <li class="wishlist__item">
                 <img class="wishlist__flag" src="https://via.placeholder.com/26x18" alt="Флаг Великобритании" width="26"
                   height="18">
@@ -1234,7 +1239,7 @@
           </div>
           <div class="traveler-card__transport-wrapper">
             <h4 class="traveler-card__label">Транспорт:</h4>
-            <ul class="traveler-card__transport-list  transport-list">
+            <ul class="traveler-card__transport-list  transport-list  list">
               <li class="transport-list__item  active">
                 <img class="transport-list__icon" src="https://via.placeholder.com/19x21" alt="Иконка самолёт"
                   width="19" height="21">

@@ -8,13 +8,6 @@
   z-index: 2;
 }
 
-.contacts__map {
-  max-height: 545px;
-  margin-top: -50px;
-  z-index: -1;
-  overflow: hidden;
-}
-
 .contacts__contact-list {
   margin-bottom: 35px;
 }
@@ -129,10 +122,6 @@ margin-right: 0;
     height: 90px;
     background-color: #121936;
     background-size: 28px 43px;
-  }
-
-  .contacts__map {
-    max-height: 475px;
   }
 
 }
