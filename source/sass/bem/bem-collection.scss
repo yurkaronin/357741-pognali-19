@@ -13,7 +13,7 @@
 
 @import "countries-list";
 
-/* список анонсов популярных стран дляпутешествий на главной стр.  */
+/* список анонсов популярных стран для путешествий на главной стр.  */
 @import "directions-list";
 @import "dots-list";
 @import "flags-list";
@@ -41,10 +41,12 @@
 
 /* список видов транспорта  */
 @import "transport-list";
+
+/* карточки путешественников  на странице каталога*/
 @import "traveler-card";
+
 /* Список карточек путешественников на главной  */
 @import "travelers-list";
-@import "travelers-result";
 
 @import "user-status";
 @import "wishlist";
@@ -57,3 +59,6 @@
 
 /* фильтр по странам на странице каталога  */
 @import "country-filter";
+
+/* Пагинация на странице попутчиков  */
+@import "pagination";
