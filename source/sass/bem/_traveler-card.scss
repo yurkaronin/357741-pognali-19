@@ -266,3 +266,166 @@
 .traveler-card__button {
   width: 100%;
 }
+
+@media (min-width: 768px) {
+  .traveler-card__link-photo {
+    width: 100%;
+    height: 190px;
+    border-radius: 20px;
+    margin: 0;
+    margin-right: 33px;
+    max-width: 190px;
+    margin-bottom: 22px;
+  }
+
+  .traveler-card__photo {
+    width: 190px;
+    height: 190px;
+  }
+
+  .traveler-card__button-like {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    max-width: 50px;
+  }
+
+  .traveler-card__link-name {
+    max-width: 330px;
+    margin: 0;
+    padding: 0;
+    display: table;
+    margin-top: -4px;
+  }
+
+  .traveler-card__name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .traveler-card__distance {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 50px;
+    display: table;
+    position: absolute;
+    top: 183px;
+    left: 459px;
+  }
+
+  .traveler-card__button-like::before {
+    width: 20px;
+    height: 17px;
+    top: auto;
+    left: auto;
+  }
+
+  .traveler-card__wishlist-wrapper {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .traveler-card__label {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .traveler-card__label-wrapper::after {
+    width: 600px;
+    right: -30px;
+  }
+
+  .traveler-card__label-wrapper::before {
+    margin-right: 25px;
+    width: 60px;
+    left: -30px;
+  }
+
+  .traveler-card__wishlist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .traveler-card__transport-list {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .traveler-card__transport-wrapper .transport-list__item {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    margin-bottom: 11px;
+  }
+
+  .traveler-card__transport-wrapper .transport-list__icon {
+    width: 100%;
+    height: auto;
+    max-width: 19px;
+  }
+
+  .traveler-card__content-wrapper::before {
+    display: none;
+  }
+
+  .traveler-card__level-wrapper .personal-level {
+    max-width: 60px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .traveler-card__level-wrapper .personal-level__details {
+    top: auto;
+    left: auto;
+  }
+
+  .traveler-card__transport-wrapper {
+    max-width: 32px;
+  }
+
+  .traveler-card__content-wrapper {
+    align-items: center;
+    flex-direction: column;
+    max-width: 60px;
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+  }
+
+  .traveler-card__content-wrapper .traveler-card__label {
+    display: none;
+  }
+
+  .traveler-card__hashtag {
+    position: absolute;
+    top: 80px;
+    left: 260px;
+    margin: 0;
+    max-width: 245px;
+    width: 100%;
+
+  }
+
+  .traveler-card__button {
+    position: absolute;
+    top: 173px;
+    max-width: 148px;
+    right: 284px;
+    padding: 17px 32px;
+  }
+
+  .traveler-card__button-like {
+    top: 175px;
+    position: absolute;
+    left: 402px;
+  }
+
+}

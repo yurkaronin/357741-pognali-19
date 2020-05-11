@@ -35,12 +35,26 @@
 
 .travelers-result__button-more::after {
   content: "";
-    position: absolute;
-    left: 17px;
-    width: 18px;
-    height: 18px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-image: url("../img/icons/show-more-plus.svg");
+  position: absolute;
+  left: 17px;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/icons/show-more-plus.svg");
 }
+
+@media (min-width: 768px) {
+  .travelers-result__list {
+    max-width: 688px;
+  }
+
+  .travelers-result__item {
+    padding: 34px 25px 30px 35px;
+    position: relative;
+  }
+
+}
+
+@media (min-width: 1440px) {}

@@ -22,3 +22,27 @@
   text-transform: uppercase;
   margin-left: 18px;
 }
+
+@media (min-width: 768px) {
+  .wishlist__item {
+    margin-right: 28px;
+    max-width: 205px;
+  }
+
+  .wishlist__item:last-child {
+    margin-right: 0;
+  }
+
+  .wishlist__name {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 11px;
+  }
+
+  .wishlist__flag {
+    width: 35px;
+    height: 24px;
+    left: 0;
+  }
+
+}
