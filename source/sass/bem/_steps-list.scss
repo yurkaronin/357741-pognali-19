@@ -23,8 +23,8 @@
   background-color: #ffd74b;
 }
 
-.steps-list__item:before {
-  font-family: 'Blogger Sans', 'Arial', sans-serif;
+.steps-list__item::before {
+  font-family: $font-family_base;
   font-size: 18px;
   font-weight: 700;
   line-height: 120%;
@@ -35,12 +35,12 @@
 
   display: inline-block;
 
-  content: counters(li, '');
+  content: counters(li, "");
   counter-increment: li;
   text-align: center;
   vertical-align: baseline;
 
-  color: #fff;
+  color: #ffffff;
 }
 
 .steps-list__item:first-child {
@@ -94,7 +94,7 @@
     width: 40px;
     height: 100%;
 
-    content: '';
+    content: "";
 
     background-color: #ff8d30;
   }
@@ -118,7 +118,7 @@
     width: 40px;
     height: 100%;
 
-    content: '';
+    content: "";
 
     background-color: #ffbd30;
   }
@@ -127,7 +127,7 @@
     border-radius: 0 0 20px 20px;
   }
 
-  .steps-list__item:before {
+  .steps-list__item::before {
     font-size: 30px;
     font-weight: 700;
     line-height: 120px;
@@ -149,7 +149,7 @@
     padding-left: 32px;
   }
 
-  .steps-list__item:before {
+  .steps-list__item::before {
     font-size: 24px;
     font-weight: 700;
     line-height: 120px;
@@ -175,7 +175,7 @@
     width: 40px;
     height: 100%;
 
-    content: '';
+    content: "";
 
     background-color: #ffa530;
   }

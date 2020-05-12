@@ -8,7 +8,7 @@
   padding: 30px 45px 18px;
 
   border-radius: 0 0 10px 10px;
-  background-color: #fff;
+  background-color: #ffffff;
 
   flex-wrap: wrap;
   align-items: center;
@@ -53,7 +53,7 @@
 
   text-align: center;
 
-  color: #444;
+  color: #444444;
 }
 
 .travelers-list__transport {
@@ -128,8 +128,6 @@
 
     width: 100%;
     height: auto;
-
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
   }
 
   .travelers-list__item:last-child {

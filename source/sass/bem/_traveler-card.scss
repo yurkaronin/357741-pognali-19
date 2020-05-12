@@ -7,7 +7,7 @@
   padding: 15px 18px 22px 20px;
 
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .traveler-card__link-photo {
@@ -24,7 +24,7 @@
 .traveler-card__photo {
   display: block;
 
-  transition: transform .3s ease-out;
+  transition: transform 0.3s ease-out;
 }
 
 .traveler-card__link-name {
@@ -55,7 +55,7 @@
   width: 6px;
   height: 6px;
 
-  content: '';
+  content: "";
 
   border-radius: 50%;
 }
@@ -80,7 +80,7 @@
 
   text-align: left;
 
-  color: #444;
+  color: #444444;
 }
 
 .traveler-card__wishlist-wrapper {
@@ -98,7 +98,6 @@
   line-height: 1.2;
 
   position: relative;
-  position: relative;
   z-index: 10;
 
   display: flex;
@@ -108,7 +107,7 @@
 
   text-transform: lowercase;
 
-  color: #444;
+  color: #444444;
 }
 
 .traveler-card__label::before,
@@ -118,7 +117,7 @@
 
   height: 1px;
 
-  content: '';
+  content: "";
 
   background-color: #edeff6;
 }
@@ -156,7 +155,7 @@
 
   text-transform: lowercase;
 
-  color: #444;
+  color: #444444;
 }
 
 .traveler-card__title--left {
@@ -170,7 +169,7 @@
 
   height: 1px;
 
-  content: '';
+  content: "";
 
   background-color: #edeff6;
 }
@@ -195,15 +194,11 @@
   right: -23px;
 
   width: 14px;
-}
-
-.traveler-card__title--right::before {
+  height: 1px;
   position: absolute;
   top: 8px;
 
-  height: 1px;
-
-  content: '';
+  content: "";
 
   background-color: #edeff6;
 }
@@ -251,7 +246,7 @@
 .traveler-card__transport-icon {
   position: absolute;
 
-  opacity: .15;
+  opacity: 0.15;
 }
 
 .traveler-card__transport-icon--plane {
@@ -277,7 +272,7 @@
 .traveler-card__level {
   font-size: 24px;
   font-weight: 700;
-  line-height: .75;
+  line-height: 0.75;
 
   position: relative;
 
@@ -339,8 +334,6 @@
   margin-top: -35px;
   margin-left: 46px;
 
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -371,10 +364,10 @@
   width: 13px;
   height: 11px;
 
-  content: '';
+  content: "";
 
-  opacity: .3;
-  background-image: url('../img/icons/heart.svg');
+  opacity: 0.3;
+  background-image: url("../img/icons/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -387,7 +380,7 @@
 
 .traveler-card__button-like--active::before {
   opacity: 1;
-  background-image: url('../img/icons/heart-active.svg');
+  background-image: url("../img/icons/heart-active.svg");
 }
 
 .traveler-card__likes-number {
@@ -427,7 +420,7 @@
     width: 190px;
     height: 190px;
 
-    transition: transform .3s ease-out;
+    transition: transform 0.3s ease-out;
   }
 
   .traveler-card__link-name {
@@ -478,7 +471,7 @@
     width: 111px;
     height: 1px;
 
-    content: '';
+    content: "";
 
     background-color: #edeff6;
   }
@@ -491,7 +484,7 @@
     width: 510px;
     height: 1px;
 
-    content: '';
+    content: "";
 
     background-color: #edeff6;
   }
@@ -587,8 +580,8 @@
 
     padding-top: 2px;
 
-    color: rgba(68, 68, 68, .4);
-    border-top: 1px solid rgba(0, 0, 0, .1);
+    color: rgba(68, 68, 68, 0.4);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .traveler-card__button-and-like {

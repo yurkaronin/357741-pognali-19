@@ -31,7 +31,7 @@
   position: absolute;
   right: 15px;
 
-  content: '';
+  content: "";
 
   border: 8px solid transparent;
   border-left: 10px solid $color-arrow__icon;
@@ -77,9 +77,9 @@
   width: 12px;
   height: 12px;
 
-  content: '';
+  content: "";
 
-  background-image: url('../img/icons/filter-close.svg');
+  background-image: url("../img/icons/filter-close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

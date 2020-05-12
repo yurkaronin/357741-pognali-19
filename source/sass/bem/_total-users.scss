@@ -16,8 +16,8 @@
 
   text-transform: uppercase;
 
-  opacity: .3;
-  color: #444;
+  opacity: 0.3;
+  color: #444444;
 
   align-items: center;
 }
@@ -31,7 +31,7 @@
   width: 11px;
   height: 11px;
 
-  content: '';
+  content: "";
 }
 
 @media (min-width: 768px) {
@@ -51,6 +51,6 @@
     width: 20px;
     height: 20px;
 
-    opacity: .6;
+    opacity: 0.6;
   }
 }

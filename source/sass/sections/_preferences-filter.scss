@@ -52,12 +52,10 @@
   margin-bottom: 13px;
   padding-right: 70px;
   padding-bottom: 21px;
-  padding-bottom: 21px;
 
   text-transform: none;
 }
 
-.preferences-filter__wrapper::after,
 .preferences-filter__title::after {
   position: absolute;
   bottom: 0;
@@ -68,7 +66,7 @@
   width: 100%;
   height: 1px;
 
-  content: '';
+  content: "";
 
   background-color: #f3c72b;
 }
@@ -101,7 +99,7 @@
   width: 8px;
   height: 4px;
 
-  content: '';
+  content: "";
 
   border: 4px solid transparent;
   border-top-color: #1d2e5b;
@@ -130,7 +128,7 @@
 
   cursor: pointer;
 
-  color: #444;
+  color: #444444;
 }
 
 .preferences-group__label::before {
@@ -141,10 +139,10 @@
   width: 18px;
   height: 18px;
 
-  content: '';
+  content: "";
 
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .preferences-group__label::after {
@@ -157,22 +155,22 @@
   width: 9px;
   height: 9px;
 
-  content: '';
+  content: "";
 
-  background-image: url('../img/icons/tick.svg');
+  background-image: url("../img/icons/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 /* чекбокс активен  */
-.preferences-group input[type=checkbox]:checked+label::after {
+.preferences-group input[type="checkbox"]:checked + label::after {
   display: block;
 }
 
 /* обводка активного декоративного чекбокса для лучшей доступности  */
-.preferences-group input:focus+.preferences-group__label::before {
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, .5);
+.preferences-group input:focus + .preferences-group__label::before {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
 /* Опция активна (развёрнута)  */
@@ -202,7 +200,7 @@
   color: #161c35;
   border: none;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -248,7 +246,6 @@
     display: flex;
 
     width: 100%;
-    max-width: 100px;
     max-width: 125px;
     height: 16px;
     margin-right: 10px;
@@ -290,11 +287,7 @@
     max-width: 100%;
     min-height: auto;
 
-    color: #444;
-  }
-
-  .preferences-group__label::before {
-    top: auto;
+    color: #444444;
   }
 
   .preferences-group__label::before {
@@ -305,7 +298,7 @@
     height: 24px;
   }
 
-  .preferences-group input[type=checkbox]:checked+label::after {
+  .preferences-group input[type="checkbox"]:checked + label::after {
     top: 4px;
     left: -2px;
 
@@ -340,7 +333,7 @@
     width: 100%;
     height: 1px;
 
-    content: '';
+    content: "";
 
     background-color: #f3c72b;
   }

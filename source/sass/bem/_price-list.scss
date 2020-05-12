@@ -21,9 +21,9 @@
   width: 99px;
   height: 99px;
 
-  content: '';
+  content: "";
 
-  background-image: url('../img/icons/rates.png');
+  background-image: url("../img/icons/rates.png");
   background-repeat: no-repeat;
 }
 
@@ -53,10 +53,10 @@
   height: 34px;
   padding: 18px;
 
-  content: counters(li, '');
+  content: counters(li, "");
   counter-increment: li;
 
-  color: #fff;
+  color: #ffffff;
   border-radius: 50%;
   background-color: #ffa530;
 
@@ -124,7 +124,7 @@
     width: 100px;
     height: 99px;
 
-    background-image: url(../img/icons/rates.png);
+    background-image: url("../img/icons/rates.png");
   }
 
   .price-list::before {
@@ -136,7 +136,7 @@
     width: 200px;
     height: 145%;
 
-    content: '';
+    content: "";
 
     border-radius: 20px;
     background-color: #e2e5f2;

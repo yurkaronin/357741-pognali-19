@@ -2,7 +2,7 @@
   padding-top: 68px;
   padding-bottom: 30px;
 
-  color: #fff;
+  color: #ffffff;
   border-radius: 0 0 30px 30px;
   background-color: #192144;
 }
@@ -20,7 +20,7 @@
   width: 132px;
   height: 132px;
 
-  content: '';
+  content: "";
 
   border-radius: 20px;
   background-color: #141b3b;
@@ -35,9 +35,9 @@
   width: 143px;
   height: 143px;
 
-  content: '';
+  content: "";
 
-  background-image: url('../img/backgrounds/smolov-back-desktop@1x.png');
+  background-image: url("../img/backgrounds/smolov-back-desktop@1x.png");
 }
 
 .travelers__header {
@@ -58,7 +58,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
 
-  color: #fff;
+  color: #ffffff;
 }
 
 .travelers .text--attention {
@@ -68,7 +68,7 @@
 
   margin-bottom: 60px;
 
-  color: #fff;
+  color: #ffffff;
 }
 
 .travelers__list::before {
@@ -80,9 +80,9 @@
   width: 71px;
   height: 71px;
 
-  content: '';
+  content: "";
 
-  background-image: url('../img/backgrounds/rogovaya-back-mobile@1x.png');
+  background-image: url("../img/backgrounds/rogovaya-back-mobile@1x.png");
 }
 
 .travelers__button {
@@ -111,7 +111,7 @@
     width: 213px;
     height: 213px;
 
-    content: '';
+    content: "";
 
     border-radius: 20px;
     background-color: #141b3b;
@@ -126,9 +126,9 @@
     width: 285px;
     height: 285px;
 
-    content: '';
+    content: "";
 
-    background-image: url('../img/backgrounds/rogovaya-back-desktop@1x.png');
+    background-image: url("../img/backgrounds/rogovaya-back-desktop@1x.png");
   }
 
   .travelers__container {
@@ -173,7 +173,7 @@
     width: 143px;
     height: 143px;
 
-    background-image: url('../img/backgrounds/smolov-back-desktop@1x.png');
+    background-image: url("../img/backgrounds/smolov-back-desktop@1x.png");
   }
 
   .travelers__list {
@@ -198,18 +198,6 @@
 
   .travelers__button {
     max-width: 618px;
-  }
-
-  .travelers-list__photo {
-    display: block;
-
-    width: 100%;
-    height: auto;
-
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-  }
-
-  .travelers__button {
     font-size: 24px;
     font-weight: 700;
     line-height: 100%;
@@ -217,11 +205,18 @@
     padding: 27px 63px 30px 34px;
   }
 
+  .travelers-list__photo {
+    display: block;
+
+    width: 100%;
+    height: auto;
+  }
+
   .travelers__button::after {
     position: absolute;
     right: 25px;
 
-    content: '';
+    content: "";
   }
 }
 
@@ -277,7 +272,6 @@
     width: 100%;
     max-width: 280px;
     margin-top: -90px;
-    margin-left: 0;
     margin-left: 65px;
     padding: 29px 94px 31px 34px;
   }

@@ -1,50 +1,50 @@
 /* ---------------- ГЛАВНАЯ СТРАНИЦА index.html ---------------- */
 /* Шапка сайта */
-@import 'header';
+@import "header";
 
 /* Первый экран главной стр.  */
-@import 'promo';
+@import "promo";
 
 /* О сервисе  */
-@import 'about';
+@import "about";
 
 /* Направления  */
-@import 'directions';
+@import "directions";
 
 /* Попутчики на главной стр. */
-@import 'travelers';
+@import "travelers";
 
 /* Прайсы с ценами на услуги */
-@import 'prices';
+@import "prices";
 
 /* Регистрация  */
-@import 'registration';
+@import "registration";
 
 /* Контакты и кнопка регистрации  */
-@import 'contacts';
+@import "contacts";
 
 /* Интерактивная карта  */
-@import 'contacts-map';
+@import "contacts-map";
 
 /* Подвал сайта  */
-@import 'footer';
+@import "footer";
 
 /* Модальные/Диалоговые окна  */
-@import 'modals';
+@import "modals";
 
 /* ---------------- СТРАНИЦА КАТАЛОГ catalog.html ---------------- */
 /* блок с фильтрами по регионам и странам  */
-@import 'geographic-filter';
+@import "geographic-filter";
 
 /* блок с фильтрами попутчика по увлечениям */
-@import 'preferences-filter';
+@import "preferences-filter";
 
 /* Результат поиска по карточкам попутчиков  */
-@import 'travelers-result';
+@import "travelers-result";
 
 /* ---------------- СТРАНИЦА НАПРАВЛЕНИЯ form.html ---------------- */
 /* блок МОИ ПЛАНЫ  */
-@import 'planing';
+@import "planing";
 
 /* Вариативная форма  */
-@import 'add-plan';
+@import "add-plan";

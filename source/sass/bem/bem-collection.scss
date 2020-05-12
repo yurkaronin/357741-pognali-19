@@ -1,64 +1,38 @@
-@import 'action-list';
-
 /* коллекция декоративных иконок  */
-@import 'icon-collection';
-
+@import "icon-collection";
 /* таблица с алфавитом в фильтре поиска по городам  */
-@import 'alphabet-table';
-
-@import 'business-price';
-@import 'button-collection';
-@import 'calendar-table';
-@import 'city-filter';
-
-@import 'countries-list';
-
+@import "alphabet-table";
+@import "button-collection";
 /* список анонсов популярных стран для путешествий на главной стр.  */
-@import 'directions-list';
-@import 'dots-list';
-@import 'flags-list';
-
+@import "directions-list";
+@import "flags-list";
 /* список хэштегов  */
-@import 'hashtag-list';
-
-@import 'logotype';
-@import 'options-list';
-
+@import "hashtag-list";
 /* Прогресс-бар уровня пользователя в карточке*/
-@import 'personal-level';
-@import 'planing-steps';
-
+@import "personal-level";
 /* Прайс лист на главной  */
-@import 'price-list';
-@import 'region-filter';
-@import 'social-list';
-@import 'steps-list';
-@import 'text-collection';
-
+@import "price-list";
+@import "region-filter";
+@import "social-list";
+@import "steps-list";
+@import "text-collection";
 /* Список популярных направлений для путешествий по миру */
-@import 'total-users';
-@import 'title-collection';
-
+@import "total-users";
+@import "title-collection";
 /* список видов транспорта  */
-@import 'transport-list';
-
+@import "transport-list";
 /* карточки путешественников  на странице каталога*/
-@import 'traveler-card';
-
+@import "traveler-card";
 /* Список карточек путешественников на главной  */
-@import 'travelers-list';
-
-@import 'user-status';
-@import 'wishlist';
-
+@import "travelers-list";
+@import "wishlist";
 /* блок с контактной информацией  */
-@import 'contact-list';
-
+@import "contact-list";
 /* Копирайт в подвале сайта */
-@import 'copyright';
-
+@import "copyright";
 /* фильтр по странам на странице каталога  */
-@import 'country-filter';
-
+@import "country-filter";
 /* Пагинация на странице попутчиков  */
-@import 'pagination';
+@import "pagination";
+/* Меню  */
+@import "menu";

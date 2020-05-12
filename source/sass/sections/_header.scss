@@ -1,7 +1,7 @@
 .header {
   position: relative;
 
-  color: #fff;
+  color: #ffffff;
   background-color: #161c36;
 }
 
@@ -60,11 +60,8 @@
 }
 
 .header__button-menu {
-  color: #fff;
-}
-
-.header__button-menu {
   font-size: 0;
+  color: #ffffff;
 
   position: relative;
 
@@ -84,10 +81,10 @@
   width: 25px;
   height: 3px;
 
-  content: '';
+  content: "";
 
   border-radius: 1.5px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .header__button-menu::before {
@@ -143,14 +140,10 @@
   width: 100%;
   height: 5px;
 
-  content: '';
+  content: "";
 
   border-radius: 2px;
   background-color: #ff8d30;
-}
-
-.header__logo-link {
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -160,6 +153,9 @@
 
   .header__authorization-button {
     display: block;
+    max-width: 190px;
+    margin: 0;
+    padding: 14px 30px 14px 30px;
   }
 
   .header__wrapper {
@@ -170,18 +166,14 @@
     justify-content: space-between;
   }
 
-  .header__authorization-button {
-    max-width: 190px;
-    margin: 0;
-    padding: 14px 30px 14px 30px;
-  }
-
   .header__logo-link {
     max-width: 170px;
+    margin-top: 2px;
   }
 
   .header__button-menu {
     max-width: 40px;
+    margin-top: 6px;
   }
 
   .header__logo-wrapper {
@@ -193,14 +185,6 @@
     padding-top: 40px;
 
     background-color: #182044;
-  }
-
-  .header__button-menu {
-    margin-top: 6px;
-  }
-
-  .header__logo-link {
-    margin-top: 2px;
   }
 
   .header__title::after {
@@ -232,9 +216,9 @@
     width: 60px;
     height: 2px;
 
-    content: '';
+    content: "";
 
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
   .header__navigation-item {
@@ -247,7 +231,7 @@
     font-weight: 500;
     line-height: 30px;
 
-    color: #fff;
+    color: #ffffff;
   }
 
   .header__button-menu {
@@ -311,9 +295,6 @@
 
 .inner-page .header__button-menu {
   margin-top: 0;
-}
-
-.inner-page .header__button-menu {
   width: 28px;
 }
 
@@ -356,7 +337,7 @@
 
     text-transform: uppercase;
 
-    color: #fff;
+    color: #ffffff;
 
     align-items: center;
   }
@@ -371,9 +352,9 @@
     width: 32px;
     height: 16px;
 
-    content: '';
+    content: "";
 
-    background-image: url('../img/icons/return.svg');
+    background-image: url("../img/icons/return.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -414,15 +395,15 @@
     padding-bottom: 40px;
 
     color: #192144;
-    background-color: #fff;
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .15);
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.15);
   }
 
   .header__navigation--active .header__navigation-list {
     display: block;
   }
 
-  .header__navigation--active .header__logo-link:after {
+  .header__navigation--active .header__logo-link::after {
     position: absolute;
     z-index: 200;
     top: 0;
@@ -431,9 +412,9 @@
     width: 100%;
     height: 100%;
 
-    content: '';
+    content: "";
 
-    background-image: url('../img/logo/logo-mobile-blue@1x.png');
+    background-image: url("../img/logo/logo-mobile-blue@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -441,20 +422,18 @@
 
   .header__navigation--active .header__button-menu::after,
   .header__navigation--active .header__button-menu::before {
-    background-color: #ccc;
+    background-color: #cccccc;
   }
 
   .header__navigation--active .header__button-menu::after {
     top: 12px;
 
-    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
 
   .header__navigation--active .header__button-menu::before {
     top: 12px;
 
-    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
 
@@ -473,11 +452,11 @@
   .header__navigation--active {
     padding-bottom: 88px;
 
-    background-color: #fff;
+    background-color: #ffffff;
   }
 
-  .header__navigation--active .header__logo-link:after {
-    background-image: url('../img/logo/logo-tablet-blue@2x.png');
+  .header__navigation--active .header__logo-link::after {
+    background-image: url("../img/logo/logo-tablet-blue@2x.png");
   }
 
   .header__navigation--active .header__logo-wrapper {
@@ -561,5 +540,3 @@
     height: 30px;
   }
 }
-
-@media (min-width: 1440px) {}
