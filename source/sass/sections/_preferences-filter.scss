@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 }
 
-.preferences__wrapper {
+.preferences-filter__global-wrapper {
   border-radius: 20px;
   background-color: #ffd74b;
   max-width: 270px;
@@ -171,7 +171,7 @@
 }
 
 @media (min-width: 768px) {
-  .preferences__wrapper {
+  .preferences-filter__global-wrapper {
     max-width: 688px;
     padding: 35px 35px 38px;
   }
