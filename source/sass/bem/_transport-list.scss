@@ -1,5 +1,6 @@
 .transport-list {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -15,7 +16,7 @@
 }
 
 .transport-list__icon {
-  opacity: 0.15;
+  opacity: .15;
 }
 
 .transport-list__icon--active {

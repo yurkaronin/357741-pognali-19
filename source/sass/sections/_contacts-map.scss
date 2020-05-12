@@ -1,8 +1,10 @@
 .contacts-map {
+  z-index: -1;
+
+  overflow: hidden;
+
   max-height: 545px;
   margin-top: -50px;
-  z-index: -1;
-  overflow: hidden;
 }
 
 @media (min-width: 1440px) {

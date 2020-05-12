@@ -1,21 +1,25 @@
 .title {
-  margin: 0;
-  padding: 0;
-  color: #ff8d30;
+  font-family: $font-family_base;
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
-  font-family: $font-family_base;
+
+  margin: 0;
+  padding: 0;
+
+  color: #ff8d30;
 }
 
 .title--big {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
   font-family: $font-family_base;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -28,5 +32,4 @@
     font-size: 60px;
     line-height: 70px;
   }
-
 }

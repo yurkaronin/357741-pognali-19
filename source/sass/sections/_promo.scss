@@ -1,26 +1,30 @@
 .promo {
-  background-color: #161C36;
-  /* background-image: url("../img/backgrounds/globe-back-mobile@1x.jpg"); */
-  background-image: linear-gradient(to bottom, transparent 50%, #161C36 50%, #161C36 70%, #192144 70%, #192144 100%), url("../img/backgrounds/globe-back-mobile@1x.jpg");
-  background-position: top 5px center;
   position: relative;
-  background-size: auto;
-  background-repeat: no-repeat;
+
   padding-top: 17px;
   padding-bottom: 39px;
-  border-radius: 0 0 30px 30px;
 
+  border-radius: 0 0 30px 30px;
+  background-color: #161c36;
+  /* background-image: url("../img/backgrounds/globe-back-mobile@1x.jpg"); */
+  background-image: linear-gradient(to bottom, transparent 50%, #161c36 50%, #161c36 70%, #192144 70%, #192144 100%), url('../img/backgrounds/globe-back-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: top 5px center;
+  background-size: auto;
 }
 
 .promo::before {
-  content: "";
   position: absolute;
-  width: 100%;
-  height: 280px;
+  z-index: 0;
   top: 393px;
   bottom: 0;
+
+  width: 100%;
+  height: 280px;
+
+  content: '';
+
   background-color: #161c36;
-  z-index: 0;
 }
 
 .promo__container {
@@ -29,56 +33,66 @@
 }
 
 .promo__container::before {
-  content: "";
-  display: block;
-  background-image: url("../img/backgrounds/traveller-illustration-mobile@1x.png");
-  width: 192px;
-  height: 255px;
+  position: absolute;
+  z-index: -1;
   top: 135px;
   right: 50px;
-  background-repeat: no-repeat;
-  z-index: -1;
-  position: absolute;
 
+  display: block;
+
+  width: 192px;
+  height: 255px;
+
+  content: '';
+
+  background-image: url('../img/backgrounds/traveller-illustration-mobile@1x.png');
+  background-repeat: no-repeat;
 }
 
 .promo__title {
   max-width: 235px;
   margin: 0 auto;
-  text-align: center;
   margin-bottom: 248px;
+
+  text-align: center;
 }
 
 .promo__contact-list .contact-list__detail {
   font-size: 0;
   line-height: 0;
+
   margin: 0;
 }
 
 .promo__contacts-wrapper {
   display: flex;
+
+  max-width: 270px;
+  margin-bottom: 30px;
+
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  max-width: 270px;
-  margin-bottom: 30px;
 }
 
 .promo__contact-list .icon-telephone::before {
-  background-color: #ff8d30;
   width: 40px;
   height: 40px;
+
+  background-color: #ff8d30;
 }
 
 .promo__contact-list .icon-email::before {
-  background-color: #ffbd30;
   width: 40px;
   height: 40px;
+
+  background-color: #ffbd30;
 }
 
 .promo__contact-list {
-  max-width: 80px;
   display: flex;
+
+  max-width: 80px;
 }
 
 .promo__contact-list .contact-list__link {
@@ -90,42 +104,48 @@
 }
 
 .promo__contacts__button {
+  font-size: 17px;
+  line-height: 30px;
+
+  width: 100%;
   max-width: 189px;
-    font-size: 17px;
-    line-height: 30px;
-    padding: 5px 32px 6px 30px;
-    width: 100%;
+  padding: 5px 32px 6px 30px;
 }
 
 .promo__quote__wrapper {
-  background-color: #161C35;
+  margin-top: -48px;
   padding: 45px 70px;
   padding-bottom: 113px;
-  margin-top: -48px;
   padding-left: 24px;
+
+  background-color: #161c35;
 }
 
 .promo__quote-content {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+
   max-width: 150px;
+  margin: 0;
   margin-bottom: 15px;
+  padding: 0;
+
+  color: #fff;
 }
 
 .promo__quote-author {
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  line-height: 22px;
-  max-width: 153px;
-  margin-bottom: 33px;
   font-style: normal;
+  line-height: 22px;
+
+  max-width: 153px;
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+
+  color: #fff;
 }
 
 .promo__steps__wrapper {
@@ -134,11 +154,12 @@
 
 @media (min-width: 768px) {
   .promo {
-    background-color: #182044;
-    background-image: url("../img/backgrounds/globe-back-tablet@1x.jpg");
-    background-position: left -356px top 263px;
     padding-top: 38px;
     padding-bottom: 90px;
+
+    background-color: #182044;
+    background-image: url('../img/backgrounds/globe-back-tablet@1x.jpg');
+    background-position: left -356px top 263px;
   }
 
   .promo__title {
@@ -151,69 +172,77 @@
   }
 
   .promo__quote__wrapper {
-    background-color: transparent;
     max-width: 300px;
-    padding: 0;
     margin-top: 0;
-    margin-left: 33px;
     margin-bottom: 282px;
+    margin-left: 33px;
+    padding: 0;
+
+    background-color: transparent;
   }
 
   .promo__quote-content {
     font-size: 28px;
     font-weight: 300;
     line-height: 33px;
-    margin-bottom: 45px;
+
     max-width: 100%;
+    margin-bottom: 45px;
   }
 
   .promo__quote-author {
     font-size: 21px;
     font-weight: 700;
     line-height: 25px;
-    margin: 0;
+
     max-width: 100%;
+    margin: 0;
   }
 
   .promo__container::before {
-    background-image: url("../img/backgrounds/traveller-illustration-tablet@1x.png");
-    width: 372px;
-    height: 451px;
     top: 250px;
     right: 112px;
+
+    width: 372px;
+    height: 451px;
+
+    background-image: url('../img/backgrounds/traveller-illustration-tablet@1x.png');
   }
 
   .promo::before {
     display: none;
   }
-
 }
 
 @media (min-width: 1440px) {
   .promo {
-    background-color: #161c34;
     padding-top: 80px;
     padding-bottom: 122px;
-    background-image: url("../img/backgrounds/globe-back-desktop@1x.jpg");
+
+    border-radius: 0 0 60px 60px;
+    background-color: #161c34;
+    background-image: url('../img/backgrounds/globe-back-desktop@1x.jpg');
     background-position: bottom center;
     background-size: inherit;
-    border-radius: 0 0 60px 60px;
-
   }
 
   .promo__container {
     display: flex;
+
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .promo__container::before {
-    content: "";
-    background-image: url("../img/backgrounds/traveller-illustration-desktop@1x.png");
-    width: 431px;
-    height: 640px;
     top: -93px;
     right: 405px;
+
+    width: 431px;
+    height: 640px;
+
+    content: '';
+
+    background-image: url('../img/backgrounds/traveller-illustration-desktop@1x.png');
   }
 
   .promo__info-wrapper {
@@ -223,15 +252,16 @@
   }
 
   .promo__title {
-    text-align: left;
     margin-bottom: 10px;
+
+    text-align: left;
   }
 
   .promo__quote__wrapper {
     max-width: 45%;
     margin: 0;
-    padding-left: 305px;
     padding-top: 15px;
+    padding-left: 305px;
   }
 
   .promo__steps__wrapper {
@@ -239,5 +269,4 @@
     margin: 0;
     margin-top: 100px;
   }
-
 }

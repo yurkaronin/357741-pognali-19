@@ -1,6 +1,7 @@
 .header {
   position: relative;
-  color: #ffffff;
+
+  color: #fff;
   background-color: #161c36;
 }
 
@@ -13,10 +14,12 @@
 .header__navigation-list {
   display: none;
   flex-direction: column;
+
   max-width: 183px;
   margin: 0 auto;
   margin-top: 61px;
   margin-bottom: 50px;
+
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -24,7 +27,9 @@
 
 .header__navigation-item {
   display: flex;
+
   max-width: 100%;
+
   align-items: center;
   justify-content: center;
 }
@@ -34,19 +39,23 @@
   font-size: 30px;
   font-weight: 500;
   line-height: 36px;
+
   text-align: center;
   text-transform: uppercase;
+
   color: #192144;
 }
 
 .header__logo-wrapper {
   display: flex;
+
   align-items: center;
   justify-content: space-between;
 }
 
 .header__logo-link {
   position: relative;
+
   display: block;
 }
 
@@ -56,11 +65,14 @@
 
 .header__button-menu {
   font-size: 0;
+
   position: relative;
+
   width: 30px;
   height: 30px;
   margin-top: 3px;
   padding: 0;
+
   border: 0;
   background-color: transparent;
 }
@@ -68,11 +80,14 @@
 .header__button-menu::after,
 .header__button-menu::before {
   position: absolute;
+
   width: 25px;
   height: 3px;
-  content: "";
+
+  content: '';
+
   border-radius: 1.5px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .header__button-menu::before {
@@ -88,6 +103,7 @@
 /* кнопка  авторизации  */
 .header__authorization-button {
   display: none;
+
   max-width: 270px;
   margin-bottom: 51px;
   padding: 18px 80px 16px 80px;
@@ -113,19 +129,24 @@
 
 .header__title {
   position: relative;
+
   display: inline-flex;
 }
 
 .header__title::after {
-  content: "";
   position: absolute;
-  display: block;
+  z-index: 2;
   bottom: -15px;
+
+  display: block;
+
   width: 100%;
   height: 5px;
+
+  content: '';
+
   border-radius: 2px;
   background-color: #ff8d30;
-  z-index: 2;
 }
 
 .header__logo-link {
@@ -170,6 +191,7 @@
 
   .header__navigation {
     padding-top: 40px;
+
     background-color: #182044;
   }
 
@@ -182,23 +204,26 @@
   }
 
   .header__title::after {
-    height: 8px;
-    border-radius: 4px;
     bottom: -70px;
+
+    height: 8px;
+
+    border-radius: 4px;
   }
-
-
 }
 
 @media (min-width: 1440px) {
   .header__navigation-list {
     position: relative;
+
     display: flex;
     flex-direction: row;
+
     width: 100%;
     max-width: 827px;
     margin: 0;
     padding-left: 40px;
+
     flex-wrap: wrap;
     justify-content: flex-start;
   }
@@ -206,7 +231,9 @@
   .header__navigation-list::before {
     width: 60px;
     height: 2px;
-    content: "";
+
+    content: '';
+
     background-color: #fff;
   }
 
@@ -219,7 +246,8 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    color: #ffffff;
+
+    color: #fff;
   }
 
   .header__button-menu {
@@ -237,18 +265,22 @@
   .header__navigation {
     padding-top: 46px;
     padding-bottom: 20px;
+
     background-color: #161c34;
   }
 
   .header__contacts-wrapper {
     display: block;
+
     margin: 0;
   }
 
   .header__contact-list {
     display: flex;
+
     max-width: 100px;
     margin: 0;
+
     flex-wrap: wrap;
   }
 
@@ -259,7 +291,6 @@
   .header__authorization-button {
     order: 4;
   }
-
 }
 
 /* Страница КАТАЛОГ  */
@@ -269,6 +300,7 @@
 
 .inner-page .header {
   padding-bottom: 14px;
+
   border-radius: 0 0 20px 20px;
 }
 
@@ -288,12 +320,14 @@
 @media (min-width: 768px) {
   .inner-page .header {
     padding-bottom: 67px;
+
     border-radius: 0 0 60px 60px;
   }
 
   .inner-page .header__navigation {
-    background-color: transparent;
     margin-bottom: 80px;
+
+    background-color: transparent;
   }
 
   .inner-page .header__wrapper--last {
@@ -305,45 +339,54 @@
   }
 
   .inner-page .header__link-home {
-    display: flex;
-    align-items: center;
-    color: #ffffff;
     font-family: $font-family_base;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-    text-transform: uppercase;
+
     position: relative;
-    max-width: 146px;
+
+    display: flex;
+
     width: 100%;
-    padding-right: 27px;
-    margin-right: 31px;
+    max-width: 146px;
     margin-top: 13px;
+    margin-right: 31px;
+    padding-right: 27px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+
+    align-items: center;
   }
 
   .inner-page .header__link-home::after {
-    content: "";
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-
     position: absolute;
+    top: 0;
+    right: -30px;
+
+    display: flex;
+
     width: 32px;
     height: 16px;
-    right: -30px;
-    top: 0;
-    background-size: contain;
+
+    content: '';
+
+    background-image: url('../img/icons/return.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../img/icons/return.svg");
-  }
+    background-size: contain;
 
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1440px) {
   .inner-page .header__navigation {
-    padding-top: 45px;
     margin-bottom: 65px;
+    padding-top: 45px;
   }
 
   .inner-page .header__wrapper--last {
@@ -355,23 +398,24 @@
   }
 
   .inner-page .header__link-home {
-    padding-right: 25px;
-    margin-right: 29px;
     margin-top: 18px;
+    margin-right: 29px;
+    padding-right: 25px;
   }
-
 }
 
 /* меню в активном состоянии  */
 @media (max-width: 1439px) {
   .header__navigation--active {
-    color: #192144;
-    background-color: #ffffff;
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .15);
     position: fixed;
     z-index: 9999;
+
     max-width: 100%;
     padding-bottom: 40px;
+
+    color: #192144;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, .15);
   }
 
   .header__navigation--active .header__navigation-list {
@@ -383,11 +427,13 @@
     z-index: 200;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
-    content: "";
 
-    background-image: url("../img/logo/logo-mobile-blue@1x.png");
+    content: '';
+
+    background-image: url('../img/logo/logo-mobile-blue@1x.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -414,23 +460,24 @@
 
   .header__navigation--active .header__authorization-button {
     display: flex;
+
     justify-content: center;
   }
 
   .header__navigation--active .header__contacts-wrapper {
     display: block;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .header__navigation--active {
-    background-color: #ffffff;
     padding-bottom: 88px;
+
+    background-color: #fff;
   }
 
   .header__navigation--active .header__logo-link:after {
-    background-image: url("../img/logo/logo-tablet-blue@2x.png");
+    background-image: url('../img/logo/logo-tablet-blue@2x.png');
   }
 
   .header__navigation--active .header__logo-wrapper {
@@ -442,17 +489,19 @@
   }
 
   .header__navigation--active .header__navigation-list {
-    order: 3;
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
     margin-top: 88px;
     margin-bottom: 135px;
     margin-left: 55px;
+
+    order: 3;
   }
 
   .header__navigation--active .header__contacts-wrapper {
-    order: 4;
     margin-left: 55px;
+
+    order: 4;
   }
 
   .header__navigation--active .header__logo-link {
@@ -472,18 +521,21 @@
   }
 
   .header__navigation--active .header__navigation-link {
-    color: #192144;
     font-size: 60px;
     font-weight: 500;
     line-height: 71.01px;
+
     text-transform: uppercase;
+
+    color: #192144;
   }
 
   .header__navigation--active .contact-list__detail {
-    margin-left: 22px;
     font-size: 28px;
     font-weight: 700;
     line-height: 28px;
+
+    margin-left: 22px;
   }
 
   .header__navigation--active .header__contact-list {
@@ -491,13 +543,14 @@
   }
 
   .header__navigation--active .header__social-list {
-    justify-content: start;
-    margin-left: 0;
     max-width: 100%;
+    margin-left: 0;
+
+    justify-content: start;
   }
 
   .header__navigation--active .social-list__link {
-    margin: 0px 9px 0 18px;
+    margin: 0 9px 0 18px;
   }
 
   .header__navigation--active .social-list__link::before,
@@ -507,7 +560,6 @@
     width: 33px;
     height: 30px;
   }
-
 }
 
 @media (min-width: 1440px) {}

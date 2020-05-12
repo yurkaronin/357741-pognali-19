@@ -1,10 +1,12 @@
 .text {
-  margin: 0;
-  padding: 0;
-  color: #444444;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+
+  margin: 0;
+  padding: 0;
+
+  color: #444;
 }
 
 .text--attention {
@@ -22,9 +24,6 @@
     font-size: 21px;
     line-height: 25px;
   }
-
 }
 
-@media (min-width: 1440px) {
-
-}
+@media (min-width: 1440px) {}

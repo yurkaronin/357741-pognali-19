@@ -1,11 +1,13 @@
 .pagination {
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 20px;
   display: flex;
-  padding: 0;
+
+  width: 100%;
   max-width: 270px;
   margin: 0 auto;
+  padding: 0;
+
+  border-radius: 20px;
+  background-color: #fff;
 }
 
 .pagination__pages-list {
@@ -13,40 +15,47 @@
 }
 
 .pagination__page-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 4px;
-  width: 100%;
-  height: 100%;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
+
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+
   color: #161c36;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination__page-link--active {
-  background-color: #ffd74b;
   border-radius: 50%;
+  background-color: #ffd74b;
 }
 
 .pagination__buttons-wrapper {
   display: flex;
+
   width: 100%;
   height: 100%;
 }
 
 .pagination__control-button {
+  position: relative;
+
   display: flex;
+
   width: 135px;
   height: 50px;
-  position: relative;
 }
 
 .pagination__control-button--prev {
+  border-right: 1px solid #edeff6;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-right: 1px solid #edeff6;
 }
 
 .pagination__control-button--next {
@@ -55,37 +64,45 @@
 }
 
 .pagination__control-button::before {
-  content: "";
   position: absolute;
   top: 15px;
+
+  content: '';
+
   border: 10px solid transparent;
 }
 
 .pagination__control-button--prev::before {
-  border-right-color: #192144;
   left: 53px;
+
+  border-right-color: #192144;
 }
 
 .pagination__control-button--next::before {
-  border-left-color: #192144;
   right: 53px;
+
+  border-left-color: #192144;
 }
 
 @media (min-width: 768px) {
   .pagination {
+    max-width: 100%;
     padding: 25px 0 25px 28px;
+
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
   }
 
   .pagination__pages-list {
-    list-style: none;
+    display: flex;
+
+    margin: 0;
     padding-left: 0;
+
+    list-style: none;
+
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    display: flex;
-    margin: 0;
     align-items: center;
     flex-grow: 1;
   }
@@ -114,8 +131,6 @@
   .pagination__control-button--next::before {
     right: 29px;
   }
-
-
 }
 
 @media (min-width: 1440px) {
@@ -125,15 +140,13 @@
 
   .pagination__pages-list {
     padding-left: 2px;
-}
+  }
 
-.pagination__control-button--prev::before {
-  left: 22px;
-}
+  .pagination__control-button--prev::before {
+    left: 22px;
+  }
 
-.pagination__control-button--next::before {
-  right: 29px;
-}
-
-
+  .pagination__control-button--next::before {
+    right: 29px;
+  }
 }
