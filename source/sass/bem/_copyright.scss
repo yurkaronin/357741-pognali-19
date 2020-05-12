@@ -1,22 +1,26 @@
 .copyright {
-  border-top: 1px solid #d9d9d9;
   padding-top: 10px;
   padding-bottom: 0;
+
+  border-top: 1px solid #d9d9d9;
 }
 
 .copyright__developers-link {
   display: flex;
+
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .copyright__text {
-  color: #444444;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+
   max-width: 120px;
+
+  color: #444;
 }
 
 .copyright__developers-image {
@@ -26,6 +30,7 @@
 @media (min-width: 768px) {
   .copyright {
     padding-top: 0;
+
     border-top: 0;
   }
 
@@ -38,9 +43,8 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    margin-right: 25px;
+
     margin-top: -7px;
+    margin-right: 25px;
   }
-
-
 }

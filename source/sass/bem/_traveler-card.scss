@@ -1,123 +1,162 @@
 .traveler-card {
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 15px 18px 22px 20px;
-  overflow: visible;
   position: relative;
+
+  overflow: visible;
+
   margin-bottom: 10px;
+  padding: 15px 18px 22px 20px;
+
+  border-radius: 20px;
+  background-color: #fff;
 }
 
 .traveler-card__link-photo {
   display: block;
+  overflow: hidden;
+
   width: 70px;
   height: 70px;
-  border-radius: 50%;
-  overflow: hidden;
   margin-right: 16px;
+
+  border-radius: 50%;
 }
 
 .traveler-card__photo {
   display: block;
+
   transition: transform .3s ease-out;
 }
 
 .traveler-card__link-name {
   display: flex;
+
   width: 90px;
 }
 
 .traveler-card__name {
-  display: inline-flex;
-  color: #1d2e5b;
   line-height: 1.05;
-  margin-top: -70px;
-  margin-left: 85px;
-  margin-bottom: 45px;
+
   position: relative;
+
+  display: inline-flex;
+
+  margin-top: -70px;
+  margin-bottom: 45px;
+  margin-left: 85px;
+
+  color: #1d2e5b;
 }
 
 .traveler-card__name::after {
-  background-color: #f97676;
-}
-
-.traveler-card__name::after {
-  content: "";
   position: absolute;
   top: 8px;
   right: -70px;
+
   width: 6px;
   height: 6px;
+
+  content: '';
+
   border-radius: 50%;
+}
+
+.user-status::after {
+  background-color: #f97676;
+}
+
+.user-status--online::after {
+  background-color: #81e31e;
 }
 
 .traveler-card__hashtag-list {
   font-size: 15px;
   font-weight: 400;
   line-height: 1.2;
-  text-align: left;
-  color: #444;
-  padding-left: 5px;
+
   width: 175px;
   margin-top: 0;
   margin-bottom: 14px;
+  padding-left: 5px;
+
+  text-align: left;
+
+  color: #444;
 }
 
 .traveler-card__wishlist-wrapper {
-  width: 100%;
-  padding-left: 5px;
   position: relative;
-  margin-bottom: 10px;
+
+  width: 100%;
   min-height: 90px;
+  margin-bottom: 10px;
+  padding-left: 5px;
 }
 
 .traveler-card__label {
-  display: flex;
-  margin: 0;
   font-size: 15px;
-  line-height: 1.2;
-  color: #444444;
-  text-transform: lowercase;
-  position: relative;
-  margin-bottom: 14px;
-  z-index: 10;
-  position: relative;
   font-weight: 400;
+  line-height: 1.2;
+
+  position: relative;
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+
+  margin: 0;
+  margin-bottom: 14px;
+
+  text-transform: lowercase;
+
+  color: #444;
 }
 
 .traveler-card__label::before,
 .traveler-card__label::after {
-  content: "";
   position: absolute;
   top: 8px;
+
   height: 1px;
+
+  content: '';
+
   background-color: #edeff6;
 }
 
 .traveler-card__label::before {
-  width: 14px;
   left: -27px;
+
+  width: 14px;
 }
 
 .traveler-card__label::after {
-  width: 138px;
   right: -27px;
+
+  width: 138px;
 }
 
 .traveler-card__title-wrapper {
   display: flex;
-  justify-content: space-between;
+
   margin-bottom: 14px;
+
+  justify-content: space-between;
 }
 
 .traveler-card__title {
-  display: flex;
-  margin: 0;
   font-size: 15px;
-  line-height: 1.2;
-  color: #444;
-  text-transform: lowercase;
-  position: relative;
   font-weight: 400;
+  line-height: 1.2;
+
+  position: relative;
+
+  display: flex;
+
+  margin: 0;
+
+  text-transform: lowercase;
+
+  color: #444;
 }
 
 .traveler-card__title--left {
@@ -126,21 +165,26 @@
 
 .traveler-card__title--left::after,
 .traveler-card__title--left::before {
-  content: "";
   position: absolute;
   top: 8px;
+
   height: 1px;
+
+  content: '';
+
   background-color: #edeff6;
 }
 
 .traveler-card__title--left::before {
-  width: 14px;
   left: -27px;
+
+  width: 14px;
 }
 
 .traveler-card__title--left::after {
-  width: 91px;
   right: -103px;
+
+  width: 91px;
 }
 
 .traveler-card__title--right {
@@ -148,51 +192,66 @@
 }
 
 .traveler-card__title--right::before {
-  width: 14px;
   right: -23px;
+
+  width: 14px;
 }
 
 .traveler-card__title--right::before {
-  content: "";
   position: absolute;
   top: 8px;
+
   height: 1px;
+
+  content: '';
+
   background-color: #edeff6;
 }
 
 .traveler-card__transport-and-level {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
 }
 
 .traveler-card__transport-wrapper {
-  list-style: none;
-  padding-left: 0;
-  margin: 0 0 0 5px;
-  display: flex;
   position: relative;
+
+  display: flex;
+
+  margin: 0 0 0 5px;
+  padding-left: 0;
+
+  list-style: none;
 }
 
 .traveler-card__transport {
-  display: flex;
   font-size: 0;
+
+  position: relative;
+
+  display: flex;
+
   width: 33px;
   height: 32px;
+
   border-radius: 50%;
   background-color: #edeff6;
-  position: relative;
 }
 
 .traveler-card__transport--active svg {
-  fill: #1d2e5b;
-  opacity: 1;
   z-index: 0;
+
+  opacity: 1;
+
+  fill: #1d2e5b;
 }
 
 .traveler-card__transport-icon {
-  opacity: .15;
   position: absolute;
+
+  opacity: .15;
 }
 
 .traveler-card__transport-icon--plane {
@@ -216,23 +275,29 @@
 }
 
 .traveler-card__level {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
   font-size: 24px;
   font-weight: 700;
   line-height: .75;
-  margin-right: 10px;
-  margin-top: 5px;
-  color: #1d2e5b;
+
   position: relative;
+
+  display: flex;
+
+  margin-top: 5px;
+  margin-right: 10px;
+
+  color: #1d2e5b;
+
+  justify-content: center;
+  align-items: stretch;
 }
 
 .traveler-card__level-percent {
-  transform: rotate(-90deg);
   position: absolute;
   top: -16px;
   left: -10px;
+
+  transform: rotate(-90deg);
 }
 
 .traveler-card__level-number {
@@ -244,60 +309,75 @@
 }
 
 .traveler-card__button-wrapper {
-  margin-top: 21px;
   width: 100%;
+  margin-top: 21px;
 }
 
 .traveler-card__button {
-  display: flex;
-  align-items: center;
-  border-radius: 25px;
-  justify-content: center;
-  padding: 10px 10px 7px;
   font-size: 17px;
   line-height: 100%;
+
+  display: flex;
+
   width: 100%;
   height: 40px;
+  padding: 10px 10px 7px;
+
+  border-radius: 25px;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .traveler-card__like-wrapper {
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 46px;
-  margin-top: -35px;
   position: absolute;
   top: 90px;
   left: 21px;
+
+  display: flex;
+
+  margin-top: -35px;
+  margin-left: 46px;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .traveler-card__button-like {
+  font-size: 0;
+
+  position: relative;
+
   display: flex;
-  padding: 0;
-  flex-shrink: 0;
+
   width: 31px;
   height: 31px;
+  margin-right: 7px;
+  padding: 0;
+
+  border: 0;
   border-radius: 50%;
   background-color: #edeff6;
-  font-size: 0;
-  border: 0;
-  margin-right: 7px;
-  position: relative;
+
+  flex-shrink: 0;
 }
 
 .traveler-card__button-like::before {
-  content: "";
   position: absolute;
-  width: 13px;
-  height: 11px;
   top: 10px;
   left: 9px;
+
+  width: 13px;
+  height: 11px;
+
+  content: '';
+
+  opacity: .3;
+  background-image: url('../img/icons/heart.svg');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("../img/icons/heart.svg");
-  opacity: .3;
 }
 
 
@@ -306,39 +386,47 @@
 }
 
 .traveler-card__button-like--active::before {
-  background-image: url("../img/icons/heart-active.svg");
   opacity: 1;
+  background-image: url('../img/icons/heart-active.svg');
 }
 
 .traveler-card__likes-number {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
-  color: #161c36;
-  text-transform: uppercase;
+
   margin-top: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
+
+  text-transform: uppercase;
+
+  color: #161c36;
 }
 
 @media (min-width: 768px) {
   .traveler-card {
-    padding: 33px 25px 24px 35px;
     display: flex;
+
+    padding: 33px 25px 24px 35px;
+
     flex-wrap: wrap;
   }
 
   .traveler-card__link-photo {
     width: 190px;
     height: 190px;
-    border-radius: 20px;
     margin-top: 2px;
     margin-right: 35px;
+
+    border-radius: 20px;
   }
 
   .traveler-card__photo {
+    display: block;
+
     width: 190px;
     height: 190px;
-    display: block;
+
     transition: transform .3s ease-out;
   }
 
@@ -348,58 +436,69 @@
 
   .traveler-card__name {
     font-size: 30px;
+
     margin: 0 0 15px;
   }
 
   .traveler-card__name::after {
-    width: 7px;
-    height: 7px;
     top: 11px;
     right: -28px;
+
+    width: 7px;
+    height: 7px;
   }
 
   .traveler-card__hashtag-list {
-    padding-left: 0;
     font-size: 20px;
+
     width: 230px;
     margin: 0 0 50px;
+    padding-left: 0;
   }
 
   .traveler-card__wishlist-wrapper {
-    order: 50;
-    margin-bottom: 0;
     min-height: auto;
     margin-top: 22px;
+    margin-bottom: 0;
     padding-left: 0;
+
+    order: 50;
   }
 
   .traveler-card__label {
-    padding-left: 47px;
     margin-bottom: 16px;
+    padding-left: 47px;
   }
 
   .traveler-card__label::before {
-    content: "";
     position: absolute;
-    width: 111px;
-    height: 1px;
-    background-color: #edeff6;
     top: 8px;
     left: -75px;
+
+    width: 111px;
+    height: 1px;
+
+    content: '';
+
+    background-color: #edeff6;
   }
 
   .traveler-card__label::after {
-    content: "";
     position: absolute;
-    width: 510px;
-    height: 1px;
-    background-color: #edeff6;
     top: 8px;
     right: -35px;
+
+    width: 510px;
+    height: 1px;
+
+    content: '';
+
+    background-color: #edeff6;
   }
 
   .traveler-card__wishlist {
     display: flex;
+
     flex-wrap: wrap;
   }
 
@@ -409,15 +508,18 @@
 
   .traveler-card__transport-and-level {
     flex-direction: column;
+
     margin-left: auto;
+
     justify-content: flex-start;
   }
 
   .traveler-card__transport-wrapper {
     flex-direction: column;
-    margin-left: 0;
+
     margin-right: 15px;
     margin-bottom: 22px;
+    margin-left: 0;
   }
 
   .traveler-card__transport {
@@ -425,65 +527,78 @@
   }
 
   .traveler-card__transport-icon--plane {
-    width: 19px;
-    height: 21px;
     top: 5px;
     left: 5px;
+
+    width: 19px;
+    height: 21px;
   }
 
   .traveler-card__transport-icon--bus {
-    width: 17px;
-    height: 21px;
     top: 5px;
     left: 7px;
+
+    width: 17px;
+    height: 21px;
   }
 
   .traveler-card__transport-icon--bike {
-    width: 24px;
-    height: 21px;
     top: 5px;
     left: 5px;
+
+    width: 24px;
+    height: 21px;
   }
 
   .traveler-card__transport-icon--run {
-    width: 20px;
-    height: 21px;
     top: 5px;
     left: 5px;
+
+    width: 20px;
+    height: 21px;
   }
 
   .traveler-card__level {
-    margin-top: 0;
-    padding-bottom: 4px;
     display: flex;
     flex-direction: column;
+
+    margin-top: 0;
+    padding-bottom: 4px;
+
     align-items: center;
   }
 
   .traveler-card__level-percent {
+    top: -18px;
+    left: -20px;
+
     width: 65px;
     height: 65px;
-    left: -20px;
-    top: -18px;
+
     stroke-width: 3px;
   }
 
   .traveler-card__level-description {
-    display: flex;
-    color: rgba(68, 68, 68, .4);
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+
+    display: flex;
+
     padding-top: 2px;
+
+    color: rgba(68, 68, 68, .4);
     border-top: 1px solid rgba(0, 0, 0, .1);
   }
 
   .traveler-card__button-and-like {
     display: flex;
+
+    margin-top: -50px;
+    margin-left: 220px;
+
     align-items: flex-start;
     order: 10;
-    margin-left: 220px;
-    margin-top: -50px;
   }
 
   .traveler-card__button-wrapper {
@@ -496,10 +611,11 @@
   }
 
   .traveler-card__like-wrapper {
-    margin: 0;
     position: static;
     top: auto;
     left: auto;
+
+    margin: 0;
   }
 
   .traveler-card__button-like {
@@ -508,14 +624,113 @@
   }
 
   .traveler-card__button-like::before {
-    width: 20px;
-    height: 17px;
     top: 16px;
     left: 15px;
+
+    width: 20px;
+    height: 17px;
   }
 
   .traveler-card__likes-number {
     font-size: 20px;
   }
+}
 
+@media (min-width: 1440px) {
+  .traveler-card {
+    width: 100%;
+    max-width: 948px;
+    padding: 0 44px 0 0;
+
+    align-items: flex-start;
+  }
+
+  .traveler-card__link-photo {
+    width: 285px;
+    height: 285px;
+    margin-top: 0;
+    margin-right: 61px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .traveler-card__photo {
+    width: 285px;
+    height: 285px;
+  }
+
+  .traveler-card__name-wrapper {
+    margin-right: 31px;
+    padding-top: 47px;
+  }
+
+  .traveler-card__name::after {
+    top: 11px;
+    right: auto;
+    left: -28px;
+  }
+
+  .traveler-card__hashtag-list {
+    padding-bottom: 50px;
+  }
+
+  .traveler-card__wishlist-wrapper {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 51px;
+    padding-bottom: 50px;
+  }
+
+  .traveler-card__label {
+    display: none;
+  }
+
+  .traveler-card__wishlist {
+    flex-direction: column;
+  }
+
+  .traveler-card__title {
+    display: none;
+  }
+
+  .traveler-card__transport-and-level {
+    position: absolute;
+    right: 44px;
+    bottom: 47px;
+
+    flex-direction: row;
+
+    margin: 0 15px 0 auto;
+
+    order: 100;
+    justify-content: space-between;
+  }
+
+  .traveler-card__transport-wrapper {
+    flex-direction: row;
+
+    margin-right: 56px;
+    margin-bottom: 4px;
+  }
+
+  .traveler-card__level {
+    margin: 4px 0 0 3px;
+  }
+
+  .traveler-card__level-number {
+    margin-bottom: 0;
+  }
+
+  .traveler-card__button-and-like {
+    position: absolute;
+    bottom: 47px;
+    left: 342px;
+
+    margin-top: 0;
+    margin-left: 0;
+
+    order: 50;
+  }
 }

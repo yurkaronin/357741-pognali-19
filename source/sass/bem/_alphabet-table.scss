@@ -1,20 +1,26 @@
 .alphabet-table__cell {
-  border: 1px solid #cbced9;
   padding: 13px 15px;
+
+  border: 1px solid #cbced9;
 }
 
 .alphabet-table__link {
-  color: #1d2e5b;
   font-family: $font-family_base;
   font-size: 14px;
   font-weight: 500;
   line-height: 100%;
-  text-transform: uppercase;
-  text-align: center;
+
   display: flex;
+
+  max-width: 100%;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #1d2e5b;
+
   align-items: center;
   justify-content: center;
-  max-width: 100%;
 }
 
 .alphabet-table__cell--active {
@@ -23,5 +29,5 @@
 }
 
 .alphabet-table__cell--active .alphabet-table__link {
-  color: #ffffff;
+  color: #fff;
 }

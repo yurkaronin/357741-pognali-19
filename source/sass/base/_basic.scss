@@ -1,24 +1,27 @@
 .body {
-  background-color: $color__background-body;
   font-family: $font-family_base;
   font-size: $font__size_base;
-  line-height: $font__size-ratio;
   font-weight: $font-weight_base;
+  line-height: $font__size-ratio;
+
   color: $color__text;
+  background-color: $color__background-body;
 }
 
 /* центровщик согласно макета с шириной 320 = 270 контент и по 25 px отступы по бокам */
 .container {
-  max-width: 320px;
-  padding: 0 25px;
-  margin: 0 auto;
   z-index: 110;
+
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 /* выборочный сброс типового оформления у списков */
 .list {
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -39,6 +42,4 @@
     max-width: 1440px;
     padding: 0 60px;
   }
-
-
 }

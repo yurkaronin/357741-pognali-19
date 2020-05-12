@@ -1,90 +1,108 @@
-.icon-telephone::before {
-  background-image: url("../img/icons/contacts-phone.svg");
+.icon-telephone::before
+{
+    background-image: url('../img/icons/contacts-phone.svg');
 }
 
-.icon-email::before {
-  background-image: url("../img/icons/topmenu-mail.svg");
+.icon-email::before
+{
+    background-image: url('../img/icons/topmenu-mail.svg');
 }
 
-.icon-facebook::before {
-  background-image: url("../img/icons/facebook.svg");
-  background-size: 18px 18px;
-  width: 11px;
-  height: 21px;
+.icon-facebook::before
+{
+    width: 11px;
+    height: 21px;
+
+    background-image: url('../img/icons/facebook.svg');
+    background-size: 18px 18px;
 }
 
-.icon-vkontakte::before {
-  background-image: url("../img/icons/vk.svg");
-  background-size: 18px 18px;
-  width: 23px;
-  height: 12px;
+.icon-vkontakte::before
+{
+    width: 23px;
+    height: 12px;
+
+    background-image: url('../img/icons/vk.svg');
+    background-size: 18px 18px;
 }
 
-.icon-Instagram::before {
-  background-image: url("../img/icons/instagram.svg");
-  background-size: 18px 18px;
-  width: 18px;
-  height: 18px;
+.icon-Instagram::before
+{
+    width: 18px;
+    height: 18px;
+
+    background-image: url('../img/icons/instagram.svg');
+    background-size: 18px 18px;
 }
 
-.promo__contact-list .icon-telephone::before {
-  background-image: url("../img/icons/topmenu-phone.svg");
+.promo__contact-list .icon-telephone::before
+{
+    background-image: url('../img/icons/topmenu-phone.svg');
 }
 
-.promo__contact-list .icon-email::before {
-  background-image: url("../img/icons/topmenu-mail-black.svg");
+.promo__contact-list .icon-email::before
+{
+    background-image: url('../img/icons/topmenu-mail-black.svg');
 }
 
-.icon-user::before {
-  background-image: url("../img/icons/user.svg");
+.icon-user::before
+{
+    background-image: url('../img/icons/user.svg');
 }
 
-.icon-address::before {
-  background-image: url("../img/icons/contacts-location.svg");
-  background-size: 14px 22px;
+.icon-address::before
+{
+    background-image: url('../img/icons/contacts-location.svg');
+    background-size: 14px 22px;
 }
 
-.icon-human::before {
-  background-image: url("../img/icons/human.svg");
+.icon-human::before
+{
+    background-image: url('../img/icons/human.svg');
 }
 
-@media (min-width: 768px) {
-  .icon-facebook::before {
-    background-image: url("../img/icons/facebook.svg");
-    background-size: 14px 28px;
-  }
+@media (min-width: 768px)
+{
+    .icon-facebook::before
+    {
+        background-image: url('../img/icons/facebook.svg');
+        background-size: 14px 28px;
+    }
 
-  .icon-vkontakte::before {
-    background-image: url("../img/icons/vk.svg");
-    background-size: 31px 16px;
-  }
+    .icon-vkontakte::before
+    {
+        background-image: url('../img/icons/vk.svg');
+        background-size: 31px 16px;
+    }
 
-  .icon-Instagram::before {
-    background-image: url("../img/icons/instagram.svg");
-    background-size: 24px 24px;
-  }
-
+    .icon-Instagram::before
+    {
+        background-image: url('../img/icons/instagram.svg');
+        background-size: 24px 24px;
+    }
 }
 
-@media (min-width: 1440px) {
-  .icon-telephone::before {
-    background-image: url("../img/icons/topmenu-phone.svg");
-  }
+@media (min-width: 1440px)
+{
+    .icon-telephone::before
+    {
+        background-image: url('../img/icons/topmenu-phone.svg');
+    }
 
-  .icon-email::before {
-    background-image: url("../img/icons/topmenu-mail-black.svg");
-  }
+    .icon-email::before
+    {
+        background-image: url('../img/icons/topmenu-mail-black.svg');
+    }
 
-  .registration .icon-telephone::before {
-    background-image: url("../img/icons/contacts-phone.svg");
-    background-size: 36px 36px;
-  }
+    .registration .icon-telephone::before
+    {
+        background-image: url('../img/icons/contacts-phone.svg');
+        background-size: 36px 36px;
+    }
 
-  .registration .icon-email::before {
-    background-image: url("../img/icons/topmenu-mail.svg");
-    background-size: 36px 26px;
-  }
-
-
-
+    .registration .icon-email::before
+    {
+        background-image: url('../img/icons/topmenu-mail.svg');
+        background-size: 36px 26px;
+    }
 }

@@ -1,12 +1,15 @@
 .flags-list {
+  position: relative;
+
   display: flex;
+
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  padding: 0;
 }
 
 .flags-list__item {
@@ -17,4 +20,3 @@
 .flags-list__item:last-child {
   margin-right: 0;
 }
-

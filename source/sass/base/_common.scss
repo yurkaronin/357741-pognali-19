@@ -1,10 +1,32 @@
+/* Доступно прячем элементы на странице */
 .visually-hidden {
   position: absolute;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-  overflow: hidden;
+
   border: 0;
-  clip: rect(0, 0, 0, 0);
+}
+
+/* Декоративная обёртка для позиционирования секций на странице каталога  */
+@media (min-width: 1440px) {
+  .catalog-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    justify-content: space-between;
+  }
+
+  .travelers-result .container {
+    padding: 0;
+  }
 }

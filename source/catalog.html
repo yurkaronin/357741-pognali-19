@@ -35,27 +35,39 @@
 </head>
 
 <body class="body  inner-page">
- <!--  инлайновые иконки  которые имеют разные состояния и будут оформляться через css-->
+  <!--  инлайновые иконки  которые имеют разные состояния и будут оформляться через css-->
   <div style="display:none">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-bike" viewBox="0 0 24 21">
-        <path d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z"></path>
+        <path
+          d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z">
+        </path>
       </symbol>
       <symbol id="icon-bus" viewBox="0 0 17 21">
-        <path d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z"></path>
+        <path
+          d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z">
+        </path>
       </symbol>
       <symbol id="icon-contacts-mail" viewBox="0 0 36 26">
-        <path d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z"></path>
+        <path
+          d="M0 23c0 1.6 1.3 3 3 3h30c1.7 0 3-1.3 3-3V3c0-1.6-1.3-3-3-3H3C1.3 0 0 1.3 0 3v20zm11-10L4.2 6.2c-.6-.6-.6-1.5 0-2 .6-.6 1.5-.6 2.1 0l11 10.9c.4.4 1.2.4 1.6 0l11-10.9c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2L25 13l6.9 6.8c.6.6.6 1.5 0 2-.6.6-1.5.6-2.1 0L22.9 15s-2.1 2.2-2.5 2.5c-.6.6-1.4 1-2.4 1-.9 0-1.8-.4-2.4-1L13.1 15l-6.9 6.8c-.6.6-1.5.6-2.1 0-.6-.6-.6-1.5 0-2L11 13z">
+        </path>
       </symbol>
       <symbol id="icon-contacts-phone" viewBox="0 0 36 36">
-        <path d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z"></path>
+        <path
+          d="M18 0C11.6 0 5.2 1.1 2.8 3.4.9 5.3.2 8.7 0 10.8v.3c0 .8.7 1.5 1.5 1.5.1 0 3.7-.3 5.9-.5h.2c.8 0 1.5-.7 1.5-1.5v-3C9 6.7 9.7 6 10.7 6h14.7c.8 0 1.6.7 1.6 1.7v3c0 .8.7 1.5 1.5 1.5h.2c2.2.2 5.8.5 5.9.5.8 0 1.5-.7 1.5-1.5v-.3c-.2-2.1-.9-5.5-2.8-7.4C30.8 1.1 24.4 0 18 0zm0 19.5c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-2.3-6.8v-1.9c0-1-.8-1.9-1.9-1.9s-1.8.9-1.8 2v1.9L1.9 23.6c-.7.7-1.1 1.6-1.1 2.7v3c0 1.7 1.3 3 3 3h.8v1.9c0 1 .8 1.9 1.9 1.9s1.9-.8 1.9-1.9v-1.9h19.5v1.9c0 1 .8 1.9 1.9 1.9 1 0 1.9-.8 1.9-1.9v-1.9h.8c1.7 0 3-1.3 3-3v-3c0-1.1-.4-2-1.1-2.7L24 12.7v-1.9c0-1-.8-1.9-1.9-1.9s-1.9.8-1.9 1.9v1.9h-4.5zm2.3 3.8c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z">
+        </path>
       </symbol>
       <symbol id="icon-plane" viewBox="0 0 19 21">
-        <path d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z"></path>
+        <path
+          d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z">
+        </path>
       </symbol>
       <symbol id="icon-run" viewBox="0 0 20 21">
         <ellipse cx="14.3" cy="2" rx="2.1" ry="2"></ellipse>
-        <path d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z"></path>
+        <path
+          d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z">
+        </path>
       </symbol>
     </svg>
   </div>
@@ -158,7 +170,8 @@
             <h2 class="geographic-filter__title  title">Фильтрация по странам</h2>
             <button class="geographic-filter__button" type="button">
               <span class="geographic-filter__button-label">Показать всё</span>
-              <span class="geographic-filter__button-label  geographic-filter__button-label--close">Свернуть</span> </button>
+              <span class="geographic-filter__button-label  geographic-filter__button-label--close">Свернуть</span>
+            </button>
           </div>
           <ul class="geographic-filter__list  region-filter  list">
             <li class="region-filter__item">
@@ -918,248 +931,630 @@
       </div>
     </section>
 
-    <section class="preferences-filter">
-      <div class="preferences-filter__global-wrapper  container">
+    <!-- Обёртка для позиционирования основных секций на десктопе  -->
+    <div class="catalog-wrapper">
+      <section class="preferences-filter">
+        <div class="preferences-filter__global-wrapper  container">
 
-        <h2 class="preferences-filter__title  title">Подберите идеального попутчика</h2>
-        <form class="preferences-filter__form" method="get" action="https://echo.htmlacademy.ru">
+          <h2 class="preferences-filter__title  title">Подберите идеального попутчика</h2>
+          <form class="preferences-filter__form" method="get" action="https://echo.htmlacademy.ru">
 
-          <figure class="preferences-filter__wrapper  preferences-group">
-            <figcaption class="preferences-filter__label">Хобби:</figcaption>
-            <button class="preferences-group__button" type="button">Хобби</button>
-            <ul class="preferences-group__list">
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-sports">
-                <label class="preferences-group__label" for="love-sports">Спорт</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-hookah">
-                <label class="preferences-group__label" for="love-hookah">Кальян</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-sofa">
-                <label class="preferences-group__label" for="love-sofa">Диван</label>
-              </li>
-            </ul>
-          </figure>
-
-          <figure class="preferences-filter__wrapper  preferences-group  preferences-group--active">
-            <figcaption class="preferences-filter__label">Музыка:</figcaption>
-            <button class="preferences-group__button" type="button">Музыка</button>
-            <ul class="preferences-group__list  list">
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-rock">
-                <label class="preferences-group__label" for="love-rock">Тяжелый рок</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-rap">
-                <label class="preferences-group__label" for="love-rap">Русский рэп</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-dance">
-                <label class="preferences-group__label" for="love-dance">Евроденс</label>
-              </li>
-            </ul>
-          </figure>
-
-          <figure class="preferences-filter__wrapper  preferences-group">
-            <figcaption class="preferences-filter__label">Еда:</figcaption>
-            <button class="preferences-group__button" type="button">Еда</button>
-            <ul class="preferences-group__list">
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-meat">
-                <label class="preferences-group__label" for="love-meat">Мясоед</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-pp">
-                <label class="preferences-group__label" for="love-pp">Сидит на ПП</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-vegan">
-                <label class="preferences-group__label" for="love-vegan">Веган-сыроед</label>
-              </li>
-            </ul>
-          </figure>
-
-          <figure class="preferences-filter__wrapper  preferences-group">
-            <figcaption class="preferences-filter__label">Транспорт:</figcaption>
-            <button class="preferences-group__button" type="button">Транспорт</button>
-            <ul class="preferences-group__list">
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-plane">
-                <label class="preferences-group__label" for="love-plane">Самолет</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-bus">
-                <label class="preferences-group__label" for="love-bus">Автобус</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-bike">
-                <label class="preferences-group__label" for="love-bike">Велосипед</label>
-              </li>
-              <li class="preferences-group__item">
-                <input class="visually-hidden" type="checkbox" id="love-hiking">
-                <label class="preferences-group__label" for="love-hiking">Пешком</label>
-              </li>
-            </ul>
-          </figure>
-
-          <figure class="preferences-filter__wrapper  preferences-group">
-            <figcaption class="preferences-filter__label">Левел:</figcaption>
-            <button class="preferences-group__button" type="button">Левел</button>
-            <div class="preferences-group__level  level-options">
-              <div class="level-options__wrapper">
-                <input class="level-options__input" type="text" value="30" name="level"
-                  aria-label="Минимальный уровень">
-                <input class="level-options__input" type="text" value="100" name="level"
-                  aria-label="Максимальный уровень">
-              </div>
-              <div class="preferences-group__range  range-elements">
-                <div class="range-elements__toggle  range-elements__toggle--min"></div>
-                <div class="range-elements__toggle  range-elements__toggle--max"></div>
-                <div class="range-elements__indicator"></div>
-              </div>
-            </div>
-          </figure>
-
-          <button class="preferences-filter__button  button" type="submit">Показать</button>
-        </form>
-
-      </div>
-    </section>
-
-    <section class="travelers-result">
-      <div class="container">
-        <h2 class="visually-hidden">Список попутчиков</h2>
-
-        <ul class="travelers-result__list  list">
-          <!-- Карточка попутчика  -->
-          <li class="travelers-result__item  traveler-card">
-            <!-- фотография попутчика  -->
-            <a class="traveler-card__link-photo" href="">
-              <img class="traveler-card__photo" src="img/users/firsova-mobile@1x.jpg" srcset="
-                        img/users/firsova-mobile@1x.jpg 1x,
-                        img/users/firsova-mobile@2x.jpg 2x
-                      " alt="Таня Фирсова" width="70" height="70">
-            </a>
-            <!-- Обёртка для имени и хэштегов  -->
-            <div class="traveler-card__name-wrapper">
-              <a class="traveler-card__link-name" href="">
-                <h3 class="traveler-card__name  user-status">Таня Фирсова</h3>
-              </a>
-              <p class="traveler-card__hashtag-list">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-            </div>
-            <!-- Список стран в которые хочет попасть попутчик  -->
-            <div class="traveler-card__wishlist-wrapper">
-              <h4 class="traveler-card__label">хочет посетить:</h4>
-              <ul class="traveler-card__wishlist  wishlist  list">
-                <li class="wishlist__item">
-                  <div class="wishlist__image-wrapper">
-                    <img class="wishlist__image" src="img/flags/flag-sri-lanka.svg" alt="Флаг Шри-Ланки" width="26"
-                      height="18">
-                  </div>
-                  <span class="wishlist__image-name">Шри-Ланка</span>
+            <figure class="preferences-filter__wrapper  preferences-group">
+              <figcaption class="preferences-filter__label">Хобби:</figcaption>
+              <button class="preferences-group__button" type="button">Хобби</button>
+              <ul class="preferences-group__list">
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-sports">
+                  <label class="preferences-group__label" for="love-sports">Спорт</label>
                 </li>
-                <li class="wishlist__item">
-                  <div class="wishlist__image-wrapper">
-                    <img class="wishlist__image" src="img/flags/flag-thailand.svg" alt="Флаг Тайланда" width="26"
-                      height="18">
-                  </div>
-                  <span class="wishlist__image-name">Тайланд</span>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-hookah">
+                  <label class="preferences-group__label" for="love-hookah">Кальян</label>
                 </li>
-                <li class="wishlist__item">
-                  <div class="wishlist__image-wrapper">
-                    <img class="wishlist__image" src="img/flags/flag-seychelles.svg" alt="Флаг Сейшел" width="26"
-                      height="18">
-                  </div>
-                  <span class="wishlist__image-name">Сейшелы</span>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-sofa">
+                  <label class="preferences-group__label" for="love-sofa">Диван</label>
                 </li>
               </ul>
-            </div>
-            <!-- заголовки про транспорт и уровень попутчика -->
-            <div class="traveler-card__title-wrapper">
-              <h4 class="traveler-card__title  traveler-card__title--left">транспорт:</h4>
-              <h4 class="traveler-card__title  traveler-card__title--right">левел:</h4>
-            </div>
-            <!-- список транспорта и уровень попутчика -->
-            <div class="traveler-card__transport-and-level">
-              <!-- перечень транспорта  -->
-              <ul class="traveler-card__transport-wrapper">
-                <li class="traveler-card__transport traveler-card__transport--active" data-tooltip="Авиаперелет">
-                  <svg class="traveler-card__transport-icon traveler-card__transport-icon--plane" width="14"
-                    height="16">
-                    <use xlink:href="#icon-plane"></use>
-                  </svg>
+            </figure>
+
+            <figure class="preferences-filter__wrapper  preferences-group  preferences-group--active">
+              <figcaption class="preferences-filter__label">Музыка:</figcaption>
+              <button class="preferences-group__button" type="button">Музыка</button>
+              <ul class="preferences-group__list  list">
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-rock">
+                  <label class="preferences-group__label" for="love-rock">Тяжелый рок</label>
                 </li>
-                <li class="traveler-card__transport" data-tooltip="Автотранспорт">
-                  <svg class="traveler-card__transport-icon traveler-card__transport-icon--bus" width="14" height="16">
-                    <use xlink:href="#icon-bus"></use>
-                  </svg>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-rap">
+                  <label class="preferences-group__label" for="love-rap">Русский рэп</label>
                 </li>
-                <li class="traveler-card__transport" data-tooltip="Велосипед">
-                  <svg class="traveler-card__transport-icon traveler-card__transport-icon--bike" width="19" height="17">
-                    <use xlink:href="#icon-bike"></use>
-                  </svg>
-                </li>
-                <li class="traveler-card__transport" data-tooltip="Пешком">
-                  <svg class="traveler-card__transport-icon traveler-card__transport-icon--run" width="15" height="17">
-                    <use xlink:href="#icon-run"></use>
-                  </svg>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-dance">
+                  <label class="preferences-group__label" for="love-dance">Евроденс</label>
                 </li>
               </ul>
-              <!-- Уровень попутчика  -->
-              <div class="traveler-card__level">
-                <svg class="traveler-card__level-percent" width="45" height="45" viewBox="0 0 45 45">
-                  <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
-                    stroke-dasharray="120px 5px"></circle>
-                </svg>
-                <span class="traveler-card__level-number">99</span>
-                <span class="traveler-card__level-description">level</span>
+            </figure>
+
+            <figure class="preferences-filter__wrapper  preferences-group">
+              <figcaption class="preferences-filter__label">Еда:</figcaption>
+              <button class="preferences-group__button" type="button">Еда</button>
+              <ul class="preferences-group__list">
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-meat">
+                  <label class="preferences-group__label" for="love-meat">Мясоед</label>
+                </li>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-pp">
+                  <label class="preferences-group__label" for="love-pp">Сидит на ПП</label>
+                </li>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-vegan">
+                  <label class="preferences-group__label" for="love-vegan">Веган-сыроед</label>
+                </li>
+              </ul>
+            </figure>
+
+            <figure class="preferences-filter__wrapper  preferences-group">
+              <figcaption class="preferences-filter__label">Транспорт:</figcaption>
+              <button class="preferences-group__button" type="button">Транспорт</button>
+              <ul class="preferences-group__list">
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-plane">
+                  <label class="preferences-group__label" for="love-plane">Самолет</label>
+                </li>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-bus">
+                  <label class="preferences-group__label" for="love-bus">Автобус</label>
+                </li>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-bike">
+                  <label class="preferences-group__label" for="love-bike">Велосипед</label>
+                </li>
+                <li class="preferences-group__item">
+                  <input class="visually-hidden" type="checkbox" id="love-hiking">
+                  <label class="preferences-group__label" for="love-hiking">Пешком</label>
+                </li>
+              </ul>
+            </figure>
+
+            <figure class="preferences-filter__wrapper  preferences-group">
+              <figcaption class="preferences-filter__label">Левел:</figcaption>
+              <button class="preferences-group__button" type="button">Левел</button>
+              <div class="preferences-group__level  level-options">
+                <div class="level-options__wrapper">
+                  <input class="level-options__input" type="text" value="30" name="level"
+                    aria-label="Минимальный уровень">
+                  <input class="level-options__input" type="text" value="100" name="level"
+                    aria-label="Максимальный уровень">
+                </div>
+                <div class="preferences-group__range  range-elements">
+                  <div class="range-elements__toggle  range-elements__toggle--min"></div>
+                  <div class="range-elements__toggle  range-elements__toggle--max"></div>
+                  <div class="range-elements__indicator"></div>
+                </div>
               </div>
-            </div>
-            <!-- Интерактивные элементы: кнопка ПОЗВАТЬ, лайк и их колличество -->
-            <div class="traveler-card__button-and-like">
-              <div class="traveler-card__button-wrapper">
-                <a class="traveler-card__button  button button--rounded" href="call-teammate.html">Позвать!</a>
-              </div>
-              <div class="traveler-card__like-wrapper">
-                <button class="traveler-card__button-like traveler-card__button-like--active"
-                  type="button">Поставить/Убрать лайк</button>
-                <span class="traveler-card__likes-number">1,5 M</span>
-              </div>
-            </div>
-          </li>
+            </figure>
 
-        </ul>
+            <button class="preferences-filter__button  button" type="submit">Показать</button>
+          </form>
 
-        <a class="travelers-result__button-more  button" href="travelers-all.html">Показать еще</a>
-
-        <div class="travelers-result__pagination  pagination">
-
-          <ul class="pagination__pages-list  list">
-            <li class="pagination__pages-item">
-              <a class="pagination__page-link pagination__page-link--active">1</a>
-            </li>
-            <li class="pagination__pages-item">
-              <a class="pagination__page-link" href="">2</a>
-            </li>
-            <li class="pagination__pages-item">
-              <a class="pagination__page-link" href="">3</a>
-            </li>
-            <li class="pagination__pages-item">
-              <a class="pagination__page-link" href="">4</a>
-            </li>
-          </ul>
-          <div class="pagination__buttons-wrapper">
-            <a class="pagination__control-button pagination__control-button--prev" href="catalog-prev.html"><span
-                class="visually-hidden">Показать предыдущую страницу</span></a>
-            <a class="pagination__control-button pagination__control-button--next" href="catalog-next.html"><span
-                class="visually-hidden">Показать следующую страницу</span></a>
-          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section class="travelers-result">
+        <div class="container">
+          <h2 class="visually-hidden">Список попутчиков</h2>
+
+          <ul class="travelers-result__list  list">
+
+            <!-- Карточка попутчика  Таня Фирсова-->
+            <li class="travelers-result__item  traveler-card">
+              <!-- фотография попутчика  -->
+              <a class="traveler-card__link-photo" href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="
+                              img/users/firsova-desktop@1x.webp 1x,
+                              img/users/firsova-desktop@2x.webp 2x
+                            ">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="
+                              img/users/firsova-tablet@1x.webp 1x,
+                              img/users/firsova-tablet@2x.webp 2x
+                            ">
+                  <source type="image/webp" srcset="
+                              img/users/firsova-mobile@1x.webp 1x,
+                              img/users/firsova-mobile@2x.webp 2x
+                            ">
+                  <source media="(min-width: 1440px)" srcset="
+                              img/users/firsova-desktop@1x.jpg 1x,
+                              img/users/firsova-desktop@2x.jpg 2x
+                            ">
+                  <source media="(min-width: 768px)" srcset="
+                              img/users/firsova-tablet@1x.jpg 1x,
+                              img/users/firsova-tablet@2x.jpg 2x
+                            ">
+                  <img class="traveler-card__photo" src="img/firsova-mobile@1x.jpg" srcset="
+                              img/users/firsova-mobile@1x.jpg 1x,
+                              img/users/firsova-mobile@2x.jpg 2x
+                            " alt="Таня Фирсова" width="70" height="70">
+                </picture>
+              </a>
+              <!-- Обёртка для имени и хэштегов  -->
+              <div class="traveler-card__name-wrapper">
+                <a class="traveler-card__link-name" href="">
+                  <h3 class="traveler-card__name  user-status">Таня Фирсова</h3>
+                </a>
+                <p class="traveler-card__hashtag-list">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              </div>
+              <!-- Список стран в которые хочет попасть попутчик  -->
+              <div class="traveler-card__wishlist-wrapper">
+                <h4 class="traveler-card__label">хочет посетить:</h4>
+                <ul class="traveler-card__wishlist  wishlist  list">
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-sri-lanka.svg" alt="Флаг Шри-Ланки" width="26"
+                        height="18">
+                    </div>
+                    <span class="wishlist__image-name">Шри-Ланка</span>
+                  </li>
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-thailand.svg" alt="Флаг Тайланда" width="26"
+                        height="18">
+                    </div>
+                    <span class="wishlist__image-name">Тайланд</span>
+                  </li>
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-seychelles.svg" alt="Флаг Сейшел" width="26"
+                        height="18">
+                    </div>
+                    <span class="wishlist__image-name">Сейшелы</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- заголовки про транспорт и уровень попутчика -->
+              <div class="traveler-card__title-wrapper">
+                <h4 class="traveler-card__title  traveler-card__title--left">транспорт:</h4>
+                <h4 class="traveler-card__title  traveler-card__title--right">левел:</h4>
+              </div>
+              <!-- список транспорта и уровень попутчика -->
+              <div class="traveler-card__transport-and-level">
+                <!-- перечень транспорта  -->
+                <ul class="traveler-card__transport-wrapper">
+                  <li class="traveler-card__transport  traveler-card__transport--active" data-tooltip="Авиаперелет">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--plane" width="14"
+                      height="16">
+                      <use xlink:href="#icon-plane"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport" data-tooltip="Автотранспорт">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--bus" width="14"
+                      height="16">
+                      <use xlink:href="#icon-bus"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport" data-tooltip="Велосипед">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--bike" width="19"
+                      height="17">
+                      <use xlink:href="#icon-bike"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport" data-tooltip="Пешком">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--run" width="15"
+                      height="17">
+                      <use xlink:href="#icon-run"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <!-- Уровень попутчика  -->
+                <div class="traveler-card__level">
+                  <svg class="traveler-card__level-percent" width="45" height="45" viewBox="0 0 45 45">
+                    <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                      stroke-dasharray="120px 5px"></circle>
+                  </svg>
+                  <span class="traveler-card__level-number">99</span>
+                  <span class="traveler-card__level-description">level</span>
+                </div>
+              </div>
+              <!-- Интерактивные элементы: кнопка ПОЗВАТЬ, лайк и их количество -->
+              <div class="traveler-card__button-and-like">
+                <div class="traveler-card__button-wrapper">
+                  <a class="traveler-card__button  button button--rounded" href="call-teammate.html">Позвать!</a>
+                </div>
+                <div class="traveler-card__like-wrapper">
+                  <button class="traveler-card__button-like traveler-card__button-like--active"
+                    type="button">Поставить/Убрать лайк</button>
+                  <span class="traveler-card__likes-number">1,5 M</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Карточка попутчика  Петя Демин-->
+            <li class="travelers-result__item  traveler-card">
+              <!-- фотография попутчика  -->
+              <a class="traveler-card__link-photo" href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="
+                              img/users/demin-desktop@1x.webp 1x,
+                              img/users/demin-desktop@2x.webp 2x
+                            ">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="
+                              img/users/demin-tablet@1x.webp 1x,
+                              img/users/demin-tablet@2x.webp 2x
+                            ">
+                  <source type="image/webp" srcset="
+                              img/users/demin-mobile@1x.webp 1x,
+                              img/users/demin-mobile@2x.webp 2x
+                            ">
+                  <source media="(min-width: 1440px)" srcset="
+                              img/users/demin-desktop@1x.jpg 1x,
+                              img/users/demin-desktop@2x.jpg 2x
+                            ">
+                  <source media="(min-width: 768px)" srcset="
+                              img/users/demin-tablet@1x.jpg 1x,
+                              img/users/demin-tablet@2x.jpg 2x
+                            ">
+                  <img class="traveler-card__photo" src="img/demin-mobile@1x.jpg" srcset="
+                              img/users/demin-mobile@1x.jpg 1x,
+                              img/users/demin-mobile@2x.jpg 2x
+                            " alt="Таня Фирсова" width="70" height="70">
+                </picture>
+              </a>
+              <!-- Обёртка для имени и хэштегов  -->
+              <div class="traveler-card__name-wrapper">
+                <a class="traveler-card__link-name" href="">
+                  <h3 class="traveler-card__name  user-status">Петя Демин</h3>
+                </a>
+                <p class="traveler-card__hashtag-list">#бургер #бар #футбол #концерт #крафт</p>
+              </div>
+              <!-- Список стран в которые хочет попасть попутчик  -->
+              <div class="traveler-card__wishlist-wrapper">
+                <h4 class="traveler-card__label">хочет посетить:</h4>
+                <ul class="traveler-card__wishlist  wishlist  list">
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-belgium.svg" alt="Флаг Бельгии" width="26"
+                        height="18">
+                    </div>
+                    <span class="wishlist__image-name">Бельгия</span>
+                  </li>
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-czech.svg" alt="Флаг Чехии" width="26"
+                        height="18">
+                    </div>
+                    <span class="wishlist__image-name">Чехия</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- заголовки про транспорт и уровень попутчика -->
+              <div class="traveler-card__title-wrapper">
+                <h4 class="traveler-card__title  traveler-card__title--left">транспорт:</h4>
+                <h4 class="traveler-card__title  traveler-card__title--right">левел:</h4>
+              </div>
+              <!-- список транспорта и уровень попутчика -->
+              <div class="traveler-card__transport-and-level">
+                <!-- перечень транспорта  -->
+                <ul class="traveler-card__transport-wrapper">
+                  <li class="traveler-card__transport  traveler-card__transport--active" data-tooltip="Авиаперелет">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--plane" width="14"
+                      height="16">
+                      <use xlink:href="#icon-plane"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport  traveler-card__transport--active" data-tooltip="Автотранспорт">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--bus" width="14"
+                      height="16">
+                      <use xlink:href="#icon-bus"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport" data-tooltip="Велосипед">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--bike" width="19"
+                      height="17">
+                      <use xlink:href="#icon-bike"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport  traveler-card__transport--active" data-tooltip="Пешком">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--run" width="15"
+                      height="17">
+                      <use xlink:href="#icon-run"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <!-- Уровень попутчика  -->
+                <div class="traveler-card__level">
+                  <svg class="traveler-card__level-percent" width="45" height="45" viewBox="0 0 45 45">
+                    <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                      stroke-dasharray="105px 20px"></circle>
+                  </svg>
+                  <span class="traveler-card__level-number">80</span>
+                  <span class="traveler-card__level-description">level</span>
+                </div>
+              </div>
+              <!-- Интерактивные элементы: кнопка ПОЗВАТЬ, лайк и их колличество -->
+              <div class="traveler-card__button-and-like">
+                <div class="traveler-card__button-wrapper">
+                  <a class="traveler-card__button  button button--rounded" href="call-teammate.html">Позвать!</a>
+                </div>
+                <div class="traveler-card__like-wrapper">
+                  <button class="traveler-card__button-like" type="button">Поставить/Убрать лайк</button>
+                  <span class="traveler-card__likes-number">150</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Карточка попутчика  Марк Смолов-->
+            <li class="travelers-result__item  traveler-card">
+              <!-- фотография попутчика  -->
+              <a class="traveler-card__link-photo" href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="
+                              img/users/smolov-desktop@1x.webp 1x,
+                              img/users/smolov-desktop@2x.webp 2x
+                            ">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="
+                              img/users/smolov-tablet@1x.webp 1x,
+                              img/users/smolov-tablet@2x.webp 2x
+                            ">
+                  <source type="image/webp" srcset="
+                              img/users/smolov-mobile@1x.webp 1x,
+                              img/users/smolov-mobile@2x.webp 2x
+                            ">
+                  <source media="(min-width: 1440px)" srcset="
+                              img/users/smolov-desktop@1x.jpg 1x,
+                              img/users/smolov-desktop@2x.jpg 2x
+                            ">
+                  <source media="(min-width: 768px)" srcset="
+                              img/users/smolov-tablet@1x.jpg 1x,
+                              img/users/smolov-tablet@2x.jpg 2x
+                            ">
+                  <img class="traveler-card__photo" src="img/smolov-mobile@1x.jpg" srcset="
+                              img/users/smolov-mobile@1x.jpg 1x,
+                              img/users/smolov-mobile@2x.jpg 2x
+                            " alt="Марк Смолов" width="70" height="70">
+                </picture>
+              </a>
+              <!-- Обёртка для имени и хэштегов  -->
+              <div class="traveler-card__name-wrapper">
+                <a class="traveler-card__link-name" href="">
+                  <h3 class="traveler-card__name  user-status">Марк Смолов</h3>
+                </a>
+                <p class="traveler-card__hashtag-list">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              </div>
+              <!-- Список стран в которые хочет попасть попутчик  -->
+              <div class="traveler-card__wishlist-wrapper">
+                <h4 class="traveler-card__label">хочет посетить:</h4>
+                <ul class="traveler-card__wishlist  wishlist  list">
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-usa.svg" alt="Флаг США" width="26" height="18">
+                    </div>
+                    <span class="wishlist__image-name">США</span>
+                  </li>
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-australia.svg" alt="Флаг Австралии" width="26"
+                        height="18">
+                    </div>
+                    <span class="wishlist__image-name">Австралия</span>
+                  </li>
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-dominica.svg" alt="Флаг Доминиканы" width="26"
+                        height="18">
+                    </div>
+                    <span class="wishlist__image-name">Доминикана</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- заголовки про транспорт и уровень попутчика -->
+              <div class="traveler-card__title-wrapper">
+                <h4 class="traveler-card__title  traveler-card__title--left">транспорт:</h4>
+                <h4 class="traveler-card__title  traveler-card__title--right">левел:</h4>
+              </div>
+              <!-- список транспорта и уровень попутчика -->
+              <div class="traveler-card__transport-and-level">
+                <!-- перечень транспорта  -->
+                <ul class="traveler-card__transport-wrapper">
+                  <li class="traveler-card__transport  traveler-card__transport--active" data-tooltip="Авиаперелет">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--plane" width="14"
+                      height="16">
+                      <use xlink:href="#icon-plane"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport" data-tooltip="Автотранспорт">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--bus" width="14"
+                      height="16">
+                      <use xlink:href="#icon-bus"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport  traveler-card__transport--active" data-tooltip="Велосипед">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--bike" width="19"
+                      height="17">
+                      <use xlink:href="#icon-bike"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport" data-tooltip="Пешком">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--run" width="15"
+                      height="17">
+                      <use xlink:href="#icon-run"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <!-- Уровень попутчика  -->
+                <div class="traveler-card__level">
+                  <svg class="traveler-card__level-percent" width="45" height="45" viewBox="0 0 45 45">
+                    <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                      stroke-dasharray="31px 94px"></circle>
+                  </svg>
+                  <span class="traveler-card__level-number">25</span>
+                  <span class="traveler-card__level-description">level</span>
+                </div>
+              </div>
+              <!-- Интерактивные элементы: кнопка ПОЗВАТЬ, лайк и их количество -->
+              <div class="traveler-card__button-and-like">
+                <div class="traveler-card__button-wrapper">
+                  <a class="traveler-card__button  button button--rounded" href="call-teammate.html">Позвать!</a>
+                </div>
+                <div class="traveler-card__like-wrapper">
+                  <button class="traveler-card__button-like" type="button">Поставить/Убрать лайк</button>
+                  <span class="traveler-card__likes-number">1700</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Карточка попутчика  Лариса Роговая-->
+            <li class="travelers-result__item  traveler-card">
+              <!-- фотография попутчика  -->
+              <a class="traveler-card__link-photo" href="">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="
+                              img/users/rogovaya-desktop@1x.webp 1x,
+                              img/users/rogovaya-desktop@2x.webp 2x
+                            ">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="
+                              img/users/rogovaya-tablet@1x.webp 1x,
+                              img/users/rogovaya-tablet@2x.webp 2x
+                            ">
+                  <source type="image/webp" srcset="
+                              img/users/rogovaya-mobile@1x.webp 1x,
+                              img/users/rogovaya-mobile@2x.webp 2x
+                            ">
+                  <source media="(min-width: 1440px)" srcset="
+                              img/users/rogovaya-desktop@1x.jpg 1x,
+                              img/users/rogovaya-desktop@2x.jpg 2x
+                            ">
+                  <source media="(min-width: 768px)" srcset="
+                              img/users/rogovaya-tablet@1x.jpg 1x,
+                              img/users/rogovaya-tablet@2x.jpg 2x
+                            ">
+                  <img class="traveler-card__photo" src="img/rogovaya-mobile@1x.jpg" srcset="
+                              img/users/rogovaya-mobile@1x.jpg 1x,
+                              img/users/rogovaya-mobile@2x.jpg 2x
+                            " alt="Лариса Роговая" width="70" height="70">
+                </picture>
+              </a>
+              <!-- Обёртка для имени и хэштегов  -->
+              <div class="traveler-card__name-wrapper">
+                <a class="traveler-card__link-name" href="">
+                  <h3 class="traveler-card__name  user-status  user-status--online">Лариса Роговая</h3>
+                </a>
+                <p class="traveler-card__hashtag-list">#образование #карьера #учеба #линкедин</p>
+              </div>
+              <!-- Список стран в которые хочет попасть попутчик  -->
+              <div class="traveler-card__wishlist-wrapper">
+                <h4 class="traveler-card__label">хочет посетить:</h4>
+                <ul class="traveler-card__wishlist  wishlist  list">
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-united-kingdom.svg" alt="Флаг Великобритании"
+                        width="26" height="18">
+                    </div>
+                    <span class="wishlist__image-name">Великобритания</span>
+                  </li>
+                  <li class="wishlist__item">
+                    <div class="wishlist__image-wrapper">
+                      <img class="wishlist__image" src="img/flags/flag-germany.svg" alt="Флаг Германии" width="26"
+                        height="18">
+                    </div>
+                    <span class="wishlist__image-name">Германия</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- заголовки про транспорт и уровень попутчика -->
+              <div class="traveler-card__title-wrapper">
+                <h4 class="traveler-card__title  traveler-card__title--left">транспорт:</h4>
+                <h4 class="traveler-card__title  traveler-card__title--right">левел:</h4>
+              </div>
+              <!-- список транспорта и уровень попутчика -->
+              <div class="traveler-card__transport-and-level">
+                <!-- перечень транспорта  -->
+                <ul class="traveler-card__transport-wrapper">
+                  <li class="traveler-card__transport  traveler-card__transport--active" data-tooltip="Авиаперелет">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--plane" width="14"
+                      height="16">
+                      <use xlink:href="#icon-plane"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport  traveler-card__transport--active" data-tooltip="Автотранспорт">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--bus" width="14"
+                      height="16">
+                      <use xlink:href="#icon-bus"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport" data-tooltip="Велосипед">
+                    <svg class="traveler-card__transport-icon  traveler-card__transport-icon--bike" width="19"
+                      height="17">
+                      <use xlink:href="#icon-bike"></use>
+                    </svg>
+                  </li>
+                  <li class="traveler-card__transport" data-tooltip="Пешком">
+                    <svg class="traveler-card__transport-icon traveler-card__transport-icon--run" width="15"
+                      height="17">
+                      <use xlink:href="#icon-run"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <!-- Уровень попутчика  -->
+                <div class="traveler-card__level">
+                  <svg class="traveler-card__level-percent" width="45" height="45" viewBox="0 0 45 45">
+                    <circle r="20" cx="22" cy="22" fill="transparent" stroke="#ff8d30" stroke-width="2"
+                      stroke-dasharray="63px 62px"></circle>
+                  </svg>
+                  <span class="traveler-card__level-number">50</span>
+                  <span class="traveler-card__level-description">level</span>
+                </div>
+              </div>
+              <!-- Интерактивные элементы: кнопка ПОЗВАТЬ, лайк и их количество -->
+              <div class="traveler-card__button-and-like">
+                <div class="traveler-card__button-wrapper">
+                  <a class="traveler-card__button  button button--rounded" href="call-teammate.html">Позвать!</a>
+                </div>
+                <div class="traveler-card__like-wrapper">
+                  <button class="traveler-card__button-like traveler-card__button-like--active"
+                    type="button">Поставить/Убрать лайк</button>
+                  <span class="traveler-card__likes-number">23</span>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+          <a class="travelers-result__button-more" href="travelers-all.html">
+            <span class="travelers-result__button-text">Показать еще</span>
+          </a>
+
+          <div class="travelers-result__pagination  pagination">
+
+            <ul class="pagination__pages-list  list">
+              <li class="pagination__pages-item">
+                <a class="pagination__page-link pagination__page-link--active">1</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__page-link" href="">2</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__page-link" href="">3</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a class="pagination__page-link" href="">4</a>
+              </li>
+            </ul>
+            <div class="pagination__buttons-wrapper">
+              <a class="pagination__control-button pagination__control-button--prev" href="catalog-prev.html"><span
+                  class="visually-hidden">Показать предыдущую страницу</span></a>
+              <a class="pagination__control-button pagination__control-button--next" href="catalog-next.html"><span
+                  class="visually-hidden">Показать следующую страницу</span></a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
   </main>
 
   <footer class="footer">

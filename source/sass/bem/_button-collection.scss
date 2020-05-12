@@ -1,42 +1,55 @@
 .button {
-  color: $color-button__text;
   font-family: $font-family_base;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  text-transform: uppercase;
+
+  display: inline-block;
+
+  padding: 13px 40px 11px;
+
+  cursor: pointer;
   text-align: center;
+  text-transform: uppercase;
+
+  color: $color-button__text;
   border-radius: 25px;
   background-color: $color__background-button;
-  padding: 13px 40px 11px;
-  display: inline-block;
-  cursor: pointer;
 }
 
 .button--arrow {
-  border-radius: 10px;
   position: relative;
+
   display: flex;
+
+  border-radius: 10px;
+
   align-items: center;
 }
 
 .button--arrow::after {
-  content: "";
   position: absolute;
   right: 15px;
+
+  content: '';
+
   border: 8px solid transparent;
   border-left: 10px solid $color-arrow__icon;
 }
 
 .button-icon {
+  font-family: $font-family_base;
+
+  display: flex;
+
+  width: 100%;
+  padding: 14px 40px 13px;
+
+  color: #161c35;
+  border: none;
   border-radius: 20px;
   background-color: #d6daed;
-  width: 100%;
-  color: #161c35;
-  font-family: $font-family_base;
-  padding: 14px 40px 13px;
-  border: none;
-  display: flex;
+
   justify-content: center;
 }
 
@@ -44,24 +57,32 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 100%;
-  text-transform: uppercase;
-  text-align: center;
+
   position: relative;
+
   display: flex;
-  align-items: center;
+
   padding-left: 25px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  align-items: center;
 }
 
 .button-icon__decorate::before {
-  content: "";
   position: absolute;
   left: 0;
+
   width: 12px;
   height: 12px;
+
+  content: '';
+
+  background-image: url('../img/icons/filter-close.svg');
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
-  background-image: url("../img/icons/filter-close.svg");
+  background-size: contain;
 }
 
 @media (min-width: 768px) {
@@ -72,9 +93,10 @@
 
   .button--arrow {
     padding: 30px 60px 27px 35px;
-    border-radius: 20px;
-    text-transform: none;
-    text-align: left;
-  }
 
+    text-align: left;
+    text-transform: none;
+
+    border-radius: 20px;
+  }
 }
