@@ -80,6 +80,7 @@
   height: 40px;
 
   background-color: $accent-3;
+  background-image: url("../img/icons/topmenu-phone.svg");
 }
 
 .promo__contact-list .icon-email::before {
@@ -87,6 +88,7 @@
   height: 40px;
 
   background-color: $accent-2;
+  background-image: url("../img/icons/topmenu-mail-black.svg");
 }
 
 .promo__contact-list {
@@ -150,14 +152,6 @@
 
 .promo__steps__wrapper {
   margin-top: -72px;
-}
-
-.promo__contact-list .icon-telephone::before {
-  background-image: url("../img/icons/topmenu-phone.svg");
-}
-
-.promo__contact-list .icon-email::before {
-  background-image: url("../img/icons/topmenu-mail-black.svg");
 }
 
 @media (min-width: 768px) {

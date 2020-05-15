@@ -31,10 +31,6 @@
 .page-navigation--white .menu-toggler::after,
 .page-navigation--white .menu-toggler::before {
   background-color: $silver-light;
-}
-
-.page-navigation--white .menu-toggler::after,
-.page-navigation--white .menu-toggler::before {
   height: 2px;
   border-radius: 0;
 }
