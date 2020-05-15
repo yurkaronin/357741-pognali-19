@@ -19,7 +19,7 @@
 
   text-align: center;
 
-  color: #ffffff;
+  color: $white;
 
   justify-content: center;
   align-items: center;
@@ -36,7 +36,7 @@
 
   letter-spacing: normal;
 
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid $white;
 }
 
 .personal-level__label {
@@ -50,9 +50,9 @@
 .personal-level__background {
   opacity: 0.6;
 
-  fill: #000000;
+  fill: $black;
   stroke-width: 3px;
-  stroke: #000000;
+  stroke: $black;
 }
 
 .personal-level__progress {
@@ -62,7 +62,7 @@
 
   fill: none;
   stroke-width: 2px;
-  stroke: #ff8d30;
+  stroke: $accent-3;
   stroke-linecap: round;
   stroke-dasharray: 190.56;
   stroke-dashoffset: 25;
@@ -89,7 +89,7 @@
 
     margin-top: 2px;
 
-    color: #cbcbcb;
-    border-top: 1px solid #cbcbcb;
+    color: $brand-16;
+    border-top: 1px solid $brand-16;
   }
 }

@@ -8,16 +8,10 @@
   padding: 30px 45px 18px;
 
   border-radius: 0 0 10px 10px;
-  background-color: #ffffff;
+  background-color: $white;
 
   flex-wrap: wrap;
   align-items: center;
-}
-
-.travelers__list {
-  position: relative;
-
-  margin-bottom: 20px;
 }
 
 .travelers-list__item {
@@ -41,7 +35,7 @@
 
   text-align: center;
 
-  color: #1d2e5b;
+  color: $brand-1;
 }
 
 .travelers-list__hashtag {
@@ -53,7 +47,7 @@
 
   text-align: center;
 
-  color: #444444;
+  color: $gray;
 }
 
 .travelers-list__transport {

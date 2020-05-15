@@ -7,7 +7,7 @@
   padding: 15px 18px 22px 20px;
 
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .traveler-card__link-photo {
@@ -44,7 +44,7 @@
   margin-bottom: 45px;
   margin-left: 85px;
 
-  color: #1d2e5b;
+  color: $brand-1;
 }
 
 .traveler-card__name::after {
@@ -60,14 +60,6 @@
   border-radius: 50%;
 }
 
-.user-status::after {
-  background-color: #f97676;
-}
-
-.user-status--online::after {
-  background-color: #81e31e;
-}
-
 .traveler-card__hashtag-list {
   font-size: 15px;
   font-weight: 400;
@@ -80,7 +72,7 @@
 
   text-align: left;
 
-  color: #444444;
+  color: $gray;
 }
 
 .traveler-card__wishlist-wrapper {
@@ -107,7 +99,7 @@
 
   text-transform: lowercase;
 
-  color: #444444;
+  color: $gray;
 }
 
 .traveler-card__label::before,
@@ -119,7 +111,7 @@
 
   content: "";
 
-  background-color: #edeff6;
+  background-color: $brand-8;
 }
 
 .traveler-card__label::before {
@@ -155,7 +147,7 @@
 
   text-transform: lowercase;
 
-  color: #444444;
+  color: $gray;
 }
 
 .traveler-card__title--left {
@@ -171,7 +163,7 @@
 
   content: "";
 
-  background-color: #edeff6;
+  background-color: $brand-8;
 }
 
 .traveler-card__title--left::before {
@@ -200,7 +192,7 @@
 
   content: "";
 
-  background-color: #edeff6;
+  background-color: $brand-8;
 }
 
 .traveler-card__transport-and-level {
@@ -232,7 +224,7 @@
   height: 32px;
 
   border-radius: 50%;
-  background-color: #edeff6;
+  background-color: $brand-8;
 }
 
 .traveler-card__transport--active svg {
@@ -240,7 +232,7 @@
 
   opacity: 1;
 
-  fill: #1d2e5b;
+  fill: $brand-1;
 }
 
 .traveler-card__transport-icon {
@@ -281,7 +273,7 @@
   margin-top: 5px;
   margin-right: 10px;
 
-  color: #1d2e5b;
+  color: $brand-1;
 
   justify-content: center;
   align-items: stretch;
@@ -351,7 +343,7 @@
 
   border: 0;
   border-radius: 50%;
-  background-color: #edeff6;
+  background-color: $brand-8;
 
   flex-shrink: 0;
 }
@@ -375,7 +367,7 @@
 
 
 .traveler-card__button-like--active {
-  background-color: #f9eaea;
+  background-color: $brand-9;
 }
 
 .traveler-card__button-like--active::before {
@@ -393,7 +385,7 @@
 
   text-transform: uppercase;
 
-  color: #161c36;
+  color: $brand-10;
 }
 
 @media (min-width: 768px) {
@@ -473,7 +465,7 @@
 
     content: "";
 
-    background-color: #edeff6;
+    background-color: $brand-8;
   }
 
   .traveler-card__label::after {
@@ -486,7 +478,7 @@
 
     content: "";
 
-    background-color: #edeff6;
+    background-color: $brand-8;
   }
 
   .traveler-card__wishlist {

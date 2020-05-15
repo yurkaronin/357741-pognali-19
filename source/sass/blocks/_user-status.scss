@@ -1,0 +1,7 @@
+.user-status::after {
+  background-color: $online;
+}
+
+.user-status--online::after {
+  background-color: $offline;
+}

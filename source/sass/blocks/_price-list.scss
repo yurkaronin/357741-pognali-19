@@ -11,22 +11,6 @@
   flex-wrap: wrap;
 }
 
-.prices__list::after {
-  position: absolute;
-  top: -125px;
-  right: -25px;
-
-  display: block;
-
-  width: 99px;
-  height: 99px;
-
-  content: "";
-
-  background-image: url("../img/icons/rates.png");
-  background-repeat: no-repeat;
-}
-
 .price-list__item {
   position: relative;
 
@@ -35,7 +19,7 @@
   padding: 14px 0;
   padding-top: 10px;
 
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid $brand-6;
 }
 
 .price-list__item::after {
@@ -56,32 +40,24 @@
   content: counters(li, "");
   counter-increment: li;
 
-  color: #ffffff;
+  color: $white;
   border-radius: 50%;
-  background-color: #ffa530;
+  background-color: $accent-5;
 
   align-items: center;
   justify-content: center;
 }
 
 .price-list__item:last-child {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $brand-6;
 }
 
 .price-list__item:nth-child(2)::after {
-  background-color: #ffbd30;
+  background-color: $accent-2;
 }
 
 .price-list__item:last-child::after {
-  background-color: #ffd74b;
-}
-
-.prices__link {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
-
-  color: #192144;
+  background-color: $accent-1;
 }
 
 @media (min-width: 768px) {
@@ -117,16 +93,6 @@
     padding: 34px;
   }
 
-  .prices__list::after {
-    top: 218px;
-    right: 34px;
-
-    width: 100px;
-    height: 99px;
-
-    background-image: url("../img/icons/rates.png");
-  }
-
   .price-list::before {
     position: absolute;
     z-index: 0;
@@ -139,7 +105,7 @@
     content: "";
 
     border-radius: 20px;
-    background-color: #e2e5f2;
+    background-color: $brand-15;
   }
 
   .price-list__cost {

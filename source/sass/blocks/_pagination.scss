@@ -7,7 +7,7 @@
   padding: 0;
 
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .pagination__pages-list {
@@ -25,7 +25,7 @@
   height: 100%;
   padding-top: 4px;
 
-  color: #161c36;
+  color: $brand-10;
 
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@
 
 .pagination__page-link--active {
   border-radius: 50%;
-  background-color: #ffd74b;
+  background-color: $accent-1;
 }
 
 .pagination__buttons-wrapper {
@@ -53,7 +53,7 @@
 }
 
 .pagination__control-button--prev {
-  border-right: 1px solid #edeff6;
+  border-right: 1px solid $brand-8;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -75,13 +75,13 @@
 .pagination__control-button--prev::before {
   left: 53px;
 
-  border-right-color: #192144;
+  border-right-color: $brand-4;
 }
 
 .pagination__control-button--next::before {
   right: 53px;
 
-  border-left-color: #192144;
+  border-left-color: $brand-4;
 }
 
 @media (min-width: 768px) {

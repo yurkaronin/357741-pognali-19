@@ -1,0 +1,50 @@
+.menu-toggler {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-toggler::after,
+.menu-toggler::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: $white;
+}
+
+.menu-toggler::before {
+  top: 14px;
+  left: 17px;
+}
+
+.menu-toggler::after {
+  top: 22px;
+  left: 17px;
+}
+
+.page-navigation--white .menu-toggler::after,
+.page-navigation--white .menu-toggler::before {
+  background-color: $silver-light;
+}
+
+.page-navigation--white .menu-toggler::after,
+.page-navigation--white .menu-toggler::before {
+  height: 2px;
+  border-radius: 0;
+}
+
+.page-navigation--active .menu-toggler::before {
+  transform: rotate(45deg);
+  top: 19px;
+}
+
+.page-navigation--active .menu-toggler::after {
+  transform: rotate(-45deg);
+  top: 19px;
+}

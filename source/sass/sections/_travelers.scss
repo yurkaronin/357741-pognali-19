@@ -2,9 +2,9 @@
   padding-top: 68px;
   padding-bottom: 30px;
 
-  color: #ffffff;
+  color: $white;
   border-radius: 0 0 30px 30px;
-  background-color: #192144;
+  background-color: $brand-4;
 }
 
 .travelers__container {
@@ -23,7 +23,7 @@
   content: "";
 
   border-radius: 20px;
-  background-color: #141b3b;
+  background-color: $brand-2;
 }
 
 .travelers__container::after {
@@ -58,7 +58,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
 
-  color: #ffffff;
+  color: $white;
 }
 
 .travelers .text--attention {
@@ -68,7 +68,13 @@
 
   margin-bottom: 60px;
 
-  color: #ffffff;
+  color: $white;
+}
+
+.travelers__list {
+  position: relative;
+
+  margin-bottom: 20px;
 }
 
 .travelers__list::before {
@@ -114,7 +120,7 @@
     content: "";
 
     border-radius: 20px;
-    background-color: #141b3b;
+    background-color: $brand-2;
   }
 
   .travelers__container::after {

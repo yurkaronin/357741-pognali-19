@@ -35,88 +35,97 @@
 
 <body class="body  menu-show">
 
-  <header class="header">
-    <div class="container">
-      <!-- добавьте тегу nav доп класс header__navigation--active что бы увидеть активное меню на планшете или мобилке  -->
-      <nav class="header__navigation">
-        <div class="header__wrapper">
-          <!-- обертка логотипа и кнопки меню -->
-          <div class="header__logo-wrapper">
-            <a href="" class="header__logo-link  logotype">
+  <header class="header  header--main">
+    <!-- различные состояния для меню. для активации меню добавляем класс page-navigation--white и меняем класс page-navigation--inactive на page-navigation--active стилизация прилипающего меню page-navigation--scrolled-->
+    <nav class="header__navigation  page-navigation  page-navigation--main   page-navigation--inactive  page-navigation--inner">
+      <div class="container">
+        <div class="page-navigation__wrapper">
+          <div class="page-navigation__logotype  top-logotype">
+            <a class="top-logotype__link" href="">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="
-              img/logo/logo-desktop-white@1x.webp 1x,
-              img/logo/logo-desktop-white@2x.webp 2x
-            ">
+                img/logo/logo-desktop-white@1x.webp 1x,
+                img/logo/logo-desktop-white@2x.webp 2x
+              ">
                 <source type="image/webp" media="(min-width: 768px)" srcset="
-              img/logo/logo-tablet-white@1x.webp 1x,
-              img/logo/logo-tablet-white@2x.webp 2x
-            ">
+                img/logo/logo-tablet-white@1x.webp 1x,
+                img/logo/logo-tablet-white@2x.webp 2x
+              ">
                 <source type="image/webp" srcset="
-              img/logo/logo-mobile-white@1x.webp 1x,
-              img/logo/logo-mobile-white@2x.webp 2x
-            ">
+                img/logo/logo-mobile-white@1x.webp 1x,
+                img/logo/logo-mobile-white@2x.webp 2x
+              ">
                 <source media="(min-width: 1440px)" srcset="
-              img/logo/logo-desktop-white@1x.png 1x,
-              img/logo/logo-desktop-white@2x.png 2x
-            ">
+                img/logo/logo-desktop-white@1x.png 1x,
+                img/logo/logo-desktop-white@2x.png 2x
+              ">
                 <source media="(min-width: 768px)" srcset="
-              img/logo/logo-tablet-white@1x.png 1x,
-              img/logo/logo-tablet-white@2x.png 2x
-            ">
-                <img class="header__logo-picture" src="img/logo/logo-mobile-white@1x.png" srcset="
-              img/logo/logo-mobile-white@1x.png 1x,
-              img/logo/logo-mobile-white@2x.png 2x
-            " alt="Логотип Погнали">
+                img/logo/logo-tablet-white@1x.png 1x,
+                img/logo/logo-tablet-white@2x.png 2x
+              ">
+                <img class="top-logotype__picture" src="img/logo/logo-mobile-white@1x.png" srcset="
+                img/logo/logo-mobile-white@1x.png 1x,
+                img/logo/logo-mobile-white@2x.png 2x
+              " alt="Логотип приложения Погнали">
               </picture>
             </a>
-            <button class="header__button-menu" type="button">Открыть меню</button>
+            <button class="top-logotype__togler  menu-toggler" type="button">
+              <span class="visually-hidden">Открыть меню / Закрыть меню</span>
+            </button>
           </div>
-          <!-- Меню  -->
-          <ul class="header__navigation-list  list">
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="">О сервисе</a>
-            </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="form.html">Направления</a>
-            </li>
-            <li class="header__navigation-item">
-              <a class="header__navigation-link" href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
-          <!-- Авторизация  -->
-          <a class="header__authorization-button  button" href="">Авторизация</a>
-          <!-- обёртка с контактами и соц сетями  -->
-          <div class="header__contacts-wrapper">
-            <ul class="header__contact-list  contact-list  list">
-              <li class="contact-list__item">
-                <a class="contact-list__link  icon-telephone" href="tel:88005558628">
-                  <span class="contact-list__detail">8 800 555-86-28</span>
+          <div class="page-navigation__button  auth-button">
+            <a class="auth-button__item" href="">Авторизация</a>
+          </div>
+          <div class="page-navigation__menu  top-menu">
+            <ul class="top-menu__list">
+              <li class="top-menu__item">
+                <a class="top-menu__link" href="index.html">О сервисе</a>
+              </li>
+              <li class="top-menu__item">
+                <a class="top-menu__link" href="form.html">Направления</a>
+              </li>
+              <li class="top-menu__item">
+                <a class="top-menu__link" href="catalog.html">Попутчики</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-navigation__contacts top-contacts">
+
+            <ul class="top-contacts__list">
+              <li class="top-contacts__item">
+                <a class="top-contacts__link  top-contacts__link--tel" href="tel:88005558628">
+                  <span class="top-contacts__text">8 800 555-86-28</span>
                 </a>
               </li>
-              <li class="contact-list__item">
-                <a class="contact-list__link  icon-email" href="mailto:mail@htmlacademy.ru">
-                  <span class="contact-list__detail">mail@htmlacademy.ru</span>
+              <li class="top-contacts__item">
+                <a class="top-contacts__link  top-contacts__link--email" href="mailto:mail@htmlacademy.ru">
+                  <span class="top-contacts__text">mail@htmlacademy.ru</span>
                 </a>
               </li>
             </ul>
-            <ul class="header__social-list  social-list  list">
-              <li class="social-list__item">
-                <a class="social-list__link  icon-facebook" href="">Facebook</a>
+
+            <ul class="top-contacts__social  top-social">
+              <li class="top-social__item">
+                <a class="top-social__link  top-social__link--fb" href="">
+                  <span class="visually-hidden">Facebook</span>
+                </a>
               </li>
-              <li class="social-list__item">
-                <a class="social-list__link  icon-vkontakte" href="">ВКонтакте</a>
+              <li class="top-social__item">
+                <a class="top-social__link  top-social__link--vk" href="">
+                  <span class="visually-hidden">VKontakte</span>
+                </a>
               </li>
-              <li class="social-list__item">
-                <a class="social-list__link  icon-Instagram" href="">Instagram</a>
+              <li class="top-social__item">
+                <a class="top-social__link  top-social__link--insta" href="">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
               </li>
             </ul>
+
           </div>
         </div>
-
-      </nav>
-
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main class="main">

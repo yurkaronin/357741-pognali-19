@@ -18,9 +18,9 @@
   margin-top: -10px;
   padding: 23px 75px 30px 25px;
 
-  color: #161c35;
+  color: $brand-3;
   border-radius: 10px 10px 0 0;
-  background-color: #ffd74b;
+  background-color: $accent-1;
 }
 
 .steps-list__item::before {
@@ -40,19 +40,19 @@
   text-align: center;
   vertical-align: baseline;
 
-  color: #ffffff;
+  color: $white;
 }
 
 .steps-list__item:first-child {
-  background-color: #ff8d30;
+  background-color: $accent-3;
 }
 
 .steps-list__item:nth-child(2) {
-  background-color: #ffa530;
+  background-color: $accent-5;
 }
 
 .steps-list__item:nth-child(3) {
-  background-color: #ffbd30;
+  background-color: $accent-2;
 }
 
 .steps-list__item:last-child {
@@ -96,7 +96,7 @@
 
     content: "";
 
-    background-color: #ff8d30;
+    background-color: $accent-3;
   }
 
   .steps-list__item:nth-child(2) {
@@ -120,7 +120,7 @@
 
     content: "";
 
-    background-color: #ffbd30;
+    background-color: $accent-2;
   }
 
   .steps-list__item:last-child {
@@ -177,6 +177,6 @@
 
     content: "";
 
-    background-color: #ffa530;
+    background-color: $accent-5;
   }
 }

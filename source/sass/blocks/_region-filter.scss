@@ -28,9 +28,30 @@
   text-transform: uppercase;
 
   opacity: 0.3;
-  color: #192144;
+  color: $brand-4;
 }
 
 .region-filter__link--active {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .region-filter__item {
+    max-width: 25%;
+    margin-right: 27px;
+    margin-bottom: 0;
+  }
+
+  .region-filter__item:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .region-filter__link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    text-transform: uppercase;
+  }
+
 }

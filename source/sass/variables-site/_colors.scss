@@ -1,15 +1,35 @@
 /* stylelint-disable */
-/* Backgrounds  */
-$color__background-body: #edeff6;
-$color__background-button: #ffd74b;
-$color__background-section: #141b3b;
-/* Text */
-$color__text: #444444;
-$color__text--white: #ffffff;
-$color-button__text: #161c35;
-/* стрелка на кнопках  */
-$color-arrow__icon: #1d2e5b;
-/* Links */
-$color__link: #0073aa;
-/* Borders */
-$color__border: #ccc;
+/* Базовые цвета/Simple colors */
+$white:#ffffff;
+$black: #000000;
+$silver-light: #cccccc;
+$gray: #444444;
+/* Фирменные цвета /Brand colors */
+$brand-1: #1d2e5b;
+$brand-2: #141b3b;
+$brand-3: #161c35;
+$brand-4: #192144;
+$brand-5: #d6daed;
+$brand-6: #d9d9d9;
+$brand-7: #cbced9;
+$brand-8: #edeff6;
+$brand-9: #f9eaea;
+$brand-10: #161c36;
+$brand-11: #dfe3f0;
+$brand-12: #121936;
+$brand-13: #182044;
+$brand-14: #161c34;
+$brand-15: #e2e5f2;
+$brand-16: #cbcbcb;
+$brand-17: #d4d9eb;
+
+/* Акцентные цвета */
+$accent-1: #ffd74b;
+$accent-2: #ffbd30;
+$accent-3: #ff8d30;
+$accent-4: #f3c72b;
+$accent-5: #ffa530;
+
+/* Индикатор онлайн  */
+$offline: #81e31e;
+$online: #f97676;

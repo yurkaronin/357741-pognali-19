@@ -23,7 +23,7 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  color: #1d2e5b;
+  color: $brand-1;
   background-color: transparent;
 
   justify-content: center;
@@ -41,7 +41,7 @@
 
   text-transform: uppercase;
 
-  color: #1d2e5b;
+  color: $brand-1;
 }
 
 .travelers-result__button-text::before {

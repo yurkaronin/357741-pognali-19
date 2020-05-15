@@ -4,9 +4,9 @@
   padding-top: 30px;
   padding-bottom: 63px;
 
-  color: $color__text--white;
+  color: $white;
   border-radius: 0 0 30px 30px;
-  background-color: #192144;
+  background-color: $brand-4;
   background-image: url("../img/backgrounds/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -24,7 +24,7 @@
 
   content: "";
 
-  background-color: #192144;
+  background-color: $brand-4;
 }
 
 .about__header {
@@ -41,13 +41,13 @@
   margin-bottom: 19px;
   padding-right: 10px;
 
-  color: $color__text--white;
+  color: $white;
 }
 
 .about .text--attention {
   margin-bottom: 0;
 
-  color: $color__text--white;
+  color: $white;
 }
 
 .about__button {
@@ -85,7 +85,7 @@
     content: "";
 
     border-radius: 20px;
-    background-color: #141b3b;
+    background-color: $brand-2;
   }
 
   .about__header::before {
@@ -168,7 +168,7 @@
     height: 213px;
 
     border-radius: 20px;
-    background-color: $color__background-section;
+    background-color: $brand-2;
   }
 
   .about__header::before {

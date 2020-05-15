@@ -1,0 +1,78 @@
+.page-navigation {
+  width: 100%;
+  background-color: transparent;
+  color: $white;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  position: static;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+}
+
+.page-navigation--scrolled,
+.page-navigation--active {
+  position: fixed;
+}
+
+.page-navigation--inner {
+  padding-top: 9px;
+  padding-bottom: 14px;
+}
+
+.page-navigation--inner.page-navigation--main {
+  padding-top: 17px;
+}
+
+.page-navigation__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-navigation--inactive .page-navigation__button,
+.page-navigation--inactive .page-navigation__contacts,
+.page-navigation--inactive .page-navigation__menu {
+  display: none;
+}
+
+.page-navigation__button {
+  order: 2;
+}
+
+.page-navigation__menu {
+  padding-top: 61px;
+  padding-bottom: 53px;
+  order: 1;
+}
+
+.page-navigation__contacts {
+  padding-top: 54px;
+  order: 3;
+}
+
+.page-navigation--no-js,
+.page-navigation--white {
+  background-color: $white;
+  color: $brand-4;
+}
+
+.page-navigation--no-js .top-logotype__link::after,
+.page-navigation--white .top-logotype__link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/logo/logo-mobile-blue@1x.png");
+}
+
+.page-navigation--active .page-navigation__button,
+.page-navigation--active .page-navigation__contacts,
+.page-navigation--active .page-navigation__menu {
+  display: block;
+}

@@ -30,14 +30,6 @@
   background-size: 18px 18px;
 }
 
-.promo__contact-list .icon-telephone::before {
-  background-image: url("../img/icons/topmenu-phone.svg");
-}
-
-.promo__contact-list .icon-email::before {
-  background-image: url("../img/icons/topmenu-mail-black.svg");
-}
-
 .icon-user::before {
   background-image: url("../img/icons/user.svg");
 }
@@ -75,15 +67,5 @@
 
   .icon-email::before {
     background-image: url("../img/icons/topmenu-mail-black.svg");
-  }
-
-  .registration .icon-telephone::before {
-    background-image: url("../img/icons/contacts-phone.svg");
-    background-size: 36px 36px;
-  }
-
-  .registration .icon-email::before {
-    background-image: url("../img/icons/topmenu-mail.svg");
-    background-size: 36px 26px;
   }
 }

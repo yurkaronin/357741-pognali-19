@@ -4,9 +4,9 @@
   padding-top: 45px;
   padding-bottom: 45px;
 
-  color: #444444;
+  color: $gray;
   border-radius: 0 0 30px 30px;
-  background-color: #edeff6;
+  background-color: $brand-8;
 }
 
 .prices::before {
@@ -21,7 +21,7 @@
 
   content: "";
 
-  background-color: #192144;
+  background-color: $brand-4;
 }
 
 .prices .container {
@@ -41,8 +41,26 @@
   margin-bottom: 31px;
 }
 
-.business-price {
-  display: none;
+.prices__list::after {
+  display: block;
+  position: absolute;
+  top: -128px;
+  right: -40px;
+
+  width: 100px;
+  height: 99px;
+
+  background-image: url("../img/icons/rates.png");
+
+  content: "";
+}
+
+.prices__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+
+  color: $brand-4;
 }
 
 @media (min-width: 768px) {
@@ -62,6 +80,22 @@
 
   .prices__list {
     margin-bottom: 60px;
+  }
+
+  .prices__list::after {
+    position: absolute;
+    top: -125px;
+    right: -25px;
+
+    display: block;
+
+    width: 99px;
+    height: 99px;
+
+    content: "";
+
+    background-image: url("../img/icons/rates.png");
+    background-repeat: no-repeat;
   }
 
   .prices__link {
@@ -88,7 +122,7 @@
     content: "";
 
     border-radius: 50%;
-    background-color: #e2e5f2;
+    background-color: $brand-15;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 17px 21px;

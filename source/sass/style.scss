@@ -2,13 +2,9 @@
 @import "base/normalize";
 /* переменные  */
 @import "variables-site/variables";
-/* Глобальные стили по ТЕГАМ  */
-@import "base/global";
-/* Базовые стили оформления */
+/* глобальные, бщие и вспомогательные/служебные стили оформления */
 @import "base/basic";
-/* вспомогательные/служебные  */
-@import "base/common";
 /* БЭМ-блоки (коллекция)*/
-@import "bem/bem-collection.scss";
+@import "blocks/blocks-collection.scss";
 /* sections - смысловые секции (коллекция) */
 @import "sections/sections-collection.scss";

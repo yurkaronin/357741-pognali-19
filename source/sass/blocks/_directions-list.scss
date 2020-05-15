@@ -9,9 +9,9 @@
   margin-top: -13px;
   padding: 26px 24px 24px;
 
-  color: #000000;
+  color: $black;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .directions-list__item {
@@ -34,7 +34,7 @@
   margin: 0;
   padding: 0;
 
-  color: #161c35;
+  color: $brand-3;
 }
 
 .directions-list__feature {
@@ -47,7 +47,7 @@
   padding: 0;
 
   opacity: 0.3;
-  color: #444444;
+  color: $gray;
 }
 
 .directions-list__total-users {
@@ -67,7 +67,7 @@
 
   content: "";
 
-  background: linear-gradient(to top, #edeff6, transparent);
+  background: linear-gradient(to top, $brand-8, transparent);
 }
 
 @media (min-width: 768px) {
@@ -94,7 +94,7 @@
     overflow: hidden;
 
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: $white;
 
     flex-wrap: wrap;
   }

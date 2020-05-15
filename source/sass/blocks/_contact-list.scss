@@ -9,7 +9,7 @@
 
   text-transform: uppercase;
 
-  color: #192144;
+  color: $brand-4;
 
   flex-wrap: wrap;
   align-items: center;
@@ -22,7 +22,7 @@
   content: "";
 
   border-radius: 50%;
-  background-color: #121936;
+  background-color: $brand-12;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 18px 18px;
@@ -33,7 +33,7 @@
 
   margin-left: 16px;
 
-  color: #192144;
+  color: $brand-4;
 }
 
 @media (min-width: 768px) {
@@ -67,6 +67,6 @@
     padding: 25px;
 
     background-size: 18px 18px;
-    background-color: #ffbd30;
+    background-color: $accent-2;
   }
 }

@@ -4,9 +4,9 @@
   padding-top: 67px;
   padding-bottom: 27px;
 
-  color: #444444;
+  color: $gray;
   border-radius: 0 0 30px 30px;
-  background-color: #edeff6;
+  background-color: $brand-8;
 }
 
 .directions::before {
@@ -21,7 +21,7 @@
 
   content: "";
 
-  background-color: #192144;
+  background-color: $brand-4;
 }
 
 .directions__header {
@@ -126,7 +126,7 @@
     content: "";
 
     border-radius: 20px;
-    background-color: #e2e5f2;
+    background-color: $brand-15;
   }
 
   .directions-list__item {

@@ -5,9 +5,9 @@
   padding-bottom: 39px;
 
   border-radius: 0 0 30px 30px;
-  background-color: #161c36;
+  background-color: $brand-10;
   /* background-image: url("../img/backgrounds/globe-back-mobile@1x.jpg"); */
-  background-image: linear-gradient(to bottom, transparent 50%, #161c36 50%, #161c36 70%, #192144 70%, #192144 100%), url("../img/backgrounds/globe-back-mobile@1x.jpg");
+  background-image: linear-gradient(to bottom, transparent 50%, $brand-10 50%, $brand-10 70%, $brand-4 70%, $brand-4 100%), url("../img/backgrounds/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top 5px center;
   background-size: auto;
@@ -24,7 +24,7 @@
 
   content: "";
 
-  background-color: #161c36;
+  background-color: $brand-10;
 }
 
 .promo__container {
@@ -79,14 +79,14 @@
   width: 40px;
   height: 40px;
 
-  background-color: #ff8d30;
+  background-color: $accent-3;
 }
 
 .promo__contact-list .icon-email::before {
   width: 40px;
   height: 40px;
 
-  background-color: #ffbd30;
+  background-color: $accent-2;
 }
 
 .promo__contact-list {
@@ -118,7 +118,7 @@
   padding-bottom: 113px;
   padding-left: 24px;
 
-  background-color: #161c35;
+  background-color: $brand-3;
 }
 
 .promo__quote-content {
@@ -131,7 +131,7 @@
   margin-bottom: 15px;
   padding: 0;
 
-  color: #ffffff;
+  color: $white;
 }
 
 .promo__quote-author {
@@ -145,11 +145,19 @@
   margin-bottom: 33px;
   padding: 0;
 
-  color: #ffffff;
+  color: $white;
 }
 
 .promo__steps__wrapper {
   margin-top: -72px;
+}
+
+.promo__contact-list .icon-telephone::before {
+  background-image: url("../img/icons/topmenu-phone.svg");
+}
+
+.promo__contact-list .icon-email::before {
+  background-image: url("../img/icons/topmenu-mail-black.svg");
 }
 
 @media (min-width: 768px) {
@@ -157,7 +165,7 @@
     padding-top: 38px;
     padding-bottom: 90px;
 
-    background-color: #182044;
+    background-color: $brand-13;
     background-image: url("../img/backgrounds/globe-back-tablet@1x.jpg");
     background-position: left -356px top 263px;
   }
@@ -220,7 +228,7 @@
     padding-bottom: 122px;
 
     border-radius: 0 0 60px 60px;
-    background-color: #161c34;
+    background-color: $brand-14;
     background-image: url("../img/backgrounds/globe-back-desktop@1x.jpg");
     background-position: bottom center;
     background-size: inherit;
