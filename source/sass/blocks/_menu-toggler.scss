@@ -27,20 +27,3 @@
   top: 22px;
   left: 17px;
 }
-
-.page-navigation--white .menu-toggler::after,
-.page-navigation--white .menu-toggler::before {
-  background-color: $silver-light;
-  height: 2px;
-  border-radius: 0;
-}
-
-.page-navigation--active .menu-toggler::before {
-  transform: rotate(45deg);
-  top: 19px;
-}
-
-.page-navigation--active .menu-toggler::after {
-  transform: rotate(-45deg);
-  top: 19px;
-}
