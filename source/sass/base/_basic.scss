@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  font-family: $font-family_base;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.18;
+
+  color: $gray;
+  background-color: $brand-8;
+}
+
+.container {
+  z-index: 110;
+
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main--catalog {
+  background-color: $brand-8;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
+@media (min-width: 1440px) {
+  .catalog-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    justify-content: space-between;
+  }
+
+  .travelers-result .container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 60px;
+  }
+}

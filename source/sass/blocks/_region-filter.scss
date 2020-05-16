@@ -1,0 +1,56 @@
+.region-filter {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 194px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  margin-left: 0;
+
+  flex-wrap: wrap;
+}
+
+.region-filter__item {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.region-filter__link {
+  font-family: $font-family_base;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 14px;
+
+  text-transform: uppercase;
+
+  opacity: 0.3;
+  color: $brand-4;
+}
+
+.region-filter__link--active {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .region-filter__item {
+    max-width: 25%;
+    margin-right: 27px;
+    margin-bottom: 0;
+  }
+
+  .region-filter__item:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .region-filter__link {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,27 @@
+.text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  margin: 0;
+  padding: 0;
+
+  color: $gray;
+}
+
+.text--attention {
+  font-weight: 700;
+  line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .text--attention {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}

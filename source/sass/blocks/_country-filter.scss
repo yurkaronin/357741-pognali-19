@@ -1,0 +1,99 @@
+.country-filter {
+  max-width: 100%;
+}
+
+.country-filter__alphabet {
+  width: 100%;
+  margin-bottom: 11px;
+  margin-left: -1px;
+
+  border-collapse: collapse;
+
+  border: 1px solid $brand-7;
+  background-color: $white;
+}
+
+.country-filter__letter {
+  display: none;
+}
+
+.country-filter__letter--active {
+  display: block;
+}
+
+.country-filter__sub-list {
+  display: none;
+}
+
+.country-filter__item--active .country-filter__sub-list {
+  display: block;
+}
+
+.country-filter__list {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .country-filter__alphabet {
+    max-width: 345px;
+    margin-right: 63px;
+    margin-bottom: 40px;
+    margin-left: 0;
+
+    border: none;
+    background-color: transparent;
+  }
+
+  .country-filter__list {
+    max-width: 155px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .country-filter__alphabet {
+    display: none;
+  }
+
+  .country-filter__list {
+    display: flex;
+
+    width: 100%;
+    max-width: 100%;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  .country-filter__item {
+    width: 100%;
+    max-width: 20%;
+    margin-bottom: 66px;
+  }
+
+  .country-filter__item:nth-child(5) {
+    margin-right: 0;
+  }
+
+  .country-filter__letter {
+    font-family: $font-family_base;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 24px;
+
+    display: block;
+
+    max-width: 35px;
+    margin-bottom: 48px;
+
+    text-transform: uppercase;
+
+    color: $brand-4;
+  }
+
+  .country-filter__sub-list {
+    display: block;
+
+    max-width: 100%;
+  }
+}
