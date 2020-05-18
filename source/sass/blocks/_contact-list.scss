@@ -1,30 +1,33 @@
-.contact-list__link {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.38;
-
-  position: relative;
-
+.contact-list {
   display: flex;
-
-  text-transform: uppercase;
-
-  color: $brand-4;
-
   flex-wrap: wrap;
-  align-items: center;
 }
 
-.contact-list__link::before {
-  width: 45px;
-  height: 45px;
+.contact-list__item {
+  max-width: 40px;
+  min-height: 40px;
+}
 
-  content: "";
-
+.contact-list__link {
+  border: none;
+  background-color: $accent-2;
   border-radius: 50%;
-  background-color: $brand-12;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url("../img/icons/topmenu-mail.svg");
+  background-size: 18px 14px;
+}
+
+.contact-list__link--telephone {
+  background-color: $accent-3;
+  background-image: url("../img/icons/topmenu-phone.svg");
   background-size: 18px 18px;
 }
 

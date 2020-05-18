@@ -2,6 +2,24 @@
   margin-top: 0;
 }
 
+.inner-page__header {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.inner-page__wrapper {
+  padding-top: 43px;
+}
+
+.inner-page__header .header__title {
+  padding-bottom: 12px;
+}
+
+.inner-page__header .page-navigation {
+  padding-top: 9px;
+  padding-bottom: 14px;
+}
+
 @media (min-width: 768px) {
   .inner-page .footer {
     margin-top: 0;

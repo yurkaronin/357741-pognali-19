@@ -69,6 +69,32 @@
   left: 17px;
 }
 
+.travelers-list__link {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+
+  max-width: 170px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.travelers-list__link::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  left: -15px;
+  display: block;
+  background-color: #f97676;
+}
+
+.travelers-list__link--online::before {
+  background-color: #81e31e;
+}
+
 @media (min-width: 768px) {
   .travelers-list__item:last-child {
     margin-right: 0;

@@ -2,7 +2,7 @@
   width: 100%;
   background-color: transparent;
   color: $white;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-bottom: 14px;
   position: static;
   top: 0;
@@ -15,12 +15,7 @@
   position: fixed;
 }
 
-.page-navigation--inner {
-  padding-top: 9px;
-  padding-bottom: 14px;
-}
-
-.page-navigation--inner.page-navigation--main {
+.page-navigation .page-navigation--main {
   padding-top: 17px;
 }
 

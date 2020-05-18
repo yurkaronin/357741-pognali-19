@@ -6,7 +6,6 @@
 
   border-radius: 0 0 30px 30px;
   background-color: $brand-10;
-  /* background-image: url("../img/backgrounds/globe-back-mobile@1x.jpg"); */
   background-image: linear-gradient(to bottom, transparent 50%, $brand-10 50%, $brand-10 70%, $brand-4 70%, $brand-4 100%), url("../img/backgrounds/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top 5px center;
@@ -92,17 +91,8 @@
 }
 
 .promo__contact-list {
-  display: flex;
-
   max-width: 80px;
-}
-
-.promo__contact-list .contact-list__link {
-  border: none;
-}
-
-.promo__contact-list .contact-list__item {
-  max-width: 40px;
+  width: 100%;
 }
 
 .promo__contacts__button {
