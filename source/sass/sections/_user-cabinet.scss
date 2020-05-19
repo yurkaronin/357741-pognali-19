@@ -28,7 +28,7 @@
   left: 0;
 }
 
-.personal-level__percent {
+.user-cabinet .personal-level__percent {
   position: absolute;
   top: 0;
   left: 2px;
@@ -37,7 +37,7 @@
   height: 100px;
 }
 
-.personal-level__number {
+.user-cabinet .personal-level__number {
   font-size: 38px;
   font-weight: 700;
   line-height: 1;
@@ -45,7 +45,7 @@
   position: relative;
 }
 
-.personal-level__number::after {
+.user-cabinet .personal-level__number::after {
   content: "";
   position: absolute;
   bottom: 3px;
@@ -55,7 +55,7 @@
   background-color: $brand-7;
 }
 
-.personal-level__description {
+.user-cabinet .personal-level__description {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.22;
@@ -219,10 +219,10 @@
   border-radius: 4px;
   background-color: $brand-18;
   padding: 19px 28px 18px 24px;
-  color: $white
+  color: $white;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 120%;
   white-space: nowrap;
 }
 
