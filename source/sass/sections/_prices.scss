@@ -1,8 +1,8 @@
 .prices {
   position: relative;
 
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 50px;
+  padding-bottom: 35px;
 
   color: $gray;
   border-radius: 0 0 30px 30px;
@@ -32,7 +32,7 @@
   display: block;
 
   max-width: 101px;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
 }
 
 .prices__list {
@@ -45,7 +45,7 @@
   display: block;
   position: absolute;
   top: -128px;
-  right: -40px;
+  right: -25px;
 
   width: 100px;
   height: 99px;

@@ -1,0 +1,236 @@
+.user-cabinet {
+  padding-top: 23px;
+}
+
+.user-cabinet__top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  padding: 0 17px;
+}
+
+.user-cabinet__level {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  padding-top: 6px;
+  position: relative;
+  background-color: transparent;
+  color: $brand-10;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+}
+
+.personal-level__percent {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  transform: rotate(-90deg);
+  width: 100px;
+  height: 100px;
+}
+
+.personal-level__number {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  color: $brand-10;
+  position: relative;
+}
+
+.personal-level__number::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: -3px;
+  width: 49px;
+  height: 2px;
+  background-color: $brand-7;
+}
+
+.personal-level__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22;
+  color: $gray;
+}
+
+.user-cabinet__photo-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-cabinet__image {
+  display: block;
+  height: auto;
+}
+
+.user-cabinet__upload-photo {
+  margin-bottom: 34px;
+}
+
+.user-cabinet__button-upload {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  color: $brand-1;
+  background-color: $brand-11;
+  border-radius: 25px;
+  text-transform: uppercase;
+  justify-content: center;
+  padding: 10px 10px 7px;
+  font-size: 17px;
+  line-height: 1.76;
+  font-weight: 700;
+}
+
+.user-cabinet__button-text {
+  color: $brand-1;
+}
+
+.user-cabinet__hashtag {
+  margin-bottom: 22px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid $brand-7;
+  padding: 22px 24px 21px;
+}
+
+.user-cabinet .hashtag-list__title {
+  margin: 0;
+  padding: 0 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $brand-1;
+  line-height: 1.13;
+  position: absolute;
+  z-index: 10;
+  background-color: $brand-8;
+  top: -8px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.user-cabinet .hashtag-list__input {
+  width: 100%;
+    height: 100%;
+    background-color: transparent;
+    resize: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.38;
+    text-align: left;
+    color: $gray;
+    border: none;
+    margin: 0;
+}
+
+.user-cabinet .user-cabinet__transport {
+  padding: 15px 24px 13px;
+  margin-bottom: 33px;
+  border-radius: 10px;
+  border: 1px solid $brand-7;
+  position: relative;
+}
+
+.user-cabinet .user-cabinet__title {
+  margin: 0;
+  padding: 0 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $brand-1;
+  line-height: 1.13;
+  position: absolute;
+  z-index: 10;
+  background-color: $brand-8;
+  top: -8px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.user-cabinet__transport-wrapper {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.user-cabinet__transport-item {
+  position: relative;
+}
+
+.user-cabinet .transport-type {
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0;
+  width: 33px;
+  height: 33px;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-cabinet  .transport-type__icon {
+  opacity: 0.15;
+  position: absolute;
+}
+
+.user-cabinet .transport-type:hover,
+.user-cabinet .transport-type:focus {
+    box-shadow: 0 2px 10px 0 rgba($black, 0.08);
+  }
+
+.user-cabinet .transport-type:active {
+    background-color: $brand-15;
+  }
+
+.user-cabinet__transport-item input:checked + .user-cabinet__transport-type svg {
+  opacity: 1;
+  fill: $brand-1;
+}
+
+.user-cabinet__transport-item::after,
+.user-cabinet__transport-item::before {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.user-cabinet__transport-item::before {
+  content: attr(data-tooltip); /* Всплывающая подсказка Впервые такое применяю. КРУТО!*/
+  bottom: -72px;
+  border-radius: 4px;
+  background-color: $brand-18;
+  padding: 19px 28px 18px 24px;
+  color: $white
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.user-cabinet__transport-item:hover::after,
+.user-cabinet__transport-item:hover::before {
+  display: block;
+}
+
+.user-cabinet__transport-item input:focus + .user-cabinet__transport-type {
+  box-shadow: 0 0 0 3px rgba(0,123,255,.5);
+}
