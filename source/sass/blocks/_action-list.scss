@@ -1,0 +1,54 @@
+.action-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.action-list__item {
+  background-color: $white;
+  border-radius: 10px;
+  padding: 24px 24px 21px;
+  margin-bottom: 10px;
+}
+
+.action-list__title {
+  font-weight: 700;
+  line-height: 1;
+  color: $brand-1;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.action-list__order-number {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.6px;
+}
+
+.action-list__detail {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 1.4px;
+  color: $brand-1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.plan-card__detail--teammates {
+  margin-bottom: 6px;
+}
+
+.plan-card__detail--dates {
+  margin-bottom: 20px;
+}
+
+.action-list__edit-link {
+  color: rgba(0,0,0,.3);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}

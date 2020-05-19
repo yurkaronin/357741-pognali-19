@@ -1,0 +1,28 @@
+.switch-list {
+  display: flex;
+  padding-right: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.switch-list__item {
+  opacity: 0.3;
+}
+
+.switch-list__item--active {
+  opacity: 1;
+}
+
+.switch-list__button {
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  line-height: 0;
+  background-color: $brand-1;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: block;
+  padding: 0;
+}

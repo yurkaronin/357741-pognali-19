@@ -1,0 +1,31 @@
+.planing-steps {
+  background-color: $white;
+  padding: 24px 24px 21px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.planing-steps__title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: $brand-1;
+  margin-bottom: 15px;
+}
+
+.planing-steps__help {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.38;
+  margin-bottom: 21px;
+}
+
+.planing-steps__markers {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21px;
+  position: relative;
+  display: none;
+}
