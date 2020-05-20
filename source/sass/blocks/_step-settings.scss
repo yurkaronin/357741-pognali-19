@@ -28,7 +28,7 @@
   font-weight: 500;
   letter-spacing: 1.6px;
   line-height: 1;
-  color: rgba(29,46,91,.3);
+  color: rgba(29, 46, 91, .3);
   max-width: 50px;
 }
 
@@ -74,9 +74,69 @@
   line-height: .9;
   letter-spacing: 1.5px;
   text-align: center;
-  color: #1d2e5b;
-  border: 1px solid #cbced9;
+  color: $brand-1;
+  border: 1px solid $brand-7;
   border-radius: 4px;
-  padding: 15px 40px 11px 40px; /* чтобы не наезжали на кнопочки при переполнении  */
-  appearance: textfield; /* Изменяем внешний вид элемента */
+  padding: 15px 40px 11px 40px;
+  /* чтобы не наезжали на кнопочки при переполнении  */
+  appearance: textfield;
+  /* Изменяем внешний вид элемента */
 }
+
+.step-settings__clarification {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  position: relative;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.step-settings__custom-checkbox {
+  display: flex;
+  padding-left: 40px;
+  position: relative;
+  height: 25px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.step-settings__custom-checkbox::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  display: block;
+  width: 26px;
+  height: 25px;
+  border: 1px solid $brand-7;
+  border-radius: 4px;
+}
+
+.step-settings__custom-checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 9px;
+  height: 9px;
+  top: 6px;
+  left: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("../img/icons/tick.svg");
+}
+
+.step-settings__clarification input:checked + .step-settings__custom-checkbox::after {
+  display: block;
+}
+
+.step-settings__clarification input:focus + .step-settings__custom-checkbox::before {
+  box-shadow: 0 0 0 3px rgba(0,123,255,.5);
+}
+
+.step-settings__button:focus,
+.step-settings__button:hover {
+  box-shadow: 0 0 0 3px #007bff;
+}
+
