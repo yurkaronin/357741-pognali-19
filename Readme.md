@@ -3,6 +3,8 @@
 * Студент: [Юрий Савченко](https://up.htmlacademy.ru/adaptive/19/user/357741).
 * Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/id61574).
 
+Ссылка для демонстрации: https://yurkaronin.github.io/357741-pognali-19/
+
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
