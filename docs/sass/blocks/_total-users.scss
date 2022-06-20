@@ -1,0 +1,56 @@
+.total-users {
+  max-width: 100px;
+}
+
+.total-users__info {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+
+  position: relative;
+
+  display: flex;
+
+  max-width: 100px;
+  padding-left: 25px;
+
+  text-transform: uppercase;
+
+  opacity: 0.3;
+  color: $gray;
+
+  align-items: center;
+}
+
+.total-users__info::before {
+  position: absolute;
+  left: 11px;
+
+  display: block;
+
+  width: 11px;
+  height: 11px;
+
+  content: "";
+}
+
+@media (min-width: 768px) {
+  .total-users__info {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+
+    padding-left: 30px;
+
+    text-transform: uppercase;
+  }
+
+  .total-users__info::before {
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    opacity: 0.6;
+  }
+}

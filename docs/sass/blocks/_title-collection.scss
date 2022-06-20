@@ -1,0 +1,35 @@
+.title {
+  font-family: $font-family_base;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+
+  margin: 0;
+  padding: 0;
+
+  color: $accent-3;
+}
+
+.title--big {
+  font-family: $font-family_base;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  color: $white;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .title--big {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}

@@ -1,0 +1,310 @@
+.travelers {
+  padding-top: 68px;
+  padding-bottom: 30px;
+
+  color: $white;
+  border-radius: 0 0 30px 30px;
+  background-color: $brand-4;
+}
+
+.travelers__container {
+  position: relative;
+}
+
+.travelers__container::before {
+  position: absolute;
+  z-index: -1;
+  top: -32px;
+  left: -20px;
+
+  width: 132px;
+  height: 132px;
+
+  content: "";
+
+  border-radius: 20px;
+  background-color: $brand-2;
+}
+
+.travelers__container::after {
+  position: absolute;
+  z-index: -1;
+  top: -32px;
+  right: 25px;
+
+  width: 143px;
+  height: 143px;
+
+  content: "";
+
+  background-image: url("../img/backgrounds/smolov-back-desktop@1x.png");
+}
+
+.travelers__header {
+  max-width: 270px;
+  padding: 0 25px;
+}
+
+.travelers__title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.travelers__description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  color: $white;
+}
+
+.travelers .text--attention {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+
+  margin-bottom: 60px;
+
+  color: $white;
+}
+
+.travelers__list {
+  position: relative;
+
+  margin-bottom: 20px;
+}
+
+.travelers__list::before {
+  position: absolute;
+  z-index: -1;
+  top: -35px;
+  left: -35px;
+
+  width: 71px;
+  height: 71px;
+
+  content: "";
+
+  background-image: url("../img/backgrounds/rogovaya-back-mobile@1x.png");
+}
+
+.travelers__button {
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  padding-right: 60px;
+
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .travelers {
+    padding-top: 135px;
+    padding-bottom: 88px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .travelers__container::before {
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    left: 40px;
+
+    width: 213px;
+    height: 213px;
+
+    content: "";
+
+    border-radius: 20px;
+    background-color: $brand-2;
+  }
+
+  .travelers__container::after {
+    position: absolute;
+    z-index: -1;
+    top: -55px;
+    right: 70px;
+
+    width: 285px;
+    height: 285px;
+
+    content: "";
+
+    background-image: url("../img/backgrounds/rogovaya-back-desktop@1x.png");
+  }
+
+  .travelers__container {
+    padding: 0 75px;
+  }
+
+  .travelers__header {
+    max-width: 450px;
+    padding: 0;
+  }
+
+  .travelers__title {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+
+  .travelers__description {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+
+    margin-bottom: 40px;
+    margin-left: 0;
+  }
+
+  .travelers .text--attention {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+
+    margin-left: 0;
+  }
+
+  .travelers__list::before {
+    top: -96px;
+    left: -34px;
+
+    width: 143px;
+    height: 143px;
+
+    background-image: url("../img/backgrounds/smolov-back-desktop@1x.png");
+  }
+
+  .travelers__list {
+    display: flex;
+
+    margin-bottom: 80px;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .travelers-list__item {
+    overflow: hidden;
+
+    width: 100%;
+    max-width: 285px;
+    margin: 0;
+
+    border-radius: 20px;
+  }
+
+  .travelers__button {
+    max-width: 618px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+
+    padding: 27px 63px 30px 34px;
+  }
+
+  .travelers-list__photo {
+    display: block;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .travelers__button::after {
+    position: absolute;
+    right: 25px;
+
+    content: "";
+  }
+}
+
+@media (min-width: 1440px) {
+  .travelers {
+    padding-top: 125px;
+    padding-bottom: 132px;
+  }
+
+  .travelers__container {
+    display: flex;
+
+    padding: 0 60px;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: end;
+  }
+
+  .travelers__header {
+    max-width: 490px;
+    margin-bottom: 85px;
+    padding: 0;
+    padding-left: 65px;
+  }
+
+  .travelers__title {
+    margin-bottom: 56px;
+  }
+
+  .travelers__description {
+    margin-bottom: 40px;
+  }
+
+  .travelers .text--attention {
+    max-width: 300px;
+    margin-bottom: 0;
+  }
+
+  .travelers__list {
+    width: 100%;
+    max-width: 630px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    margin-left: 195px;
+  }
+
+  .travelers__button {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    width: 100%;
+    max-width: 280px;
+    margin-top: -90px;
+    margin-left: 65px;
+    padding: 29px 94px 31px 34px;
+  }
+
+  .travelers-list__level {
+    z-index: 5;
+    top: 25px;
+    left: 25px;
+  }
+
+  .travelers-list__flags {
+    z-index: 4;
+    top: -5px;
+  }
+
+  .travelers__container::before {
+    top: -65px;
+    left: -65px;
+  }
+
+  .travelers__list::before {
+    top: 0;
+    left: -205px;
+  }
+
+  .travelers__container::after {
+    top: 260px;
+    left: 188px;
+  }
+}

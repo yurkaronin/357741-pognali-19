@@ -1,0 +1,32 @@
+.hashtag-list__input {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .hashtag-list {
+    max-width: 100%;
+  }
+
+  .hashtag-list__input {
+    max-width: 222px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hashtag-list__input {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+}

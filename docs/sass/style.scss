@@ -1,0 +1,10 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import "base/normalize";
+/* переменные  */
+@import "variables-site/variables";
+/* глобальные, бщие и вспомогательные/служебные стили оформления */
+@import "base/basic";
+/* БЭМ-блоки (коллекция)*/
+@import "blocks/blocks-collection.scss";
+/* sections - смысловые секции (коллекция) */
+@import "sections/sections-collection.scss";

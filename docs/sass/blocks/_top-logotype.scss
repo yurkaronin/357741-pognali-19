@@ -1,0 +1,18 @@
+.top-logotype {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 0;
+  flex-shrink: 0;
+}
+
+.top-logotype__link {
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.top-logotype__picture {
+  display: block;
+  border: 0;
+}

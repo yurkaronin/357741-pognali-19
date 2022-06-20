@@ -1,0 +1,24 @@
+.transport-list {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.transport-list__item {
+  max-width: 25%;
+  margin-right: 13px;
+}
+
+.transport-list__item:last-child {
+  margin-right: 0;
+}
+
+.transport-list__icon {
+  opacity: 0.15;
+}
+
+.transport-list__icon--active {
+  opacity: 1;
+}

@@ -1,0 +1,29 @@
+.menu-toggler {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-toggler::after,
+.menu-toggler::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: $white;
+}
+
+.menu-toggler::before {
+  top: 14px;
+  left: 17px;
+}
+
+.menu-toggler::after {
+  top: 22px;
+  left: 17px;
+}

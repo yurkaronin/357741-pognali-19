@@ -1,0 +1,382 @@
+.geographic-filter {
+  position: relative;
+
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  border-radius: 0 0 20px 20px;
+  background-color: $brand-15;
+}
+
+.geographic-filter::after {
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+
+  width: 100%;
+  height: 60px;
+
+  content: "";
+
+  background-color: $brand-15;
+}
+
+.geographic-filter__header {
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.geographic-filter__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+
+  position: relative;
+
+  display: flex;
+
+  max-width: 100%;
+  padding-left: 27px;
+
+  text-transform: uppercase;
+
+  color: $brand-4;
+
+  align-items: center;
+}
+
+.geographic-filter__title::before {
+  position: absolute;
+  left: 0;
+
+  width: 15px;
+  height: 10px;
+
+  content: "";
+
+  background-image: url("../img/icons/filter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px 10px;
+}
+
+.geographic-filter__button {
+  font-size: 0;
+  font-weight: 0;
+  line-height: 0;
+
+  position: relative;
+
+  display: flex;
+
+  width: 23px;
+  max-width: 23px;
+  height: 23px;
+  padding: 0;
+
+  color: $brand-4;
+  border: none;
+  background-color: transparent;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.geographic-filter__button::after {
+  position: absolute;
+
+  width: 17px;
+  height: 3px;
+
+  content: "";
+
+  background-image: url("../img/icons/dots.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17px 3px;
+}
+
+.geographic-filter__wrapper {
+  margin: 0;
+}
+
+.geographic-filter__list {
+  display: none;
+}
+
+.geographic-filter__countries {
+  display: none;
+
+  max-width: 220px;
+}
+
+.geographic-filter__button-closed {
+  display: none;
+
+  max-width: 270px;
+}
+
+.geographic-filter__footer {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* фильтра развёрнут  */
+.geographic-filter--open {
+  padding-bottom: 27px;
+}
+
+.geographic-filter--open .geographic-filter__list {
+  display: flex;
+
+  margin-bottom: 15px;
+  margin-top: 31px;
+  margin-left: 25px;
+}
+
+.geographic-filter--open .geographic-filter__countries {
+  display: block;
+}
+
+.geographic-filter--open .geographic-filter__wrapper {
+  display: flex;
+
+  margin-top: 0;
+
+  flex-wrap: wrap;
+}
+
+.geographic-filter--open .country-filter__alphabet {
+  margin-left: 25px;
+}
+
+.geographic-filter--open .country-filter__list {
+  margin-left: 25px;
+}
+
+.geographic-filter--open .geographic-filter__button-closed {
+  display: flex;
+}
+
+.geographic-filter--open .geographic-filter__button-label {
+  display: none;
+}
+
+.geographic-filter--open .geographic-filter__button-label--close {
+  display: block;
+}
+
+.geographic-filter--open .geographic-filter__button::after {
+  right: -18px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/icons/filter-close-blue.svg");
+  background-size: 12px 12px;
+}
+
+
+@media (min-width: 768px) {
+  .geographic-filter {
+    padding-top: 57px;
+    padding-bottom: 30px;
+
+    border-radius: 0 0 60px 60px;
+  }
+
+  .geographic-filter .container {
+    display: flex;
+
+    padding: 0 73px;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .geographic-filter__wrapper {
+    display: flex;
+
+    width: 100%;
+    max-width: 100%;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .geographic-filter__list {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 365px;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    order: 0;
+  }
+
+  .geographic-filter__title {
+    display: none;
+  }
+
+  .geographic-filter__header {
+    width: 100%;
+    max-width: 180px;
+    margin: 0;
+    padding: 0;
+
+    order: 2;
+  }
+
+  .geographic-filter__button {
+    font-family: $font-family_base;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    width: 100%;
+    max-width: 156px;
+    height: auto;
+    margin-right: 27px;
+    padding-right: 20px;
+
+    text-transform: uppercase;
+
+    background-image: none;
+
+    justify-content: space-between;
+  }
+
+  .geographic-filter__button::after {
+    right: -27px;
+
+    display: block;
+
+    width: 27px;
+    height: 20px;
+
+    background-size: 27px 5px;
+  }
+
+  .geographic-filter__button-label--close {
+    display: none;
+  }
+
+  .geographic-filter__footer {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 28px;
+
+    order: 3;
+  }
+
+  .geographic-filter__countries {
+    display: none;
+
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+
+    flex-wrap: wrap;
+  }
+
+  .geographic-filter__button-closed {
+    max-width: 618px;
+    padding: 40px;
+  }
+
+  .geographic-filter--open {
+    padding-bottom: 73px;
+  }
+
+  .geographic-filter--open .geographic-filter__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .geographic-filter--open .geographic-filter__countries {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 0;
+
+    flex-wrap: wrap;
+  }
+
+  .geographic-filter--open .geographic-filter__footer {
+    margin-top: 57px;
+  }
+
+  .geographic-filter--open .country-filter__alphabet {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .geographic-filter--open,
+  .geographic-filter::after {
+    background-color: $brand-8;
+  }
+
+  .geographic-filter__wrapper {
+    position: relative;
+  }
+
+  .geographic-filter__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    position: absolute;
+    left: 9px;
+
+    display: flex;
+
+    max-width: 300px;
+    margin-left: 0;
+    padding-left: 42px;
+
+    text-transform: uppercase;
+  }
+
+  .geographic-filter__title::before {
+    width: 23px;
+    height: 15px;
+
+    background-size: 23px 15px;
+  }
+
+  .geographic-filter .geographic-filter__list {
+    margin-left: 335px;
+  }
+
+  .geographic-filter__header {
+    max-width: 227px;
+  }
+
+  .geographic-filter__button::after {
+    right: -23px;
+  }
+
+  .geographic-filter--open .geographic-filter__footer {
+    margin-top: 90px;
+  }
+
+  .geographic-filter--open .country-filter__list {
+    margin-left: 0;
+    padding: 0 22px;
+  }
+
+  .geographic-filter__button-closed {
+    width: 100%;
+    max-width: 100%;
+    padding: 38px;
+  }
+}

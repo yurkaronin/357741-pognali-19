@@ -1,0 +1,75 @@
+.icon {
+  position: relative;
+}
+
+.icon--telephone::before {
+  background-image: url("../img/icons/contacts-phone.svg");
+}
+
+.icon--email::before {
+  background-image: url("../img/icons/topmenu-mail.svg");
+}
+
+.icon--facebook::before {
+  width: 11px;
+  height: 21px;
+
+  background-image: url("../img/icons/facebook.svg");
+  background-size: 18px 18px;
+}
+
+.icon--vkontakte::before {
+  width: 23px;
+  height: 12px;
+
+  background-image: url("../img/icons/vk.svg");
+  background-size: 18px 18px;
+}
+
+.icon--instagram::before {
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/icons/instagram.svg");
+  background-size: 18px 18px;
+}
+
+.icon--user::before {
+  background-image: url("../img/icons/user.svg");
+}
+
+.icon--address::before {
+  background-image: url("../img/icons/contacts-location.svg");
+  background-size: 14px 22px;
+}
+
+.icon--human::before {
+  background-image: url("../img/icons/human.svg");
+}
+
+@media (min-width: 768px) {
+  .icon--facebook::before {
+    background-image: url("../img/icons/facebook.svg");
+    background-size: 14px 28px;
+  }
+
+  .icon--vkontakte::before {
+    background-image: url("../img/icons/vk.svg");
+    background-size: 31px 16px;
+  }
+
+  .icon--instagram::before {
+    background-image: url("../img/icons/instagram.svg");
+    background-size: 24px 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .icon--telephone::before {
+    background-image: url("../img/icons/topmenu-phone.svg");
+  }
+
+  .icon--email::before {
+    background-image: url("../img/icons/topmenu-mail-black.svg");
+  }
+}

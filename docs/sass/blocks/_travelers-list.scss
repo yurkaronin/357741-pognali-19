@@ -1,0 +1,148 @@
+.travelers-list__details-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -10px;
+  padding: 30px 45px 18px;
+
+  border-radius: 0 0 10px 10px;
+  background-color: $white;
+
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.travelers-list__item {
+  position: relative;
+
+  overflow: hidden;
+
+  max-width: 270px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+}
+
+.travelers-list__link {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+
+  max-width: 140px;
+
+  text-align: center;
+
+  color: $brand-1;
+}
+
+.travelers-list__hashtag {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+
+  max-width: 180px;
+
+  text-align: center;
+
+  color: $gray;
+}
+
+.travelers-list__transport {
+  max-width: 122px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.travelers-list__flags {
+  position: absolute;
+  top: -10px;
+
+  max-width: 145px;
+}
+
+.travelers-list__level {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+}
+
+@media (min-width: 768px) {
+  .travelers-list__item:last-child {
+    margin-right: 0;
+  }
+
+  .travelers-list__details-wrapper {
+    margin-top: 0;
+    padding: 28px 20px 30px;
+  }
+
+  .travelers-list__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    max-width: 170px;
+    margin-bottom: 20px;
+  }
+
+  .travelers-list__hashtag {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .travelers-list__level {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .travelers-list__item {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 285px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    margin-left: 0;
+
+    border-radius: 20px;
+
+    align-items: center;
+  }
+
+  .travelers-list__photo {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .travelers-list__item:last-child {
+    margin-right: 0;
+  }
+
+  .travelers-list__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .travelers-list__details-wrapper {
+    width: 100%;
+    padding: 30px 20px 20px;
+  }
+
+  .travelers-list__hashtag {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,151 @@
+.pagination {
+  display: flex;
+
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 0;
+
+  border-radius: 20px;
+  background-color: $white;
+}
+
+.pagination__pages-list {
+  display: none;
+}
+
+.pagination__page-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+
+  color: $brand-10;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination__page-link--active {
+  border-radius: 50%;
+  background-color: $accent-1;
+}
+
+.pagination__buttons-wrapper {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+}
+
+.pagination__control-button {
+  position: relative;
+
+  display: flex;
+
+  width: 135px;
+  height: 50px;
+}
+
+.pagination__control-button--prev {
+  border-right: 1px solid $brand-8;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pagination__control-button--next {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.pagination__control-button::before {
+  position: absolute;
+  top: 15px;
+
+  content: "";
+
+  border: 10px solid transparent;
+}
+
+.pagination__control-button--prev::before {
+  left: 53px;
+
+  border-right-color: $brand-4;
+}
+
+.pagination__control-button--next::before {
+  right: 53px;
+
+  border-left-color: $brand-4;
+}
+
+@media (min-width: 768px) {
+  .pagination {
+    max-width: 100%;
+    padding: 25px 0 25px 28px;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .pagination__pages-list {
+    display: flex;
+
+    margin: 0;
+    padding-left: 0;
+
+    list-style: none;
+
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .pagination__pages-item {
+    width: 50px;
+    height: 50px;
+  }
+
+  .pagination__buttons-wrapper {
+    width: 124px;
+  }
+
+  .pagination__control-button {
+    width: 62px;
+  }
+
+  .pagination__control-button--prev {
+    border-right: none;
+  }
+
+  .pagination__control-button--prev::before {
+    left: 26px;
+  }
+
+  .pagination__control-button--next::before {
+    right: 29px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pagination {
+    margin-right: 85px;
+  }
+
+  .pagination__pages-list {
+    padding-left: 2px;
+  }
+
+  .pagination__control-button--prev::before {
+    left: 22px;
+  }
+
+  .pagination__control-button--next::before {
+    right: 29px;
+  }
+}
